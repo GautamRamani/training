@@ -1,0 +1,120 @@
+The middleware in node.js is a function that will have all the access for requesting an object, responding to an object, and moving to the next middleware function in the application request-response cycle.
+
+ex:-
+
+app.use(express.josn())  :-here express.josn() is a middleware function
+
+app.get('/',(req,res)=>{
+    res.send('hello world...')
+})     //here callbak is also middleware function
+
+
+custom middleware 
+
+function log(req,res,next){
+    console.log('Logging...')
+    next();
+}
+
+Built in Modules:-
+
+app.use(express.josn()) 
+app.use(express.urlencoded()) 
+app.use(express.static('public)); 
+
+A README file contains information about the other files in a directory or archive of computer software. A form of documentation, it is usually a simple plain text file called README , Read Me , READ.ME , README. TXT , README.md (to indicate the use of Markdown), or README.
+ 
+Third party Middlewares
+
+There are so many third Party Middleware in Nodejs 
+we are learn  helmet,morgan third party middleware
+
+Helmet helps you secure your Express apps by setting various HTTP headers.
+
+For development environment
+const morgan=require('morgan')
+const express = require('express');
+const app = express();
+if(app.get('env')==='development'){
+  app.use(morgan('tiny'))
+  console.log("Morgan enabled")
+}
+
+For Production Environment:-
+$env:NODE_ENV='production'
+npm start (so now morgan enabled is not shown)
+
+Config:-
+Node-config organizes hierarchical configurations for your app deployments.
+
+It lets you define a set of default parameters, and extend them for different deployment environments (development, qa, staging, production, etc.).
+
+Configurations are stored in configuration files within your application, and can be overridden and extended by environment variables, command line parameters, or external sources.
+
+npm i config
+
+debug:-
+
+debug exposes a function; simply pass this function the name of your module, and it will return a decorated version of console.error for you to pass debug statements to. This will allow you to toggle the debug output for different parts of your module as well as the module as a whole.
+
+npm i debug
+
+Template Engines:-
+pug
+Mustache
+EJS
+
+npm i pug
+
+Database Integration:-
+Cassandra
+Couchbase
+CouchDB
+LevelDB
+MySQL
+MongoDB
+Neo4j
+Oracle
+PostgreSQL
+Redis
+SQL Server
+SQLite
+Elasticsearch
+
+Routing:-
+already done
+
+Express: Advanced Topics
+So, in this section, you learned that: 
+- A middleware function is a function that takes a request object and either 
+terminates the request/response cycle or passes control to another middleware 
+function.
+- Express has a few built-in middleware functions:
+- json(): to parse the body of requests with a JSON payload
+- urlencoded(): to parse the body of requests with URL-encoded payload
+- static(): to serve static files
+- You can create custom middleware for cross-cutting concerns, such as logging, 
+authentication, etc. 
+// Custom middleware (applied on all routes) 
+app.use(function(req, res, next)) { 
+ // … 
+ next(); 
+} 
+// Custom middleware (applied on routes starting with /api/admin) 
+app.use(‘/api/admin’, function(req, res, next)) { 
+ // … 
+ next(); 
+} 
+- We can detect the environment in which our Node application is running 
+(development, production, etc) using process.env.NODE_ENV and 
+app.get(‘env’). 
+- The config package gives us an elegant way to store configuration settings for 
+our applications. 
+- We can use the debug package to add debugging information to an application. 
+Prefer this approach to console.log() statements. 
+- To return HTML markup to the client, use a templating engine. There are various 
+templating engines available out there. Pug, EJS and Mustache are the most 
+popular ones.
+
+
+

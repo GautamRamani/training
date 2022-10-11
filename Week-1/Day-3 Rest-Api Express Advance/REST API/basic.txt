@@ -1,0 +1,28 @@
+node web frame works:-
+-Express js
+-nest js
+-koa js
+-Meteor- js
+-Socket.io- Chat Apps Made Easy with Socket.io
+-Nest.js– A Nestling of Code
+-Sails.js- Modernized Data-Oriented MVC Framework
+-Total.js– A Complete Framework
+-Hapi.js- Secure than Ever
+-Feather.js– F for Flexible
+-Loopback.js- Better Connectivity
+-Adonis.js- The Dependable Framework
+-Derby.js- The Racer
+
+-client-front end part
+-server -backend --save the data
+
+REST=Representational State Transfer
+
+HTTP method:-get,post.put,delete
+
+Express=node popular web framework
+
+joi:-
+The most powerful schema description language and data validator for JavaScript.
+
+Vidly API Task Url:https://www.demo2s.com/node.js/node-js-project-basic-vidly-this-is-a-project-i-m-working-on-while-le.html

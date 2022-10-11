@@ -1,0 +1,9 @@
+npm adduser
+
+npm publish
+
+
+
+create another folder node-app
+npm i lion-lib
+make file in node-app=>index.js

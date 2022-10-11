@@ -1,0 +1,5 @@
+Java Script run only in Browser. So every Browser has what we call a javascript engine so its called javascript engine. 
+javascript engine that can execute javascript code the javascript engines in firefox,chrome and Spidermonkey and v8 in 2009
+
+Ecma Script(v1-1997 2015,2016...) ->Specification
+javascript ->Programming Language

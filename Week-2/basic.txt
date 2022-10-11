@@ -1,0 +1,418 @@
+Comparison Query Oprator:-
+$eq:-
+    Matches values that are equal to a specified value.
+$gt:-
+    Matches values that are greater than a specified value.
+$gte:-
+    Matches values that are greater than or equal to a specified value.
+$in:-
+    Matches any of the values specified in an array.
+$lt:-
+    Matches values that are less than a specified value.
+$lte:-
+    Matches values that are less than or equal to a specified value.
+$ne:-
+    Matches all values that are not equal to a specified value.
+$nin:-
+    Matches none of the values specified in an array.
+
+
+Logical Query Operators:-
+
+$and:-
+    Joins query clauses with a logical AND returns all documents that match the conditions of both clauses.
+$not:-
+    Inverts the effect of a query expression and returns documents that do not match the query expression.
+$nor:-
+    Joins query clauses with a logical NOR returns all documents that fail to match both clauses.
+$or:-
+    Joins query clauses with a logical OR returns all documents that match the conditions of either clause.
+    
+
+Element query:-
+
+$exists:-
+    Matches documents that have the specified field.
+    $in,$ni
+
+ex:-
+
+    db.data.find( { id: { $exists: true, $nin: [ 1,3,4,5,7] } } ).pretty()
+    it will show 2 and 6th no record
+    
+    db.data.find( { id: { $exists: true, $in: [ 1,3,4,5,7] } } ).pretty()
+    it will show 1,3,4,5,7 record
+
+$type:-
+    Selects documents if a field is of the specified type.
+
+    BSON stands for Binary Javascript Object Notation.
+
+$type:-
+ selects documents where the value of the field is an instance of the specified BSON type(s). Querying by data type is useful when dealing with highly unstructured data where data types are not predictable.
+
+
+$type
+ expression for a single BSON type has the following syntax:
+
+{ field: { $type: <BSON type> } }
+
+You can specify either the number or alias for the 
+BSON type
+
+The 
+$type
+ expression can also accept an array of BSON types and has the following syntax:
+
+{ field: { $type: [ <BSON type1> , <BSON type2>, ... ] } }
+
+db.addressBook.insertMany(
+   [
+      { "_id" : 1, address : "2030 Martian Way", zipCode : "90698345" },
+      { "_id" : 2, address: "156 Lunar Place", zipCode : 43339374 },
+      { "_id" : 3, address : "2324 Pluto Place", zipCode: NumberLong(3921412) },
+      { "_id" : 4, address : "55 Saturn Ring" , zipCode : NumberInt(88602117) },
+      { "_id" : 5, address : "104 Venus Drive", zipCode : ["834847278", "1893289032"]}
+   ]
+)
+
+db.addressBook.find( { "zipCode" : { $type : "string" } } );
+db.addressBook.find({"zipCode":{$type:2}})
+db.addressBook.find({"zipCode":{$type:"string"}})
+db.addressBook.find({"zipCode":{$type:"array"}})
+db.addressBook.inserOne({ "_id" : 6, "address" : "105 Venus Drive", "zipCode" : true})
+db.addressBook.find({"zipCode":{$type:"true"}})
+
+
+*******************************
+
+db.grades.insertMany(
+   [
+      { "_id" : 1, name : "Alice King" , classAverage : 87.333333333333333 },
+      { "_id" : 2, name : "Bob Jenkins", classAverage : "83.52" },
+      { "_id" : 3, name : "Cathy Hart", classAverage: "94.06" },
+      { "_id" : 4, name : "Drew Williams" , classAverage : NumberInt("93") }
+   ]
+)
+
+db.grades.find( { "classAverage" : { $type : [ 2 , 1 ] } } );
+db.grades.find( { "classAverage" : { $type : [ "string" , "double" ] } } );
+
+Querying by MinKey and MaxKey:-
+
+
+    The restaurants collection uses minKey for any grade that is a failing grade:
+
+    {
+   "_id": 1,
+   "address": {
+      "building": "230",
+      "coord": [ -73.996089, 40.675018 ],
+      "street": "Huntington St",
+      "zipcode": "11231"
+   },
+   "borough": "Brooklyn",
+   "cuisine": "Bakery",
+   "grades": [
+      { "date": new Date(1393804800000), "grade": "C", "score": 15 },
+      { "date": new Date(1378857600000), "grade": "C", "score": 16 },
+      { "date": new Date(1358985600000), "grade": MinKey(), "score": 30 },
+      { "date": new Date(1322006400000), "grade": "C", "score": 15 }
+   ],
+   "name": "Dirty Dan's Donuts",
+   "restaurant_id": "30075445"
+}
+{
+   "_id": 2,
+   "address": {
+      "building": "1166",
+      "coord": [ -73.955184, 40.738589 ],
+      "street": "Manhattan Ave",
+      "zipcode": "11222"
+   },
+   "borough": "Brooklyn",
+   "cuisine": "Bakery",
+   "grades": [
+      { "date": new Date(1393804800000), "grade": MaxKey(), "score": 2 },
+      { "date": new Date(1378857600000), "grade": "B", "score": 6 },
+      { "date": new Date(1358985600000), "grade": MaxKey(), "score": 3 },
+      { "date": new Date(1322006400000), "grade": "B", "score": 5 }
+   ],
+   "name": "Dainty Daisey's Donuts",
+   "restaurant_id": "30075449"
+}
+
+db.restaurants.find(
+   { "grades.grade" : { $type : "minKey" } }
+)
+db.restaurants.find(
+   { "grades.grade" : { $type : "maxKey" } }
+)
+
+*************************
+Array Query Operators
+$all:-
+    Matches arrays that contain all elements specified in the query.
+    { <field>: { $all: [ <value1> , <value2> ... ] } }
+
+$elemMatch:-
+    Selects documents if element in the array field matches all the specified
+
+$elemMatch:-
+    conditions.
+
+$size:-
+    Selects documents if the array field is a specified size.
+
+    [
+{
+  "id":1,
+  "code": "xyz",
+  "tags": [ "school", "book", "bag", "headphone", "appliance" ],
+  "qty": [
+         { "size": "S", "num": 10, "color": "blue" },
+         { "size": "M", "num": 45, "color": "blue" },
+         { "size": "L", "num": 100, "color": "green" }
+       ]
+},
+{
+  "id":2,
+  "code": "abc",
+  "tags": [ "appliance", "school", "book" ],
+  "qty": [
+         { "size": "6", "num": 100, "color": "green" },
+         { "size": "6", "num": 50, "color": "blue" },
+         { "size": "8", "num": 100, "color": "brown" }
+       ]
+},
+{
+  "id":3,
+  "code": "efg",
+  "tags": [ "school", "book" ],
+  "qty": [
+         { "size": "S", "num": 10, "color": "blue" },
+         { "size": "M", "num": 100, "color": "blue" },
+         { "size": "L", "num": 100, "color": "green" }
+       ]
+},
+{
+  "id":4,
+  "code": "ijk",
+  "tags": [ "electronics", "school" ],
+  "qty": [
+         { "size": "M", "num": 100, "color": "green" }
+       ]
+}
+]
+
+ db.all.find({tags:{$all:["appliance","school","book"]}}).pretty()
+
+db.all.find({qty:{ $all:[{ "$elemMatch" : { size: "M",num: { $gt: 50} } },{ "$elemMatch" : { num : 100, color: "green" } }  ] }   } )
+
+**********************************************
+db.elematch.insertOne({"element":[11,12,13,14,15,16,17,18,19,20]})
+db.elematch.insertOne({"element":[21,22,23,24,25,26,27,28,29,30]})
+
+ db.elematch.find({element:{$elemMatch:{$gte:13,$lte:17}}}).pretty()
+ db.elematch.find({element:{$elemMatch:{$gte:23,$lte:27}}}).pretty()
+
+ **********************Size***********
+..continue
+db.elematch.insertOne({"element":[31,32,33,34,35]})
+db.elematch.find({"element":{$size:5}})
+db.elematch.find({"element":{$size:10}})
+
+**************************************
+Field Update operator:-
+
+$currentDate:-
+    Sets the value of a field to current date, either as a Date or a Timestamp.
+$inc:-
+    Increments the value of the field by the specified amount.
+$min:-
+    Only updates the field if the specified value is less than the existing field value.
+$max:-
+    Only updates the field if the specified value is greater than the existing field value.
+$mul:-
+    Multiplies the value of the field by the specified amount.
+$rename:-
+    Renames a field.
+$set:-
+    Sets the value of a field in a document.
+$setOnInsert:-
+    Sets the value of a field if an update results in an insert of a document. Has no effect on update operations that modify existing documents.
+$unset:-
+    Removes the specified field from a document.
+
+**********examles************
+
+$currentDate:-
+    db.customers.insertOne(
+   { _id: 1, status: "a", lastModified: ISODate("2013-10-02T01:11:18.965Z") }
+)
+
+db.customers.updateOne(
+   { _id: 1 },
+   {
+     $currentDate: {
+        lastModified: true,
+        "cancellation.date": { $type: "timestamp" }
+     },
+     $set: {
+        "cancellation.reason": "user request",
+        status: "D"
+     }
+   }
+)
+
+db.customers.updateOne(
+  { _id: 1 },
+  [
+   { $set: { lastModified: "$$NOW", cancellation: {date: "$$CLUSTER_TIME", reason: "user request"}, status: "D" } }
+  ]
+)
+
+
+$inc:-
+
+db.customers.insertOne(
+   {
+     _id: 1,
+     sku: "abc123",
+     quantity: 10,
+     metrics: { orders: 2, ratings: 3.5 }
+   }
+)
+
+db.customers.updateOne(
+   { sku: "abc123" },
+   { $inc: { quantity: -2, "metrics.orders": 1 } }
+)
+
+$min:-
+
+    db.elematch.insertOne( { _id: 1, highScore: 800, lowScore: 200 } )
+
+    db.elematch.updateOne( { _id: 1 }, { $min: { lowScore: 150 } } )
+
+$max:-
+    db.elematch.insertOne( { _id: 5, "highScore": 1000, "lowScore": 500 } )
+    db.elematch.updateOne({"_id":5},{$max:{highScore:1500}})
+
+$mul:-
+    db.elematch.insertOne(
+   { "_id" : 1, "item" : "Hats", "price" : Decimal128("10.99"), "quantity" : 25 }
+    )
+
+    db.elematch.updateOne(
+   { _id: 1 },
+   { $mul:
+      {
+         price: Decimal128( "1.25" ),
+         quantity: 2
+       }
+   }
+)
+
+$rename:-
+     db.elematch.updateOne({"_id":6},{$rename:{"item":"products"}})
+
+$set:-
+     db.elematch.updateOne({"_id":6},{$set:{"products":80}})
+
+$setOnInsert:-
+
+    db.elematch.updateOne({"_id":6},{$set:{"products":"Cap"},$setOnInsert:{"quantity":50}},{upsert:true})
+
+$unset:-
+    db.elematch.insertmany([{"name":"raj","course":"node js","fees":2000},{"name":"kishan","course":"flutter","fees":30000},{"name":"gr","course":"node js","fees":55000}])
+    db.elematch.updateOne({"name":"raj"},{$unset:{course:""}})
+
+$:-
+    Acts as a placeholder to update the first element that matches the query condition.
+
+    db.elematch.insertOne({"name":"gr","element":[41,42,43,44,45]})
+     db.elematch.updateOne({"element":45},{$set:{"element.$":46}})
+
+$[]:-
+    Acts as a placeholder to update all elements in an array for the documents that match the query condition.
+    db.elematch.updateOne({"element":[41,42,43,44,46]},{$set:{"element.$[]":40}})
+
+$[<identifier>]:-
+    Acts as a placeholder to update all elements that match the arrayFilters condition for the documents that match the query condition.
+    db.filter.insertMany([ { "_id" : 1, "grades" : [ 95, 92, 90 ] },
+    { "_id" : 2, "grades" : [ 98, 100, 102 ] },
+    { "_id" : 3, "grades" : [ 95, 110, 100 ] }
+ ] )
+ db.filter.updateMany(    { },    { $set: { "grades.$[element]" : 100 } },    { arrayFilters: [ { "element": { $gte: 100 } } ] } )
+
+$addToSet:-
+Adds elements to an array only if they do not already exist in the set.
+db.elematch.insertOne({"id":8,"colors":["green", "red"]})
+db.elematch.updateOne({"id":8},{$addToSet:{"colors":["newOne","newTwo"]}})
+
+$pop:-
+Removes the first or last item of an array.
+db.elematch.insertOne({"id":9,"colors":[1,2,3]})
+db.elematch.updateOne({"id":9},{$pop:{"colors":-1}})
+
+$pull:-
+Removes all array elements that match a specified query.
+db.pull.insertMany( [
+   {
+      _id: 1,
+      fruits: [ "apples", "pears", "oranges", "grapes", "bananas" ],
+      vegetables: [ "carrots", "celery", "squash", "carrots" ]
+   },
+   {
+      _id: 2,
+      fruits: [ "plums", "kiwis", "oranges", "bananas", "apples" ],
+      vegetables: [ "broccoli", "zucchini", "carrots", "onions" ]
+   }
+] )
+
+db.pull.updateMany(
+    { },
+    { $pull: { fruits: { $in: [ "apples", "oranges" ] }, vegetables: "carrots" } }
+)
+
+$push:-
+Adds an item to an array.
+db.elematch.updateOne({"name":"gr"},{$push:{"element":41}})
+
+$pullAll:-
+Removes all matching values from an array.
+db.elematch.insertOne({"id":10,"size":[1,2,5,3,6,4,2,5,7,3,2]})
+db.elematch.updateOne({"id":10},{$pullAll:{"size":[2,3]}})
+
+***********************************
+
+Update Operator Modifiers
+
+$each:-
+    Modifies the $push and $addToSet operators to append multiple items for array updates.
+
+$position:-
+    Modifies the $push operator to specify the position in the array to add elements.
+    db.elematch.insertOne( { "_id" : 11, "scores" : [ 100 ] } )
+    db.elematch.updateOne(
+   { _id: 11 },
+   {
+     $push: {
+        scores: {
+           $each: [ 50, 60, 70 ],
+           $position: 0
+        }
+     }
+   }
+)
+
+$slice:-
+Modifies the $push operator to limit the size of updated arrays.
+db.elematch.updateOne({"_id":11},{$push:{scores:{$each:[80,90,100],$slice:-5}}})
+
+
+$sort:-
+    Modifies the $push operator to reorder documents stored in an array.
+db.elematch.insertOne( { "_id" : 12, "scores" : [ 30,20,10,40,60] } )
+db.elematch.updateOne({"_id":12},{$push:{scores:{$each:[80,90,100],$sort:1}}})

@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Node",
+        "author":"xyz",
+        "tags":["backend"],
+        "isPublished":true,
+        "price":200
+    },
+    {
+        "name":"Android",
+        "author":"xyz",
+        "tags":["backend"],
+        "isPublished":false,
+        "price":400
+    },
+    {
+        "name":"Php",
+        "author":"abc",
+        "tags":["front end"],
+        "isPublished":true,
+        "price":250
+    },
+    {
+        "name":".net",
+        "author":"lss",
+        "tags":["backend"],
+        "isPublished":true,
+        "price":500
+    }
+]
