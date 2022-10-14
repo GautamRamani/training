@@ -4,3 +4,323 @@ https://www.youtube.com/watch?v=Hbt56gFj998
 
 build app:-
 https://www.youtube.com/watch?v=9S-mphgE5fA
+
+What are the available database?
+    MySQL, Oracle, PostgreSQL, Microsoft SQL Server, MongoDB, Redis, Elasticsearch, Cassandra, MariaDB, IBM Db2.
+
+Redis:-
+    Open Source in memory datastucture store which can be used as a database and/or a cache and message broker
+
+    Redis Datatypes:-
+        Strings,lists,sets,sorted sets,Hashes,Bitmaps,Hyperlogs
+
+        Advantage:-
+        flexible,
+        No Schema&colomn name,
+        Very fast:- 1,10,000 SETs per second,
+                    81,000 GETs per second
+                    Rich database caching & disk persistence
+
+
+cmd:-
+    set key value
+    get key...
+
+    ex:- 
+    set name gautam
+    get name
+    op:-"gautam"   ...in Strings
+
+    ex:-
+    set num 15
+    get num
+    op:-"15"
+
+    incr num
+    get num 
+    op:-16
+    
+    decr num
+    get num 
+    op:-15
+
+    del num
+    get num
+    op:-nil
+
+***********************
+    set server:name someserver
+    get server:name
+    op:-someserver
+    set server:port 8000
+    get server:port
+    op:-8000
+
+    set greeting "hello world"
+    expire greeting 50
+    ......decr....decr....
+    at the end it will nil..
+
+    ***************
+
+    clear
+
+    ********************
+
+    =>multiple store
+
+    mset key1 "hello" key2 "world"
+    get key1
+    get key2
+
+    =>append
+
+    append key1 " world"
+    get key1
+    "op:-hello world"
+
+    append key2 " hello"
+    get key2
+    op:-"world hello"
+
+    =>rename
+
+    rename key1 renamedkey
+    get renamedkey   (get key1 =>nil)
+
+
+    //remove all
+    flushall
+
+***************************
+
+lpush:-
+
+    Insert all the specified values at the head of the list stored at key. If key does not exist, it is created as empty list before performing the push operations. When key holds a value that is not a list, an error is returned.
+
+lpush people "brad"
+lpush people "jen"
+lpush people "tom"
+
+lrange people 0 -1
+op:-1) "tom"
+2) "jen"
+3) "brad"
+lrange people 1 2
+
+rpush people "harry"
+lrange people 0 -1
+op:-
+1)"tom"
+2) "jen"
+3) "brad"
+4) "harry"
+
+llen :-
+    Redis LLEN command returns the length of the list stored at the key. If the key does not exist, it is interpreted as an empty list and 0 is returned. An error is returned when the value stored at the key is not a list.
+
+    llen people
+    :4
+
+lpop :-
+    By default, the command pops a single element from the beginning of the list. When provided with the optional count argument, the reply will consist of up to count elements, depending on the list's length.
+
+    lpop people
+    "tom"  (deleted)
+    lrange people 0 -1
+    1) "jen"
+    2) "brad"
+    3) "harry"
+
+rpop:-
+
+(opposite to lpop)
+
+    rpop people
+    "harry" (deleted)
+    lrange people 0 -1
+    1) "jen"
+    2) "brad"
+
+linsert:-
+    Inserts element in the list stored at key either before or after the reference value pivot.
+
+    When key does not exist, it is considered an empty list and no operation is performed.
+
+    An error is returned when key exists but does not hold a list value.
+
+    linsert people before "brade" "jen"
+    lrange people 0 -1
+    op:-
+    1) "jen"
+    2) "jen"
+    3) "brad"
+
+lpop:-
+
+    lpop people
+    "jen"
+    lrange people 0 -1
+    1) "jen"
+    2) "brad"
+
+
+linsert:-
+    linsert people before "brad" "tom"
+    lrange people 0 -1
+      1) "jen"
+      2) "tom"
+      3) "brad"
+
+flushall
+
+**********************************
+Redis sets:-
+
+    A Redis set is an unordered collection of unique strings (members). You can use Redis sets to efficiently:
+
+    Track unique items (e.g., track all unique IP addresses accessing a given blog post).
+    Represent relations (e.g., the set of all users with a given role).
+    Perform common set operations such as intersection, unions, and differences.
+
+    SADD adds a new member to a set.
+    SREM removes the specified member from the set.
+    SISMEMBER tests a string for set membership.
+    SINTER returns the set of members that two or more sets have in common (i.e., the intersection).
+    SCARD returns the size (a.k.a. cardinality) of a set.
+
+    sadd cars "ford"
+    sadd cars "honda"
+    sadd cars "bmw"
+
+    sismember cars "ford"
+    :1
+    sismember cars "swift"
+    :0
+
+    smembers cars
+    1) "ford"
+    2) "bmw"
+    3) "honda"
+
+    scard cars
+    :3
+
+    smove cars mycars "ford"
+    :1
+    smembers cars
+    1) "bmw"
+    2) "honda"
+    smembers mycars
+    1)"ford"
+    
+    srem cars "bmw"
+    smembers cars
+    1) "honda"
+
+    flushall
+
+    *****************************
+
+    sorted sets:-
+
+        A Redis sorted set is a collection of unique strings (members) ordered by an associated score. When more than one string has the same score, the strings are ordered lexicographically. Some use cases for sorted sets include:
+
+        Leaderboards. For example, you can use sorted sets to easily maintain ordered lists of the highest scores in a massive online game.
+
+        Rate limiters. In particular, you can use a sorted set to build a sliding-window rate limiter to prevent excessive API requests.
+
+    ZADD adds a new member and associated score to a sorted set. If the member already exists, the score is updated.
+    ZRANGE returns members of a sorted set, sorted within a given range.
+    ZRANK returns the rank of the provided member, assuming the sorted is in ascending order.
+    ZREVRANK returns the rank of the provided member, assuming the sorted set is in descending order.
+
+
+    zadd users 1981 "brad travery"
+    zadd users 1975 "john doe"
+    zadd users 1990 "kate rogers"
+
+    zrank users "mika smith"
+    :3
+    zrank users "john doe"
+    :0                      (not in assending)
+
+    zrange users 0 -1
+    1) "john doe"
+    2) "brad travery"
+    3) "kate rogers"
+    4) "mika smith"
+
+    zincrby users 1 "john doe" 
+    :-"1976"
+
+    zincrby users 10 "john doe" 
+    :-"1986"
+
+    flushall
+    
+    ****************************
+
+    hset:-
+
+    Sets field in the hash stored at key to value. If key does not exist, a new key holding a hash is created. If field already exists in the hash, it is overwritten.
+
+    hset user:brad name "brad traversy"
+    hset user:brad email "brad@gmail.com"
+    hget user:brad name
+    :-"brad traversy"
+    hget user:brad email
+    :-"brad@gmail.com"
+    hgetall user:brad
+    1) "name"
+    2) "brad traversy"
+    3) "email"
+    4) "brad@gmail.com"
+
+for multiple:-
+
+    hmset user:john name "john doe" "email" "johdoe@yahoo.com" age "25"
+    :OK
+    hgetall user:john
+    1) "name"
+    2) "john doe"
+    3) "email"
+    4) "johdoe@yahoo.com"
+    5) "age"
+    6) "25"
+
+    hkeys user:john
+    1) "name"
+    2) "email"
+    3) "age"
+
+    hvals user:john
+    1) "john doe"
+    2) "johdoe@yahoo.com"
+    3) "25"
+
+    hincrby user:john age 1
+    : 26
+
+    hdel user:john age
+     hgetall user:john
+    1) "name"
+    2) "john doe"
+    3) "email"
+    4) "johdoe@yahoo.com"
+
+    hlen user:john
+    :2
+
+    Redis persistence:-
+
+    How Redis writes data to disk (append-only files, snapshots, etc.)
+
+    Persistence refers to the writing of data to durable storage, such as a solid-state disk (SSD). Redis itself provides a range of persistence options:
+
+    RDB (Redis Database): The RDB persistence performs point-in-time snapshots of your dataset at specified intervals.
+    AOF (Append Only File): The AOF persistence logs every write operation received by the server, that will be played again at server startup, reconstructing the original dataset. Commands are logged using the same format as the Redis protocol itself, in an append-only fashion. Redis is able to rewrite the log in the background when it gets too big.
+    No persistence: If you wish, you can disable persistence completely, if you want your data to just exist as long as the server is running.
+    RDB + AOF: It is possible to combine both AOF and RDB in the same instance. Notice that, in this case, when Redis restarts the AOF file will be used to reconstruct the original dataset since it is guaranteed to be the most complete.
+
+    
