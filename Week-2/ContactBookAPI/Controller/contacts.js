@@ -1,94 +1,138 @@
-const {Book,validate}=require('../Model/contact')
+const { Book, validate } = require('../Model/contact')
 const express = require('express');
 const router = express.Router();
 const { mongo, default: mongoose } = require('mongoose');
 
 //get
-router.post('/contact', async(req, res) => {
-
-    const { error } = validate(req.body);
-    if (error) {
-        return res.send('book validation error' + error.details[0].message);
-    }
-    const { fullName, phones, city } = req.body;
-
-    const book = new Book({
-        fullName: fullName,
-        phones: phones,
-        city: city
-    })
-    const getBook = await book.save();
-    res.send(getBook);
+router.get("/contact", async (req, res) => {
+  try {
+    const getBook = await Book.find();
+    res.send(getBook)
+  } catch (error) {
+    console.log(error)
+    res.send(error)
+  }
 })
 
-  
-//post
-  router.post('/contact/:id', async(req, res) => {
-    const {phones}=req.body;
+//get by id
+router.get("/contact/:id", async (req, res) => {
+  const getBookById = await Book.findById(req.params.id);
+  res.send(getBookById)
+})
 
-    
-    // const phone=await Book.findOne({_id:req.params.id})
-    // console.log(phone)
-    // phone.phones.push(phones);
-    // const save=await phone.save();
-    
-    // let save=await Book.findOneAndUpdate({_id:req.params.id,'phones.type':req.body.type},{$set:{phones:{type:req.body}}})
+//post
+router.post('/contact', async (req, res) => {
+  try {
+    const { error } = validate(req.body);
+    if (error) {
+      return res.send('book validation error' + error.details[0].message);
+    }
+    const { fullName, phones, city } = req.body;
   
-    const postBook=await Book.findByIdAndUpdate({_id:req.params.id},{
-      $push:{
-        phones:phones
+    const book = new Book({
+      fullName: fullName,
+      phones: phones,
+      city: city
+    })
+    const postBook = await book.save();
+    res.send(postBook);
+  } catch (error) {
+    console.log(error)
+    res.send(error)
+  }
+})
+
+//put add
+router.put('/contact/:id', async (req, res) => {
+  try { 
+    const { phones } = req.body;
+  
+    const putBook = await Book.findByIdAndUpdate({ _id: req.params.id }, {
+      $push: {
+        phones: phones
       }
     })
-    res.send(postBook)
-  })
-  
-  // //put
-  router.put('/contact/:id/:id1',async(req, res) => {
-    
-  // const { phones, type } = req.body;
-    // const phoneBook = await Book.findOne({ _id: req.params.id });
-    // const phone = phoneBook.phones;
-    // const newPhone = phone.find((value) => value._id == req.params.id1);
-    // newPhone.type = type;
-    // newPhone.phone = phones;
+    res.send(putBook)
+  } catch (error) {
+    console.log(error)
+    res.send(error)
+  }
+})
 
-    const putBook = await Book.findOneAndUpdate({ _id: req.params.id },
+//put update
+router.put('/contact/:id/:id1', async (req, res) => {
+
+  const { home, office } = req.body;
+  try {
+       let update = await Book.findOneAndUpdate({ _id: req.params.id, 'phones._id': req.params.id1 },
       {
-          $set: {
-              'phones.$[elem].phone': '0000000000',
-              'phones.$[elem].type' : 'office1'
-          }
-      },
-      { arrayFilters: [{ "elem._id": { $eq: req.params.id1 } }] }
-  );
+        $set: {
+          'phones.$.home': home,
+          'phones.$.office': office
+        }
+      }, {
+      new: true
+    }
+    );
+    res.send(update);
+  } 
+  catch (error) {
+    console.log(error)
+    res.send(error)
+  }
+})
 
-  res.send(putBook);
-  console.log(putBook);
+//put
+router.put('/contact/del/:id/:id1', async (req, res) => {
 
-  // await phoneBook.save();
-  })
-  
-  // //delete
-  router.delete("/contact/:id/:id1",async (req,res)=>{
-  //   // const phoneBook = await Book.findOne({ _id: req.params.id });
-    // const phone = phoneBook.phones;
-    // const newPhone = phone.findIndex((value) => value._id == req.params.id1);
-    // console.log(newPhone)
-    // phone.splice(newPhone, 1);
+  const { home, office } = req.body;
+  try {
+       let update = await Book.findOneAndUpdate({ _id: req.params.id, 'phones._id': req.params.id1 },
+      {
+        $unset: {
+          'phones.$.home': home,
+          'phones.$.office': office
+        }
+      }, {
+      new: true
+    }
+    );
+    res.send(update);
+  } 
+  catch (error) {
+    console.log(error)
+    res.send(error)
+  }
+})
+
+//delete
+router.delete("/contact/:id/:id1", async (req, res) => {
+  try {
 
     const delBook = await Book.findOneAndUpdate({ _id: req.params.id },
       {
-          $pull: {
-              phones:{
-                  _id:{$eq:req.params.id1}
-              }
+        $pull: {
+          phones: {
+            _id: { $eq: req.params.id1 }
           }
+        }
       },
-  );
-  res.send(delBook);
-  console.log(delBook);
-  // await phoneBook.save();
-  })
-  
-  
+    );
+    res.send(delBook);
+  } catch (err) {
+    res.send(err)
+  }
+})
+
+//delete whole
+router.delete("/contact/:id", async (req, res) => {
+  try {
+    const deleteBookById = await Book.findByIdAndRemove(req.params.id)
+    res.send(deleteBookById)
+    console.log('Record Delete Successfully...')
+  } catch (e) {
+    res.status(400).send(e)
+  }
+})
+
 module.exports = router;

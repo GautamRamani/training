@@ -2,13 +2,13 @@ const Joi = require('joi')
 const mongoose = require('mongoose')
 
 const phoneSchema=new mongoose.Schema({
-    phone:{
+    home:{
         type:String,
         required:true,
         minlegth:10,
         maxlength:10
     },
-    type:{
+    office:{
         type:String,
         required:true,
         minlegth:10,
