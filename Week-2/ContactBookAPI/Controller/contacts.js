@@ -1,74 +1,94 @@
-const {Contact,validate}=require('../Model/contact')
+const {Book,validate}=require('../Model/contact')
 const express = require('express');
 const router = express.Router();
-const Joi = require('joi');
 const { mongo, default: mongoose } = require('mongoose');
 
 //get
-router.get('/contact', async(req, res) => {
+router.post('/contact', async(req, res) => {
 
-    // throw new Error('Could not get genre...') //log error winston
-  
-    const contactGet=await Contact.find();
-    res.send(contactGet)
+    const { error } = validate(req.body);
+    if (error) {
+        return res.send('book validation error' + error.details[0].message);
+    }
+    const { fullName, phones, city } = req.body;
+
+    const book = new Book({
+        fullName: fullName,
+        phones: phones,
+        city: city
+    })
+    const getBook = await book.save();
+    res.send(getBook);
 })
 
-//get by id
-router.get('/contact/:id', async(req, res) => {
-  const contactbyId=await Contact.findById(req.params.id);
-  if(!contactbyId) return res.status(404).send('the genre with the given ID was not found')
-  res.send(contactbyId)
-})
   
 //post
-  router.post('/contact', async(req, res) => {
-    const { error } = validate(req.body);
-  
-    if (error) {
-      return res.status(400).send(error.details[0].message);
-    }
-      let contactAdd = new Contact({
-        fullName:req.body.fullName,
-        phones:req.body.phones,
-        city:req.body.city
-      })
-      contactAdd=await contactAdd.save();
+  router.post('/contact/:id', async(req, res) => {
+    const {phones}=req.body;
 
-    res.status(200).send(contactAdd)
+    
+    // const phone=await Book.findOne({_id:req.params.id})
+    // console.log(phone)
+    // phone.phones.push(phones);
+    // const save=await phone.save();
+    
+    // let save=await Book.findOneAndUpdate({_id:req.params.id,'phones.type':req.body.type},{$set:{phones:{type:req.body}}})
+  
+    const postBook=await Book.findByIdAndUpdate({_id:req.params.id},{
+      $push:{
+        phones:phones
+      }
+    })
+    res.send(postBook)
   })
   
   // //put
-  // router.put('/contact/:id',async(req, res) => {
+  router.put('/contact/:id/:id1',async(req, res) => {
     
-  //   const { error } = validate(req.body);
-  //   if (error) {
-  //     return res.status(400).send(error.details[0].message);
-  //   }
+  // const { phones, type } = req.body;
+    // const phoneBook = await Book.findOne({ _id: req.params.id });
+    // const phone = phoneBook.phones;
+    // const newPhone = phone.find((value) => value._id == req.params.id1);
+    // newPhone.type = type;
+    // newPhone.phone = phones;
 
-  //   const contactUpdate=await Contact.findByIdAndUpdate(req.params.id,
-  //     {
-  //     name:req.body.name,
-  //     new:true
-  //   })
-  
-  //   if (!contactUpdate) res.status(404).send('The genre with the given id is not available')
-    
+    const putBook = await Book.findOneAndUpdate({ _id: req.params.id },
+      {
+          $set: {
+              'phones.$[elem].phone': '0000000000',
+              'phones.$[elem].type' : 'office1'
+          }
+      },
+      { arrayFilters: [{ "elem._id": { $eq: req.params.id1 } }] }
+  );
 
-  //   res.send(contactUpdate);
-  // })
+  res.send(putBook);
+  console.log(putBook);
+
+  // await phoneBook.save();
+  })
   
   // //delete
-  // router.delete("/contact/:id",async (req,res)=>{
-  //   try{
-  //       const contactDel=await Contact.findByIdAndDelete(req.params.id)
-  //       if(req.params.id){
-  //           res.status(400).send('Record is Deleted')
-  //       }
-  //       res.send(contactDel)
-  //   }catch(e){
-  //       res.status(400).send(e)
-  //   }
-  // })
+  router.delete("/contact/:id/:id1",async (req,res)=>{
+  //   // const phoneBook = await Book.findOne({ _id: req.params.id });
+    // const phone = phoneBook.phones;
+    // const newPhone = phone.findIndex((value) => value._id == req.params.id1);
+    // console.log(newPhone)
+    // phone.splice(newPhone, 1);
+
+    const delBook = await Book.findOneAndUpdate({ _id: req.params.id },
+      {
+          $pull: {
+              phones:{
+                  _id:{$eq:req.params.id1}
+              }
+          }
+      },
+  );
+  res.send(delBook);
+  console.log(delBook);
+  // await phoneBook.save();
+  })
   
   
 module.exports = router;
