@@ -1,0 +1,18 @@
+RabbitMQ:-
+
+        RabbitMQ is a messaging broker - an intermediary for messaging. It gives your applications a common platform to send and receive messages, and your messages a safe place to live until received.
+
+        open-source message-broker software
+
+        Advanced Message Queuing Protocol (AMQPlib) library
+
+        
+open rabbitMQ Commandprompt:-
+rabbitmq-plugins enable rabbitmq_management
+
+open browser(default port):-
+localhost:15672
+
+default rebbitmq
+username:-guest
+passwordguest
