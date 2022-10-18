@@ -2,7 +2,7 @@ const Joi = require('joi')
 const mongoose = require('mongoose')
 
 const phoneSchema=new mongoose.Schema({
-    home:{
+    phone:{
         type:String,
         required:true,
         minlegth:10,

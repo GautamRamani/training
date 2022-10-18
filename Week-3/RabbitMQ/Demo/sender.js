@@ -16,6 +16,5 @@ amqp.connect('amqp://localhost',(connError,connection)=>{
         //step 4: send message to queue
         channel.sendToQueue(QUEUE,Buffer.from('All glory Comes from daring to begin'))
         console.log(`message send ${QUEUE}`)
-        
     })
 })

@@ -5,7 +5,10 @@ app.use(express.json());
 const user = require("./routes/index")
 app.use(user);
 
-const port=1234;
+// console.log(process.argv)
+
+const port = process.argv[2]
+// cons port = process.argv[2] ? 
 app.listen(port, () => {
   console.log(`server listening the port number ${port}`)
 });
