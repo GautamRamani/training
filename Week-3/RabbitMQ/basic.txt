@@ -15,4 +15,4 @@ localhost:15672
 
 default rebbitmq
 username:-guest
-passwordguest
+password:-guest
