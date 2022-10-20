@@ -57,6 +57,7 @@ amqp.connect(amqpUrl,(connErr,connection)=>{
                     socket.emit("message",msg.content.toString())
                     channel.ack(msg);
                 })
+                //if you see the message in Rebbitmq server please comment the channel.consume function
             })
         })
     })

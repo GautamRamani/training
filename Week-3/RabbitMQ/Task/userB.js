@@ -51,7 +51,7 @@ amqp.connect(amqpUrl,(connError,connection)=>{
                     console.log('userB',data)
                     channel.sendToQueue("room2",Buffer.from(data))
                 })
-
+                //if you see the message in Rebbitmq server please comment the channel.consume function
                 channel.consume("room1",(msg)=>{
                     console.log("new1:::",msg.content.toString())
                     socket.emit("message",msg.content.toString())
