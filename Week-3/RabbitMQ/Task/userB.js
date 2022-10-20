@@ -9,7 +9,7 @@ const socketio=require("socket.io");
 
 dotenv.config({path:"./.env"})
 const port=3002;
-const amqpUrl2="amqp://localhost"
+const amqpUrl="amqp://localhost"
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
@@ -29,7 +29,7 @@ server.listen(port,()=>{
 
 const io=socketio(server)
 
-amqp.connect(amqpUrl2,(connError,connection)=>{
+amqp.connect(amqpUrl,(connError,connection)=>{
     if(connError){
         throw connError;
     }
@@ -40,8 +40,8 @@ amqp.connect(amqpUrl2,(connError,connection)=>{
         io.on("connection",(socket)=>{
             console.log('socket server connected socket-id : ',socket.id)
             socket.emit("message","welcome")
-            socket.on("join",({userName,rooName})=>{
-                socket.join(rooName)
+            socket.on("join",({userName,roomName})=>{
+                socket.join(roomName)
 
                 channel.assertQueue("room2",{
                     durable:false
@@ -49,13 +49,12 @@ amqp.connect(amqpUrl2,(connError,connection)=>{
 
                 socket.on("sendMessage",(data)=>{
                     console.log('userB',data)
-
                     channel.sendToQueue("room2",Buffer.from(data))
                 })
 
                 channel.consume("room1",(msg)=>{
                     console.log("new1:::",msg.content.toString())
-                    socket.broadcast.to(rooName).emit("message",msg.content.toString())
+                    socket.emit("message",msg.content.toString())
                     channel.ack(msg);
                 })
             })

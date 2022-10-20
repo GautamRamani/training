@@ -54,7 +54,7 @@ amqp.connect(amqpUrl,(connErr,connection)=>{
 
                 channel.consume("room2",(msg)=>{
                     console.log("new2:::",msg.content.toString())
-                    socket.broadcast.to(roomName).emit("message",msg.content.toString())
+                    socket.emit("message",msg.content.toString())
                     channel.ack(msg);
                 })
             })
