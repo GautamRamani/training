@@ -12,6 +12,5 @@ const showpost = new mongoose.Schema({
     like:Number,
     username:String,
     comment:[comment]
-
 })
 module.exports= new mongoose.model("showpost",showpost)

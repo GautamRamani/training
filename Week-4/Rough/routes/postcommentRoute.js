@@ -1,5 +1,5 @@
-const model = require("../model/post");
-const post = require("../model/Showpost");
+const model = require("../Model/post");
+const post = require("../Model/showpost");
 module.exports = function showpost(socket, io) {
   socket.on("post:comment", async (data) => {
     console.log(data)

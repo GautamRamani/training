@@ -1,8 +1,8 @@
 const express = require("express");
-const post = require("./model/Showpost");
+const post = require("./Model/showpost");
 const app = express();
 
-require("./connection");
+require("./Db/connection");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

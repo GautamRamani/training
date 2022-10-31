@@ -1,8 +1,8 @@
-const model = require("../model/post");
-const post = require("../model/Showpost");
+const model = require("../Model/post");
+const post = require("../Model/showpost");
 const bcrypt = require("bcrypt");
 module.exports = function commentRoutes(socket, io) {
-  socket.on("postcomment:send", async (data) => {
+  socket.on("post:send", async (data) => {
     console.log("::postcomment:send socket server ::", data);
 
     const info = await model
@@ -27,6 +27,6 @@ module.exports = function commentRoutes(socket, io) {
     const fullpost = await post.find();
     console.log("info10", info10);
 
-    io.emit("postcomment:recive", post1);
+    io.emit("post:receive", post1);
   });
 };

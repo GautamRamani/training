@@ -10,7 +10,6 @@ app.get("/",(req,res)=>{
     res.send('Learning Socket io')
 })
 
-const users={};
 const io=socketio(server)
 
 const port=8000;

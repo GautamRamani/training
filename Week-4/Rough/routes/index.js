@@ -1,6 +1,6 @@
 
 
-module.exports=function heyyy(socket,io){
+module.exports=function twit(socket,io){
    require("./registerRoute")(socket);
    require("./commentRoutes")(socket,io)
    require("./likeRoute")(socket,io)

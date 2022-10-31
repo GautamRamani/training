@@ -1,5 +1,5 @@
-const model = require("../model/post");
-const post = require("../model/Showpost");
+const model = require("../Model/post");
+const post = require("../Model/showpost");
 const bcrypt = require("bcrypt");
 module.exports =async function register(socket,io) {
   socket.on("Register", async (data) => {
