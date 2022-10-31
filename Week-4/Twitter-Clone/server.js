@@ -23,7 +23,7 @@ io.on("connection",async(socket)=>{
     //console.log("show all post data::",info)
     socket.emit("showpost:all",info)
 
-    require("./Routes/index")(socket,io)       //
+    require("./Routes/index")(socket,io)       
     socket.on("disconnect",()=>{
         console.log("socket id disconnected ::",socket.id)
     })
