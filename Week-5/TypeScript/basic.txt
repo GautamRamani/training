@@ -1,0 +1,54 @@
+What is TypeScript and why it is used?
+
+        TypeScript extends JavaScript, providing a better developer experience. The benefits of using TypeScript over JavaScript include: Static typing – TypeScript comes with optional static typing and a type inference system, which means that a variable, declared with no type may be inferred by TypeScript based on its value.
+
+        Source:- Type Script Tutorial Beginer Mosh...
+
+        created by Microsoft
+
+
+
+
+
+        Statically Type:-
+        
+                        c c++ Java
+
+                                int number =10;
+                                number="a"  not possible
+
+        Dynamically Type:-
+
+                        Javascript python Ruby
+
+                        let number =10
+                        number ="a"    
+
+        TypeScript --->Javascript with type Checking
+
+        browser does not understand type script we are using typescript compiler
+
+        typescript:-  Medium to large Project
+        Javascript:- Simple project
+
+
+        command:-
+
+                npm i -g typescript
+                tsc.cmd -v     -->show version
+                tsc.cmd --init
+
+        JavaScript Data Type:-          TypeScript Data Type:-
+
+        number                          any
+        string                          unknown
+        bollean                         never
+        null                            enum
+        undefined                       tupal
+        object
+        
+                
+run :-
+
+        tsc
+        node dist/first.js
