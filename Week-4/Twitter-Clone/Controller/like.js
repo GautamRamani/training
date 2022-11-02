@@ -6,7 +6,7 @@ module.exports=function likecount(socket,io){
             {
                 _id:data.id
             },
-            {$set:{like:data.count}},
+            {$push:{like:data.userId}},
             {new:true}
         );
 

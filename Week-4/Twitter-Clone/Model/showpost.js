@@ -3,13 +3,19 @@ const mongoose=require("mongoose")
 const comment=new mongoose.Schema(
     {
         Comment:String,
-        username:String
-    },
-    {_id:false}
+        userId:{
+                type:mongoose.Types.ObjectId,
+                ref:"User"
+            }
+        },
+        {_id:false}
     );
     const showpost=new mongoose.Schema({
         post:String,
-        like:Number,
+        like:[{
+            type:mongoose.Types.ObjectId,
+            ref:"User"
+        }],
         username:String,
         comment:[comment]
     })

@@ -6,7 +6,6 @@ require("./Db/connection");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
 const httpserver = require("http").createServer(app);
 httpserver.listen(3000, () => {
   console.log("server started", 3000);
