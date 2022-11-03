@@ -62,5 +62,5 @@ run :-
 
         tsc
         node dist/first.js
-        also:-tsc && node dist/first.js
+        also:-  tsc && node dist/first.js
         

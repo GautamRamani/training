@@ -1,0 +1,23 @@
+There are two way to run ts...
+
+    1)cmd
+        tsc index.ts
+        node index.js
+
+    2)cmd
+        npm init -y
+
+        npm i express
+
+        npm i -D ts-node     //Development
+            or Global
+        npm i -g ts-node     //perticular this machine
+            or
+        npm i -D typescript @types/node @types/express      //project receive another developer(system change) if he has not installed typescript in their machine globally...so it will helpful
+
+        tsc --init
+
+        npm i -D nodemon
+        edit package.json
+        "start":"nodemon index.ts"
+        
