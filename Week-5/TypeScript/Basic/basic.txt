@@ -47,8 +47,20 @@ What is TypeScript and why it is used?
         undefined                       tupal
         object
         
-                
+        Type Script has Three Access Specifier Public,Private,Protected
+        
+        Public:- Member function can be accesse with in the class as well outside the class
+        Private:- Member function can only access within the class
+        Protected:- Similar to the Private..access within the Diffrence is the Private does not access in child class
+                        but Protected is access in child class  
+
+        Inheritance:-
+                Parent/Base/Super
+                Child/Derived/sub
+
 run :-
 
         tsc
         node dist/first.js
+        also:-tsc && node dist/first.js
+        
