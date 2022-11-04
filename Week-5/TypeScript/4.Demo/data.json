@@ -1,0 +1,56 @@
+[
+    {
+        "productName": "Netgear Cable Modem",
+        "productCode": "CM700",
+        "proddescription": "Netgear Cable Modem compatible with all cables",
+        "prodRating": 4.0
+    },
+    {
+        "productName": "Linksys Cable Modem",
+        "productCode": "LK700",
+        "proddescription": "Linksys Cable Modem compatible with all cables",
+        "prodRating": 4.1
+    },
+    {
+        "productName": "TP Link Cable Modem",
+        "productCode": "TPL700",
+        "proddescription": "TP Link Cable Modem compatible with all cables",
+        "prodRating": 4.2
+    },
+    {
+        "productName": "Netgear Cable Modem",
+        "productCode": "CM700",
+        "proddescription": "Netgear Cable Modem compatible with all cables",
+        "prodRating": 4.0
+    },
+    {
+        "productName": "Linksys Cable Modem",
+        "productCode": "LK700",
+        "proddescription": "Linksys Cable Modem compatible with all cables",
+        "prodRating": 4.1
+    },
+    {
+        "productName": "TP Link Cable Modem",
+        "productCode": "TPL700",
+        "proddescription": "TP Link Cable Modem compatible with all cables",
+        "prodRating": 4.2
+    },
+    {
+        "productName": "Netgear Cable Modem",
+        "productCode": "CM700",
+        "proddescription": "Netgear Cable Modem compatible with all cables",
+        "prodRating": 4.0
+    },
+    {
+        "productName": "Linksys Cable Modem",
+        "productCode": "LK700",
+        "proddescription": "Linksys Cable Modem compatible with all cables",
+        "prodRating": 4.1
+    },
+    {
+        "productName": "TP Link Cable Modem",
+        "productCode": "TPL700",
+        "proddescription": "TP Link Cable Modem compatible with all cables",
+        "prodRating": 4.2
+    }
+]

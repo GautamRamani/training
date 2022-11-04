@@ -1,0 +1,21 @@
+source from---
+    medium.com sarthakmittal
+
+
+
+    dependencies
+
+        npm init -y
+        npm i nodemon
+        npm i -D @types/node @types/express @types/dotenv @types/cors @types/helmet @types/mongoose
+        npm i express dotenv cors helmet mongoose
+        npm i -D typescript
+
+        commandline
+        tsc --init  (perticular for this)
+
+        Creating Hot Module Replacement aka HMR:-
+
+            The next step is to implement hot module replacement. Check the webpack link to check more about webpack loader. HMR provide auto compile feature. Whenever there is any change in the code within the scope of the root directory. HMR automatically runs and compile the code and generate the code in the dist folder. Install the webpack dependencies, check the official documentation for more insight.
+
+        npm i -D ts-loader webpack webpack-cli webpack-node-externals
