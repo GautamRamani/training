@@ -7,8 +7,8 @@ source from---
 
         npm init -y
         npm i nodemon
-        npm i -D @types/node @types/express @types/dotenv @types/cors @types/helmet @types/mongoose
-        npm i express dotenv cors helmet mongoose
+        npm i -D @types/node @types/express @types/dotenv @types/cors @types/helmet @types/mongoose @types/morgan
+        npm i express dotenv cors helmet mongoose morgan
         npm i -D typescript
 
         commandline
