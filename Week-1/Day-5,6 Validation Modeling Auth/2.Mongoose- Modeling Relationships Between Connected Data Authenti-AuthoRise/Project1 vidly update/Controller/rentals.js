@@ -7,7 +7,7 @@ const { mongo, default: mongoose } = require('mongoose');
 
 //get
 router.get('/rental', async(req, res) => {
-  const rental=await Rental.find().sort('-dateOut');
+  const rental=await Rental.find().populate('customer movie');
   res.send(rental)
 })
 //get by id
