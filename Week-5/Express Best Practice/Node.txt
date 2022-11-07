@@ -1,0 +1,142 @@
+Refer:-https://scoutapm.com/blog/nodejs-architecture-and-12-best-practices-for-nodejs-development
+
+Best Practices for Node.js
+
+    A Brief History of Node.js:-
+            Just to give you a sense of the timeline here, the World Wide Web started around 30 years back. Javascript was born about 25 years ago and about the same goes for PHP (26 years). Node.js, on the other hand, is only 11 years old. Despite its relatively short run, Node.js has done wonders for developer organizations around the world.
+
+            The following are the key points that an ideal project setup entails - 
+
+                Coherent, well-defined structure for clarity
+                Reusability, modularity, and separation of concerns
+                Simplicity for better understanding
+                Easy debugging and maintenance
+                Automated testing, logging mechanisms
+                Employing best programming, development principles
+
+Best Practice #1: Take a Layered Approach
+Separate your concerns.
+
+        Controller
+    (API routes and endpoints)
+    Service layer
+    (for business logic)
+    Data access layer
+    (for working with a database)
+
+Best Practice #2: Folder structure 
+Properly organize your code files.
+
+          src
+      ├── app.js			app entry point
+      ├── /api			controller layer: api routes
+      ├── /config			config settings, env variables
+      ├── /services		service layer: business logic
+      ├── /models			data access layer: database models	
+      ├── /scripts		miscellaneous NPM scripts
+      ├── /subscribers		async event handlers
+      └── /test               test suites
+
+Best Practice #3: Publisher Subscriber Models 
+
+    export default class UserService() {		
+
+      async function signup(user) {
+
+        // 1. Create user record
+        // 2. Generate auth key
+        // 3. Send confirmation email
+        // ...  
+
+      }
+    }
+
+Best Practice #4: Clean Code & Easy Readability
+Use code linters, formatters and style guides; add comments.
+
+    Linting & Formatting
+    Style Guides
+    Add comments
+
+Best Practice #5: Write Asynchronous Code 
+Use promises, async/await syntax. 
+
+     async function get_data() { // async function
+        await $.get('https://url.com/one')
+        await $.get('https://url.com/two')
+        let res = await $.get('https://url.com/three')
+        console.log(res)
+    }
+
+Best Practice #6: Configuration files and Environment Variables 🌳
+Config it up!
+
+.env file
+    DB_HOST=localhost
+    DB_USER=root
+    DB_PASS=my_password_123
+
+    app.js
+    require('dotenv').config() 
+
+    showing how this can be done -
+
+    config/database.js
+
+      require('dotenv').config()
+
+      export default {
+        host: process.env.DB_HOST,		
+        user: process.env.DB_USER,
+        pass: process.env.DB_PASS,
+      }
+
+Best Practice #7: Testing, Logging & Error Handling
+Errors are an important part of the process.
+
+    console.log()
+    console.info()
+    console.debug()
+    For logging errors and warnings ⚠️ -
+
+    console.error()
+    console.warn()
+
+     Some of the most common logging frameworks for Node.js are - Winston, Bunyan, and Morgan.
+
+Best Practice #8: Code Compression and File Size 📦
+Gzip compress!
+
+      var compression = require('compression')
+  var express = require('express')
+  var app = express()
+  app.use(compression())
+
+  Enabling gzip compression in Express.js
+
+  Best Practice #9: Dependency Injection
+        Dependency injection is a software design pattern that advocates passing (injecting) dependencies (or services) as parameters to our modules instead of requiring or creating specific ones inside them. 
+
+Best Practice #10: Third-party solutions
+Don’t reinvent the wheel. Don’t be greedy either.
+
+    Node.js has a huge developer community across the world. As far as third-party support is concerned, Node’s package manager, NPM is full of feature-rich, well maintained, well documented, frameworks, libraries and tools for any use case you can imagine. It is therefore very convenient for developers to plug these existing solutions into their code and make the most of their APIs.
+
+    Nodemon, (automatically restarts application when code files are updated)
+    Gulp, Grunt, (automated task runners)
+    Winston, (logging framework)
+    Agenda (job scheduling), 
+    Moment (working with date & time)
+
+Best Practice #11: Follow good generic coding practices
+
+Best Practice #12: Use Application Monitoring Tools
+
+        Best Practice #12: Use Application Monitoring Tools
+    For large-scale applications in production, one of the main goals is to better understand how users interact with the application: about which routes or features are most commonly used, about the most commonly performed operations, etc. Also, there is a focus on evaluating performance metrics, quality issues, bottlenecks, common errors, etc. and using that information to make the necessary changes and improvements.
+
+    This is where application monitoring (APM) tools like ScoutAPM come into the picture. ScoutAPM allows you to constructively analyze and optimize your web app’s performance. 
+
+    It gives you real-time insight so you can quickly pinpoint & resolve issues before the customer ever sees them. 
+
+    
