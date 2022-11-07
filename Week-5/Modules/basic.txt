@@ -1,0 +1,11 @@
+Module:-
+    Every file in Node Application is a Module
+
+    arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function.
+    
+    Exports vs module.exports, whats the difference?
+
+    By default, the hidden function created by node returns something, which is the module.exports property. Therefore, whatever we set our module.exports property to will be returned by the hidden function, hence exposing it to other programs. The exports keyword only points to the module.exports property. Right now, our module doesn’t export anything, to export a part of your module to other programs, add the following line of code above the line where we console.log our arguments:
+
+    exports.name = "James Bond";
+    console.log(arguments);
