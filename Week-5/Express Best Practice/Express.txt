@@ -1,0 +1,35 @@
+ ExpressJS - Best Practices
+
+            Always begin a node project using npm init.
+
+            Always install dependencies with a --save or --save-dev. This will ensure that if you move to a different platform, you can just run npm install to install all dependencies.
+
+            Stick with lowercase file names and camelCase variables. If you look at any npm module, its named in lowercase and separated with dashes. Whenever you require these modules, use camelCase.
+
+            Don’t push node_modules to your repositories. Instead npm installs everything on development machines.
+
+            Use a config file to store variables
+
+            Group and isolate routes to their own file. For example, take the CRUD operations in the movies example we saw in the REST API page.
+
+
+RESTful APIs:-
+
+
+APIs are simpler to design; they don't need a public or a views directory. Use the following structure to build APIs −
+
+        test-project/
+        node_modules/
+        config/
+            db.js                //Database connection and configuration
+            credentials.js       //Passwords/API keys for external services used by your app
+        models/                 //For mongoose schemas
+            users.js
+            things.js
+        routes/                 //All routes for different entities in different files 
+            users.js
+            things.js
+        app.js
+        routes.js               //Require all routes in this and then require this file in 
+        app.js 
+        package.json
