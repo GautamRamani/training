@@ -27,7 +27,7 @@ router.post("/postById/:id", (req, res) => {
         postedBy: _id,
         comments: [{
             text: req.body.comments[0].text,
-            postedBy: req.body.postedByUserId
+            postedBy: req.body.comments[0].postedByUserId
         }]
     });
     post.save().then(post => {
