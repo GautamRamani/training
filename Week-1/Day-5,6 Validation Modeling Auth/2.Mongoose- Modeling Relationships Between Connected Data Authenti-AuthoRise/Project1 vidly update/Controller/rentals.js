@@ -62,16 +62,18 @@ router.post('/rental', async(req, res) => {
   })
   
   //delete
-  router.delete("/rental/:id",async (req,res)=>{
-    try{
-        const rentaldel=await Rental.findByIdAndDelete(req.params.id)
-        if(req.params.id){
-            res.status(400).send('Record is Deleted')
-        }
-        res.send(rentaldel)
-    }catch(e){
-        res.status(400).send(e)
-    }
-  })
+  router.delete('/rental/:id',async (req, res) => {
+    // deleting a record 
+    let _id= req.params.id;
+    await Rental.findByIdAndDelete(_id)
+        .then((rentaldel) => {
+            if (!rentaldel) {
+                res.status(404).send();
+            }
+            res.send(rentaldel);
+        }).catch((e) => {
+            res.status(400).send(e);
+        });
+  });
 
 module.exports = router;

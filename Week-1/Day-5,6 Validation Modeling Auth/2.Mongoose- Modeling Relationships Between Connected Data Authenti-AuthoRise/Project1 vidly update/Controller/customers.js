@@ -48,16 +48,19 @@ router.post('/customer', async(req, res) => {
   })
   
   //delete
-  router.delete("/customer/:id",async (req,res)=>{
-    try{
-        const customerdel=await Customer.findByIdAndDelete(req.params.id)
-        if(req.params.id){
-            res.status(400).send('Record is Deleted')
-        }
-        res.send(customerdel)
-    }catch(e){
-        res.status(400).send(e)
-    }
-  })
+
+  router.delete('/customer/:id',async (req, res) => {
+    // deleting a record 
+    let _id= req.params.id;
+    await Customer.findByIdAndDelete(_id)
+        .then((customerdel) => {
+            if (!customerdel) {
+                res.status(404).send();
+            }
+            res.send(customerdel);
+        }).catch((e) => {
+            res.status(400).send(e);
+        });
+});
 
 module.exports = router;

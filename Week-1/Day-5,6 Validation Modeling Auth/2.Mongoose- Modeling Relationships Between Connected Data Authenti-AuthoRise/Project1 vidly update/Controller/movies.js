@@ -59,17 +59,20 @@ router.put('/movie/:id', async (req, res) => {
 })
 
 //delete
-router.delete("/movie/:id", async (req, res) => {
-  try {
-    const moviedel = await Movie.findByIdAndDelete(req.params.id)
-    if (req.params.id) {
-      res.status(400).send('Record is Deleted')
-    }
-    res.send(moviedel)
-  } catch (e) {
-    res.status(400).send(e)
-  }
-})
+router.delete('/movie/:id',async (req, res) => {
+  // deleting a record 
+  let _id= req.params.id;
+  await Movie.findByIdAndDelete(_id)
+      .then((moviedel) => {
+          if (!moviedel) {
+              res.status(404).send();
+          }
+          res.send(moviedel);
+      }).catch((e) => {
+          res.status(400).send(e);
+      });
+});
+
 
 
 module.exports = router;

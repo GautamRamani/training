@@ -125,14 +125,21 @@ router.delete("/contact/:id/:id1", async (req, res) => {
 })
 
 //delete whole
-router.delete("/contact/:id", async (req, res) => {
-  try {
-    const deleteBookById = await Book.findByIdAndRemove(req.params.id)
-    res.send(deleteBookById)
-    console.log('Record Delete Successfully...')
-  } catch (e) {
-    res.status(400).send(e)
-  }
-})
+router.delete('/contact/:id',async (req, res) => {
+  // deleting a record 
+  let _id= req.params.id;
+  await Book.findByIdAndDelete(_id)
+      .then((deleteBookById) => {
+          if (!deleteBookById) {
+              res.status(404).send();
+          }
+          res.send(deleteBookById);
+      }).catch((e) => {
+          res.status(400).send(e);
+      });
+});
+
+
+
 
 module.exports = router;

@@ -52,19 +52,20 @@ router.get('/genre/:id', async(req, res) => {
 
     res.send(genreupdate);
   })
-  
-  //delete
-  router.delete("/genre/:id",async (req,res)=>{
-    try{
-        const genredel=await Genre.findByIdAndDelete(req.params.id)
-        if(req.params.id){
-            res.status(400).send('Record is Deleted')
-        }
-        res.send(genredel)
-    }catch(e){
-        res.status(400).send(e)
-    }
-  })
+
+  router.delete('/genre/:id',async (req, res) => {
+    // deleting a record 
+    let _id= req.params.id;
+    await Genre.findByIdAndDelete(_id)
+        .then((genre) => {
+            if (!genre) {
+                res.status(404).send();
+            }
+            res.send(genre);
+        }).catch((e) => {
+            res.status(400).send(e);
+        });
+});
   
   
 module.exports = router;
