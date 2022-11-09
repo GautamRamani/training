@@ -1,0 +1,26 @@
+[
+    {
+        "item":"computer",
+        "qty":5,
+        "price":200,
+        "stock":"InStock"
+    },
+    {
+        "item":"mobile",
+        "qty":5,
+        "price":200,
+        "stock":"InStock"
+    },
+    {
+        "item":"laptop",
+        "qty":5,
+        "price":300,
+        "stock":"InStock"
+    },
+    {
+        "item":"tv",
+        "qty":5,
+        "price":500,
+        "stock":"InStock"
+    }
+]

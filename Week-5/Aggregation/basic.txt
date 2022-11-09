@@ -1,2 +1,30 @@
 refer:-
     https://www.youtube.com/watch?v=rMz7v7KREpg&list=PLWkguCWKqN9OwcbdYm4nUIXnA2IoXX0LI&index=35
+
+
+	https://medium.com/@thepradeep001/mongodb-advance-operations-5755693fd76e
+
+
+
+	https://www.mongodb.com/developer/article/mongodb-schema-design-best-practices/
+
+
+
+	https://www.mongodb.com/docs/manual/core/aggregation-pipeline-optimization/#example
+
+
+
+	https://studio3t.com/knowledge-base/articles/mongodb-aggregation-framework/#mongodb-aggregate-examples
+
+
+
+	https://www.freecodecamp.org/news/mongodb-aggregation-framework/#:~:text=Best%20Practices%20for%20using%20the%20Aggregation%20Framework&text=MongoDB%20will%20reject%20any%20operator,up%20more%20than%20100MB%20memory.
+
+
+    What is Aggregation in MongoDB?
+Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. The stages make up what is known as a pipeline. The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline.
+
+
+flow:-
+
+input-->$match->$group->$sort->output
