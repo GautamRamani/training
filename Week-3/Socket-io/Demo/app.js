@@ -23,8 +23,4 @@ io.on('connection',(socket)=>{
         console.log('user',name)
         socket.emit('user-joined',name)
     })
-
-    // socket.on('send',(message)=>{
-    //     socket.emit('receive',{message:message,name:users[socket.id]})
-    // })
 })
