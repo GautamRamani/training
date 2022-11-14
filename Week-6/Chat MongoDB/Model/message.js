@@ -2,7 +2,11 @@ const mongoose=require("mongoose")
 const msgSchema=new mongoose.Schema({
     msg:{
         type:String,
-        required:true
+        required:true,
+    },
+    date: {
+        type: Date,
+        default: Date.now,
     }
 })
 
