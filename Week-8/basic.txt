@@ -1,0 +1,15 @@
+refer:-
+
+    https://www.youtube.com/watch?v=ZQL7tL2S0oQ
+
+    What is GraphQL in Node JS?
+
+        GraphQL is defined as a query language for client APIs and server-side runtime to execute those queries. That said, GraphQL is not exactly a language, but it has its own syntax and can be developed within several programming languages, such as Node. js.
+
+task:-
+
+    https://www.youtube.com/watch?v=htB2uJCf4ws
+
+Mutation:-
+
+    In GraphQL, you insert, update or delete data with mutations. A Mutation is a GraphQL Operation that allows you to insert new data or modify the existing data on the server-side. You can think of GraphQL Mutations as the equivalent of POST , PUT , PATCH and DELETE requests in REST

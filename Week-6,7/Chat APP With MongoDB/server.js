@@ -87,8 +87,13 @@ io.on("connection", (socket) => {
   });
 
   // handles message posted by client
-  socket.on("new-message", (data) => {
+  socket.on("new-message",async (data) => {
     console.log(`👾 new-message from ${data.user}`);
+
+    let ChatMessage=new Msg();
+    ChatMessage.msg=data.message
+    await ChatMessage.save();
+
     // broadcast message to all sockets except the one that triggered the event
     socket.broadcast.emit("broadcast-message", {
       user: users[data.user],
