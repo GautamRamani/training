@@ -13,3 +13,7 @@ task CRUD:-
 Mutation:-
 
     In GraphQL, you insert, update or delete data with mutations. A Mutation is a GraphQL Operation that allows you to insert new data or modify the existing data on the server-side. You can think of GraphQL Mutations as the equivalent of POST , PUT , PATCH and DELETE requests in REST
+
+Why GraphQL is faster than REST?
+
+    GraphQL data fetching specific data with a single API call and Rest fixed data with multiple API calls. GraphQL community is growing and Rest are Large. GraphQL performance is fast and Rest are multiple network calls take up more time. GraphQL development speed is rapid and Rest are slower.
