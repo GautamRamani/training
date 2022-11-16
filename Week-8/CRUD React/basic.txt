@@ -7,27 +7,12 @@ refer:-
 
         Apollo Server is an open-source, spec-compliant GraphQL server that's compatible with any GraphQL client, including Apollo Client. It's the best way to build a production-ready, self-documenting GraphQL API that can use data from any source.
 
-Root for RegisterUser:-
+First Start backend side server:-
 
+                                npx nodemon index.js
 
-        mutation:-registerUser
+After Start React server:-
 
-        argu:-registerInput:registerInput
-
-            username,email,password
-
-            same email user will not register due to the validation
-
-
-Root for RegisterUser:-
-
-
-        mutation:-loginUser
-
-        argu:-loginInput:LoginInput
-
-            username,email,password,token
-
-            variables:- email:"",password:""
-
+                                cd client
+                                npm start
 

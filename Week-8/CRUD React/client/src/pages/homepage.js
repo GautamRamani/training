@@ -1,12 +1,12 @@
 import {useContext} from "react"
-import { Link, Navigate } from "react-router-dom";
+// import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../context/authContext";
 
 function Homepage(){
-    const {user,logout}=useContext(AuthContext)
+    const {user}=useContext(AuthContext)
     return (
         <>
-            <h1>this is the Homepage</h1>
+            <h1>Homepage</h1>
             {
                 user?
                 <>

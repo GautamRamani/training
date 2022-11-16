@@ -31,7 +31,6 @@ function Navbar() {
                                 <Link to="/login" style={{textDescription:"none",color:"white",marginRight:"10px"}}>Login</Link>
                                 <Link to="/register" style={{textDescription:"none",color:"white"}}>Register</Link>
                             </>
-
                         }
                     </Box>
                 </Toolbar>
