@@ -9,6 +9,17 @@ var transporter = nodemailer.createTransport({
       user: "gautam.ramani06@gmail.com",
       pass: "pktcdzuqwascppqu"
   }
+
+    // host: "smtp.gmail.com",
+    // secureConnection: true,
+    // port: 465,
+    // auth: {
+    //     user: "gautam.ramani06@gmail.com",
+    //     pass: "pktcdzuqwascppqu"
+    // },
+    // tls: {
+    //     secureProtocol: "TLSv1_method"
+    // }
 });
 
 var mailOptions = {
