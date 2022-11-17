@@ -1,13 +1,13 @@
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure:false,
-    requireTLS:true,
-    auth: {
-      user: "gautam.ramani06@gmail.com",
-      pass: "jrokfxqnjnitmgdj"
+  host: "smtp.mailtrap.io",
+  port: 587,
+  secure:false,
+  requireTLS:true,
+  auth: {
+    user: "2a2c8716be7f26",
+    pass: "5f1b2e70e375d1"
   }
 });
 
@@ -25,3 +25,6 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
+
+
+//Mailtrap Account
