@@ -12,7 +12,7 @@ app.use(cors())
 //middleware
 app.use(bodyParser.json())
 app.use(morgan("tiny"))
-// app.use(authJwt())
+app.use(authJwt())
 
 require("./Db/logging")
 

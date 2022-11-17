@@ -9,7 +9,7 @@ function authJwt(){
     }).unless({
         path:[
             `/user/login`,
-            `/user/register`,
+            // `/user/register`,
         ],
     });
 }
