@@ -1,6 +1,8 @@
-2022-11-18 17:40:59:4059 info: Mongodb Connected
-2022-11-18 17:42:12:4212 info: Mongodb Connected
-2022-11-18 17:42:17:4217 error: error Gene is not defined
-2022-11-18 17:42:19:4219 info: GET /genre/genre - - - - ms
+2022-11-18 17:55:25:5525 info: Mongodb Connected
+2022-11-18 17:55:45:5545 info: POST /genre/genre 200 60 - 65.596 ms
 
-2022-11-18 17:42:35:4235 info: Mongodb Connected
+2022-11-18 17:56:48:5648 info: Mongodb Connected
+2022-11-18 17:56:54:5654 error: error genresget is not defined
+2022-11-18 17:56:55:5655 info: GET /genre/genre - - - - ms
+
+2022-11-18 17:57:31:5731 info: Mongodb Connected
