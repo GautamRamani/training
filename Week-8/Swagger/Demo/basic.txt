@@ -5,3 +5,6 @@ What is Swagger tool used for?
                 Dependency:-
                             npm i swagger-jsdoc
                             npm i swagger-ui-express
+
+
+in Browser:- localhost:1234/api-docs
