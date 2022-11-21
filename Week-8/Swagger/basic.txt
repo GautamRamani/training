@@ -1,3 +1,0 @@
-What is Swagger tool used for?
-
-                Swagger helps users build, document, test and consume RESTful web services. It can be used with both a top-down and bottom-up API development approach. In the top-down, or design-first, method, Swagger can be used to design an API before any code is written.
