@@ -65,7 +65,7 @@ app.get("/",(req,res)=>{
 
 /**
  * @swagger
- * /api/course:
+ * /api/courses:
  *  get: 
  *      summery: To get all courses from mongodb
  *      description: This api is used to fetch data from mongodb
@@ -79,10 +79,44 @@ app.get("/",(req,res)=>{
  *                    items:
  *                        $ref:'#components/schema/Course
  */
-app.get('/api/course', async(req, res) => {
+app.get('/api/courses', async(req, res) => {
   try {
     const courseget=await Course.find();
     res.send(courseget)
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+
+/**
+ * @swagger
+ * /api/course/{_id}:
+ *  get: 
+ *      summery: To get all courses from mongodb
+ *      description: This api is used to fetch data from mongodb
+ *      parameters:
+ *          - in: path
+ *            name: _id
+ *            required: true
+ *            description: string ID required
+ *            schema:
+ *              type: string
+ *      responses:
+ *       200:
+ *           description: This api is used to fetch data from mongodb
+ *           content:
+ *               application/json:
+ *                    schema:
+ *                        type: array
+ *                    items:
+ *                        $ref:'#components/schema/Course
+ */
+app.get('/api/course/:id', async(req, res) => {
+  try {
+    const coursegetid=await Course.findById(req.params.id);
+    if(!coursegetid) return res.status(404).send('the genre with the given ID was not found')
+    res.send(coursegetid)
   } catch (error) {
     console.log(error)
   }
