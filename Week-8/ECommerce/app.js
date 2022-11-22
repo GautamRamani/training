@@ -6,11 +6,10 @@ const cors=require("cors")
 const logger=require("./config/logger")
 const app=express()
 
-
 const stream={
     write:(message)=>{
         logger.info(message)
-    }
+    }   
 }
 //middleware
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms',{stream}))
@@ -20,7 +19,6 @@ app.use(cors())
 require("./config/connection")
 
 const routeIndex=require("./Route/index")
-const { loggers } = require("winston")
 app.use("/api",routeIndex);
 
 app.listen(process.env.PORT,()=>{

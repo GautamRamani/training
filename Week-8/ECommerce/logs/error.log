@@ -1,6 +1,0 @@
-2022-11-22 14:41:49:4149 error: That user already exists!
-2022-11-22 14:42:55:4255 error: child "name" fails because ["name" length must be at least 5 characters long]
-2022-11-22 14:49:56:4956 error: User not Found
-2022-11-22 14:50:59:5059 error: User not Found
-2022-11-22 14:53:24:5324 error: child "name" fails because ["name" is required]
-2022-11-22 15:27:00:270 error: User not Found
