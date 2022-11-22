@@ -1,0 +1,27 @@
+
+[
+    {
+        "name":"yaman",
+        "email":"yaman123@gmail.com",
+        "passwordHash":"yaman@123",
+        "phone":"8153810811",
+        "isAdmin":true,
+        "street":"punagam",
+        "apartment":"shantiniketan",
+        "zip":"395006",
+        "city":"surat",
+        "country":"india"
+    },
+    {
+        "name":"Pairmal",
+        "email":"parimal123@gmail.com",
+        "passwordHash":"parimal@123",
+        "phone":"7358456781",
+        "isAdmin":true,
+        "street":"jakatnak",
+        "apartment":"swaminarayan nagar",
+        "zip":"395008",
+        "city":"surat",
+        "country":"india"
+    }
+]
