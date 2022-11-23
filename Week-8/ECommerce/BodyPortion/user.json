@@ -23,5 +23,27 @@
         "zip":"395008",
         "city":"surat",
         "country":"india"
+    },
+    {
+        "name":"yashpal",
+        "email":"yash123@gmail.com",
+        "passwordHash":"yash@123",
+        "phone":"8153810815",
+        "street":"andheri",
+        "apartment":"kanayalal",
+        "zip":"3956785",
+        "city":"borivali",
+        "country":"india"
+    },
+    {
+        "name":"Riyan",
+        "email":"riyan123@gmail.com",
+        "passwordHash":"riyan@123",
+        "phone":"8153810808",
+        "street":"yamuna",
+        "apartment":"mahal",
+        "zip":"3956734",
+        "city":"mathura",
+        "country":"india"
     }
 ]

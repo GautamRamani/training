@@ -1,0 +1,6 @@
+2022-11-23 10:29:00:290 error: Cannot set headers after they are sent to the client
+2022-11-23 10:30:13:3013 error: Cannot set headers after they are sent to the client
+2022-11-23 10:31:13:3113 error: Cannot set headers after they are sent to the client
+2022-11-23 10:49:33:4933 error: "isAdmin" is not allowed
+2022-11-23 10:50:14:5014 error: "isAdmin" is not allowed
+2022-11-23 10:54:23:5423 error: That user already exists!

@@ -28,8 +28,7 @@ const User=new mongoose.Schema({
         maxlength: 10
     },
     isAdmin:{
-        type:Boolean,
-        default:false
+        type:Boolean
     },
     street:{
         type:String,
@@ -74,6 +73,7 @@ function validateUser(user) {
         email: Joi.string().min(5).max(50).required().email(),
         passwordHash: Joi.string().min(5).max(50).required(),
         phone: Joi.number().min(10).required(),
+        isAdmin:Joi.boolean(),
         street:Joi.string().min(5).max(255).required(),
         apartment:Joi.string().min(5).max(255).required(),
         zip:Joi.string().min(5).max(50).required(),
