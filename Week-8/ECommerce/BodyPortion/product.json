@@ -1,0 +1,52 @@
+[
+    {
+        "productName":"Jeans",
+        "description":"Traditionally made from denim (a kind of cotton fabric)",
+        "image":"xyz.jpg",
+        "brand":"Denim",
+        "price":1400,
+        "countInStock":2000,
+        "rating":4,
+        "numReviews":560
+    },
+    {
+        "productName":"Trowser",
+        "description":"Traditionally made from Cotton Twill. Twill is versatile and it's a common fabric for trousers",
+        "image":"xyz.jpg",
+        "brand":"Allen Solly",
+        "price":1800,
+        "countInStock":600,
+        "rating":4,
+        "numReviews":800
+    },
+    {
+        "productName":"Neckless",
+        "description":"an ornament worn around the neck",
+        "image":"xyz.jpg",
+        "brand":"Deluxe Diamonds",
+        "price":1000,
+        "countInStock":60,
+        "rating":3,
+        "numReviews":350
+    },
+    {
+        "productName":"BhagwatGita",
+        "description":"Sanskrit epic poem of ancient India",
+        "image":"xyz.jpg",
+        "brand":"Bhagwat Gita based",
+        "price":170,
+        "countInStock":100,
+        "rating":4,
+        "numReviews":4000
+    },
+    {
+        "productName":"Faux Grass Base Flip-Flops",
+        "description":"Flip-flops are a type of light sandal, typically worn as a form of casual footwear",
+        "image":"xyz.jpg",
+        "brand":"Ajio",
+        "price":450,
+        "countInStock":343,
+        "rating":4,
+        "numReviews":500
+    }
+]
