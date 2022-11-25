@@ -133,3 +133,4 @@ Require stack:
 
 2022-11-25 12:11:12:1112 info: DELETE /api/product/6380636fcba384e6afd3e91c 200 399 - 26.480 ms
 
+2022-11-25 12:12:34:1234 info: Mongodb Connected
