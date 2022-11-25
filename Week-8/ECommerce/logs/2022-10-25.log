@@ -134,3 +134,9 @@ Require stack:
 2022-11-25 12:11:12:1112 info: DELETE /api/product/6380636fcba384e6afd3e91c 200 399 - 26.480 ms
 
 2022-11-25 12:12:34:1234 info: Mongodb Connected
+2022-11-25 12:28:47:2847 info: Mongodb Connected
+2022-11-25 12:28:50:2850 info: POST /api/login 200 248 - 121.632 ms
+
+2022-11-25 12:37:50:3750 info: Mongodb Connected
+2022-11-25 13:36:53:3653 info: GET //public/uploadsDenim.jpg-1669293757876.jpeg 404 182 - 3.428 ms
+
