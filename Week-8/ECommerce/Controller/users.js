@@ -90,10 +90,6 @@ router.get("/user/:id", async (req, res) => {
 //Update
 router.put("/user/:id", async (req, res) => {
     try {
-        // const { error } = validate(req.body)
-        // if (error) {
-        //     res.status(400).send(error.details[0].message)
-        // }
         const userupdate = await User.findByIdAndUpdate(
             req.params.id,
             {
@@ -128,7 +124,7 @@ router.delete("/user/:id",async(req,res)=>{
             if(!user){
                 res.status(400).send()
             }
-            res.send(user)
+            res.status(200).send([{message:"Deleted Successfully"},user])
         })
         .catch((e)=>{
             res.status(400).send(e)

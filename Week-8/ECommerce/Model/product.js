@@ -1,7 +1,5 @@
 const mongoose=require("mongoose")
-const BaseJoi=require("joi")
-const ImageExtension = require('joi-image-extension')
-const Joi = BaseJoi.extend(ImageExtension)
+const Joi=require("joi")
 
 const Product=new mongoose.Schema({
     productName:{

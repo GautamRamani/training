@@ -31,3 +31,17 @@
 2022-11-24 17:43:30:4330 error: child "productName" fails because ["productName" is required]
 2022-11-24 18:02:33:233 error: child "productName" fails because ["productName" is required]
 2022-11-24 18:02:50:250 error: child "productName" fails because ["productName" is required]
+2022-11-25 10:17:08:178 error: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+2022-11-25 11:03:12:312 error: basePath is not defined
+2022-11-25 11:05:16:516 error: Cannot read property 'filename' of undefined
+2022-11-25 11:06:20:620 error: Cannot read property 'filename' of undefined
+2022-11-25 11:10:38:1038 error: file is not defined
+2022-11-25 11:10:51:1051 error: Cannot read property 'filename' of undefined
+2022-11-25 11:14:44:1444 error: Cannot read property 'filename' of undefined
+2022-11-25 11:16:03:163 error: Cannot read property 'filename' of undefined
+2022-11-25 11:34:32:3432 error: Cannot set headers after they are sent to the client
+2022-11-25 11:59:06:596 error: Cannot set headers after they are sent to the client

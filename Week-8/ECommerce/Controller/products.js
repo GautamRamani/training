@@ -27,6 +27,15 @@ const storage = multer.diskStorage({
 })
 const upload=multer({storage:storage})
 
+//Get
+router.get("/product",async(req,res)=>{
+    const getproduct=await Product.find()
+    if(!getproduct){
+        res.status(400).send({success:false})
+    }
+    res.send(getproduct)
+})
+
 //Post
 router.post("/product",upload.single("image"),async(req,res)=>{
     //First validate the Request
@@ -61,6 +70,50 @@ router.post("/product",upload.single("image"),async(req,res)=>{
             logger.error(err)
             res.status(400).send(err)
         })
+})
+
+//Put
+router.put("/product/:id",async(req,res)=>{
+    try {
+        const updateproduct=await Product.findByIdAndUpdate(
+            req.params.id,
+            {
+                productName:req.body.productName,
+                description:req.body.description,
+                brand:req.body.brand,
+                price:req.body.price,
+                countInStock:req.body.countInStock,
+                rating:req.body.rating,
+                numReviews:req.body.numReviews
+            },
+            {new:true}
+        )
+        if(!updateproduct){
+            res.status(400).send("Product can not be Updated")
+        }
+        res.send(updateproduct)
+    } catch (error) {
+        logger.error(error)
+    }
+})
+
+//Delete
+router.delete("/product/:id",async(req,res)=>{
+    try {
+        let _id=req.params.id
+        await Product.findByIdAndDelete(_id)
+            .then((user)=>{
+                if(!user){
+                    res.status(400).send()
+                }
+                res.status(200).send([{message:"Deleted Successfully"},user])
+            })
+            .catch((e)=>{
+                res.status(400).send(e)
+            })
+    } catch (error) {
+        logger.error(error)
+    }
 })
 
 module.exports = router;
