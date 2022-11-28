@@ -6,3 +6,6 @@ Authorization:
 
 Information Exchange: 
                     JWTs are a good way of securely transmitting information between parties because they can be signed, which means you can be sure that the senders are who they say they are. Additionally, the structure of a JWT allows you to verify that the content hasn't been tampered with. 
+
+                    Auth Refer:-
+                                https://jasonwatmore.com/post/2018/08/06/nodejs-jwt-authentication-tutorial-with-example-api
