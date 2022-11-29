@@ -17,7 +17,7 @@ app.use("/public/uploads",express.static(__dirname+"/public/uploads"))
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms',{stream}))
 app.use(bodyParser.json())
 app.use(cors())
-app.use(authJwt());
+// app.use(authJwt());
 
 require("./config/connection")
 

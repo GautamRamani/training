@@ -386,3 +386,71 @@ Require stack:
     at Function.Module._load (internal/modules/cjs/loader.js:769:14)
     at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
 2022-11-29 16:55:51:5551 info: Mongodb Connected
+2022-11-29 17:52:56:5256 info: Mongodb Connected
+2022-11-29 17:53:08:538 info: Mongodb Connected
+2022-11-29 17:53:52:5352 info: GET /api/user/product 200 1058 - 33.498 ms
+
+2022-11-29 17:54:52:5452 info: GET /api/user/product?page=2&limit=2 200 683 - 19.837 ms
+
+2022-11-29 17:55:14:5514 info: GET /api/user/product 200 1058 - 21.988 ms
+
+2022-11-29 17:56:05:565 info: GET /api/user/product 200 1058 - 16.734 ms
+
+2022-11-29 17:56:16:5616 info: GET /api/user/product?page=2 200 741 - 17.580 ms
+
+2022-11-29 18:04:53:453 info: Mongodb Connected
+2022-11-29 18:04:54:454 info: GET /api/user/product 200 736 - 31.505 ms
+
+2022-11-29 18:05:03:53 info: GET /api/user/product?page=2 200 683 - 18.210 ms
+
+2022-11-29 18:05:12:512 info: GET /api/user/product?page=3 200 406 - 19.058 ms
+
+2022-11-29 18:08:49:849 info: Mongodb Connected
+2022-11-29 18:08:52:852 info: Mongodb Connected
+2022-11-29 18:09:03:93 info: Mongodb Connected
+2022-11-29 18:09:14:914 info: Mongodb Connected
+2022-11-29 18:09:24:924 error: uncaughtException: Unexpected token 'catch'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:33
+    } catch (error) {
+      ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-11-29 18:09:41:941 info: Mongodb Connected
+2022-11-29 18:09:53:953 info: Mongodb Connected
+2022-11-29 18:10:09:109 info: Mongodb Connected
+2022-11-29 18:10:18:1018 info: Mongodb Connected
+2022-11-29 18:10:25:1025 info: Mongodb Connected
+2022-11-29 18:10:35:1035 info: GET /api/user/profile 200 622 - 30.883 ms
+
+2022-11-29 18:11:22:1122 info: Mongodb Connected
+2022-11-29 18:11:30:1130 info: Mongodb Connected
+2022-11-29 18:11:38:1138 info: Mongodb Connected
+2022-11-29 18:11:52:1152 info: Mongodb Connected
+2022-11-29 18:11:57:1157 info: Mongodb Connected
+2022-11-29 18:11:59:1159 info: Mongodb Connected
+2022-11-29 18:12:14:1214 info: GET /api/admin/users 200 1182 - 27.100 ms
+
+2022-11-29 18:14:20:1420 info: GET /api/admin/product 200 736 - 18.544 ms
+
+2022-11-29 18:21:28:2128 info: Mongodb Connected
+2022-11-29 18:21:31:2131 info: Mongodb Connected
+2022-11-29 18:21:46:2146 info: Mongodb Connected
+2022-11-29 18:22:04:224 info: Mongodb Connected
+2022-11-29 18:22:28:2228 info: GET /api/admin/users 200 622 - 28.892 ms
+
+2022-11-29 18:22:38:2238 info: GET /api/admin/users?page=3 200 25 - 17.275 ms
+
+2022-11-29 18:22:47:2247 info: GET /api/admin/users?page=2 200 607 - 17.511 ms
+
+2022-11-29 18:22:56:2256 info: GET /api/admin/users 200 622 - 18.942 ms
+

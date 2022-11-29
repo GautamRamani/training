@@ -7,11 +7,13 @@ const router = express.Router();
 //Get
 router.get("/admin/product",async(req,res)=>{
     try {        
-        const getproduct=await Product.find()
+        const {page=1,limit=2}=req.query;
+
+        const getproduct=await Product.find().limit(limit*1).skip((page-1)*limit)
         if(!getproduct){
             res.status(400).send({success:false})
         }
-        res.send(getproduct)
+        res.status(200).json({total:getproduct.length,getproduct})
     } catch (error) {
         logger.error(error)
     }

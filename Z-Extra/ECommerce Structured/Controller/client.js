@@ -7,11 +7,13 @@ const router = express.Router();
 //Get Products
 router.get("/user/product", async (req, res) => {   
     try {
-        const getproduct = await Product.find()
+        const {page=1,limit=2}=req.query;
+
+        const getproduct = await Product.find().limit(limit*1).skip((page-1)*limit)
         if (!getproduct) {
             res.status(400).send({ success: false })
         }
-        res.send(getproduct)
+        res.status(200).json({total:getproduct.length,getproduct})
     } catch (error) {
         logger.error(error)
     }
@@ -20,11 +22,13 @@ router.get("/user/product", async (req, res) => {
 //Get User Profile
 router.get("/user/profile", async (req, res) => {
     try {
-        const userList = await User.find()
+        const {page=1,limit=2}=req.query;
+
+        const userList = await User.find().limit(limit*1).skip((page-1)*limit)
         if (!userList) {
             res.status(400).json({ success: false })
         }
-        res.send(userList)
+        res.status(200).json({total:userList.length,userList})
     } catch (error) {
         logger.error(error)
     }
