@@ -4,6 +4,19 @@ const multer = require("multer")
 const logger = require("../config/logger")
 const router = express.Router();
 
+//Get
+router.get("/admin/product",async(req,res)=>{
+    try {        
+        const getproduct=await Product.find()
+        if(!getproduct){
+            res.status(400).send({success:false})
+        }
+        res.send(getproduct)
+    } catch (error) {
+        logger.error(error)
+    }
+})
+
 const File_TYPE_MAP = {
     "image/png": "png",
     "image/jpeg": "jpeg",
@@ -27,17 +40,9 @@ const storage = multer.diskStorage({
 })
 const upload=multer({storage:storage})
 
-//Get
-router.get("/product",async(req,res)=>{
-    const getproduct=await Product.find()
-    if(!getproduct){
-        res.status(400).send({success:false})
-    }
-    res.send(getproduct)
-})
 
 //Post
-router.post("/product",upload.single("image"),async(req,res)=>{
+router.post("/admin/product",upload.single("image"),async(req,res)=>{
     //First validate the Request
     const { error } = validate(req.body);
     if (error) {
@@ -72,8 +77,21 @@ router.post("/product",upload.single("image"),async(req,res)=>{
         })
 })
 
+//Get by ID
+router.get("/admin/product/:id", async (req, res) => {
+    try {
+        const productbyID = await Product.findById(req.params.id)
+        if (!productbyID) {
+            res.status(400).json({ success: false })
+        }
+        res.send(productbyID)
+    } catch (error) {
+        logger.error(error)
+    }
+})
+
 //Put
-router.put("/product/:id",async(req,res)=>{
+router.put("/admin/product/:id",async(req,res)=>{
     try {
         const updateproduct=await Product.findByIdAndUpdate(
             req.params.id,
@@ -98,7 +116,7 @@ router.put("/product/:id",async(req,res)=>{
 })
 
 //Delete
-router.delete("/product/:id",async(req,res)=>{
+router.delete("/admin/product/:id",async(req,res)=>{
     try {
         let _id=req.params.id
         await Product.findByIdAndDelete(_id)

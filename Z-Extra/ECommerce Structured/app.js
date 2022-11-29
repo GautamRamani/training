@@ -22,7 +22,7 @@ app.use(authJwt());
 require("./config/connection")
 
 const routeIndex=require("./Route/index")
-app.use("/api",routeIndex);
+app.use("/",routeIndex);
 
 app.listen(process.env.PORT,()=>{
     console.log(`Server Listening on PORT ${process.env.PORT}`)

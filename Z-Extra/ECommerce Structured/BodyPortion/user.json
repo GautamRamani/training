@@ -29,6 +29,7 @@
         "email":"yash123@gmail.com",
         "passwordHash":"yash@123",
         "phone":"8153810815",
+        "isAdmin":true,
         "street":"andheri",
         "apartment":"kanayalal",
         "zip":"3956785",
@@ -40,10 +41,35 @@
         "email":"riyan123@gmail.com",
         "passwordHash":"riyan@123",
         "phone":"8153810808",
+        "isAdmin":true,
         "street":"yamuna",
         "apartment":"mahal",
         "zip":"3956734",
         "city":"mathura",
+        "country":"india"
+    },
+    {
+        "name":"gautam",
+        "email":"gautam@gmail.com",
+        "passwordHash":"yaman@123",
+        "phone":"8153810811",
+        "isAdmin":true,
+        "street":"punagam",
+        "apartment":"shantiniketan",
+        "zip":"395006",
+        "city":"surat",
+        "country":"india"
+    },
+    {
+        "name":"mihir",
+        "email":"mihir@gmail.com",
+        "passwordHash":"yaman@123",
+        "phone":"8153810811",
+        "isAdmin":true,
+        "street":"punagam",
+        "apartment":"shantiniketan",
+        "zip":"395006",
+        "city":"surat",
         "country":"india"
     }
 ]

@@ -48,14 +48,6 @@ const Product=new mongoose.Schema({
     }
 })
 
-Product.virtual("id").get(function (){
-    return this._id.toHexString();
-})
-
-Product.set("toJSON",{
-    virtuals:true
-})
-
 exports.Product=mongoose.model("Product",Product)
 
 function validateProduct(product){

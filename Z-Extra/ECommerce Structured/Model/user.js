@@ -57,14 +57,6 @@ const User=new mongoose.Schema({
     }
 })
 
-User.virtual('id').get(function(){
-    return this._id.toHexString();
-})
-
-User.set('toJSON',{
-    virtuals:true,
-})
-
 exports.User=mongoose.model('User',User)
 
 function validateUser(user) {

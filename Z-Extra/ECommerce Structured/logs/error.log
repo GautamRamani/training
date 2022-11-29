@@ -1,0 +1,91 @@
+2022-11-23 10:29:00:290 error: Cannot set headers after they are sent to the client
+2022-11-23 10:30:13:3013 error: Cannot set headers after they are sent to the client
+2022-11-23 10:31:13:3113 error: Cannot set headers after they are sent to the client
+2022-11-23 10:49:33:4933 error: "isAdmin" is not allowed
+2022-11-23 10:50:14:5014 error: "isAdmin" is not allowed
+2022-11-23 10:54:23:5423 error: That user already exists!
+2022-11-24 11:46:37:4637 error: child "description" fails because ["description" length must be less than or equal to 50 characters long]
+2022-11-24 11:46:51:4651 error: child "productName" fails because ["productName" length must be at least 3 characters long]
+2022-11-24 11:47:46:4746 error: child "productName" fails because ["productName" length must be at least 3 characters long]
+2022-11-24 11:48:04:484 error: child "image" fails because ["image" length must be at least 3 characters long]
+2022-11-24 11:48:17:4817 error: child "brand" fails because ["brand" length must be at least 3 characters long]
+2022-11-24 11:48:26:4826 error: child "countInStock" fails because ["countInStock" must be less than or equal to 5]
+2022-11-24 11:59:16:5916 error: child "rating" fails because ["rating" must be less than or equal to 5]
+2022-11-24 11:59:40:5940 error: child "rating" fails because ["rating" must be larger than or equal to 1]
+2022-11-24 12:04:04:44 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:07:37:737 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:07:43:743 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:14:08:148 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:14:39:1439 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:15:17:1517 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:15:22:1522 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:15:32:1532 error: child "phone" fails because ["phone" must be less than or equal to 10]
+2022-11-24 12:16:20:1620 error: That user already exists!
+2022-11-24 12:22:54:2254 error: child "rating" fails because ["rating" must be an integer]
+2022-11-24 15:24:15:2415 error: child "image" fails because ["image" is required]
+2022-11-24 16:45:49:4549 error: child "image" fails because ["image" is required]
+2022-11-24 16:55:08:558 error: child "image" fails because ["image" is required]
+2022-11-24 17:01:43:143 error: child "image" fails because ["image" is required]
+2022-11-24 17:02:25:225 error: child "image" fails because ["image" is required]
+2022-11-24 17:02:50:250 error: child "image" fails because ["image" is required]
+2022-11-24 17:43:30:4330 error: child "productName" fails because ["productName" is required]
+2022-11-24 18:02:33:233 error: child "productName" fails because ["productName" is required]
+2022-11-24 18:02:50:250 error: child "productName" fails because ["productName" is required]
+2022-11-25 10:17:08:178 error: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+2022-11-25 11:03:12:312 error: basePath is not defined
+2022-11-25 11:05:16:516 error: Cannot read property 'filename' of undefined
+2022-11-25 11:06:20:620 error: Cannot read property 'filename' of undefined
+2022-11-25 11:10:38:1038 error: file is not defined
+2022-11-25 11:10:51:1051 error: Cannot read property 'filename' of undefined
+2022-11-25 11:14:44:1444 error: Cannot read property 'filename' of undefined
+2022-11-25 11:16:03:163 error: Cannot read property 'filename' of undefined
+2022-11-25 11:34:32:3432 error: Cannot set headers after they are sent to the client
+2022-11-25 11:59:06:596 error: Cannot set headers after they are sent to the client
+2022-11-29 12:25:32:2532 error: That user already exists!
+2022-11-29 12:25:35:2535 error: That user already exists!
+2022-11-29 12:54:34:5434 error: child "name" fails because ["name" length must be at least 5 characters long]
+2022-11-29 12:57:33:5733 error: That user already exists!
+2022-11-29 12:57:48:5748 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 12:59:16:5916 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:03:25:325 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:03:40:340 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:04:03:43 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:04:52:452 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:05:15:515 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:07:27:727 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:09:20:920 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:11:54:1154 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:49:38:4938 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:50:44:5044 error: Callback must be a function, got [object Object]
+2022-11-29 13:54:44:5444 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 13:57:33:5733 error: Cast to ObjectId failed for value "6385ae1c3e203e7bc2380df5\n" (type string) at path "_id" for model "User"
+2022-11-29 13:58:22:5822 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:00:16:016 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:00:44:044 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:02:49:249 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:06:56:656 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:07:12:712 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:08:01:81 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:08:19:819 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:09:21:921 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:10:12:1012 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:11:48:1148 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:12:04:124 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:14:36:1436 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:28:18:2818 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:31:36:3136 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:32:33:3233 error: Cast to ObjectId failed for value "6385b3c4bbd240bd8ca9d2fe\n" (type string) at path "_id" for model "User"
+2022-11-29 14:37:33:3733 error: Cast to ObjectId failed for value "6385ade33e203e7bc2380df2\n" (type string) at path "_id" for model "User"
+2022-11-29 14:38:27:3827 error: Cast to ObjectId failed for value "6385ade33e203e7bc2380df2\n" (type string) at path "_id" for model "User"
+2022-11-29 14:39:56:3956 error: Cast to ObjectId failed for value "6385ade33e203e7bc2380df2\n" (type string) at path "_id" for model "User"
+2022-11-29 14:44:07:447 error: Cast to ObjectId failed for value "6385ccd2ad456a3c82240003\n" (type string) at path "_id" for model "User"
+2022-11-29 14:45:14:4514 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74\n" (type string) at path "_id" for model "User"
+2022-11-29 14:46:28:4628 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74\n" (type string) at path "_id" for model "User"
+2022-11-29 14:52:02:522 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74\n" (type string) at path "_id" for model "User"
+2022-11-29 14:54:10:5410 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74\n" (type string) at path "_id" for model "User"
+2022-11-29 14:56:15:5615 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74      " (type string) at path "_id" for model "User"
+2022-11-29 15:01:46:146 error: That user already exists!
