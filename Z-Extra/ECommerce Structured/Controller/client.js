@@ -7,13 +7,44 @@ const router = express.Router();
 //Get Products
 router.get("/user/product", async (req, res) => {
     try {
-        var {page,perpage}=req.query;
-        var query={}
+        var { page, perpage, searchText } = req.query;
+        var query = {}
         var options = {
-            page:parseInt(page,10)||1,
-            limit:parseInt(perpage,10)||10
+            page: parseInt(page, 10) || 1,
+            limit: parseInt(perpage, 10) || 10
         }
-        const getproduct = await Product.paginate(query,options)
+
+        if (searchText) {
+            const regex = { $regex: new RegExp('^' + searchText + '', 'i') };
+            query = {
+                ...query,
+
+                productName: regex
+
+            };
+        }
+
+        const getproduct = await Product.paginate(query, options)
+
+        if (!getproduct) {
+            res.status(400).send({ success: false })
+        }
+        res.status(200).json(getproduct)
+    }
+    catch (error) {
+        logger.error(error)
+    }
+})
+
+router.get("/user/product/search", async (req, res) => {
+    try {
+        var { page, perpage } = req.query;
+        var query = {}
+        var options = {
+            page: parseInt(page, 10) || 1,
+            limit: parseInt(perpage, 10) || 10
+        }
+        const getproduct = await Product.paginate(query, options)
 
         if (!getproduct) {
             res.status(400).send({ success: false })
@@ -24,17 +55,18 @@ router.get("/user/product", async (req, res) => {
     }
 })
 
+
 //Get User Profile
 router.get("/user/profile", async (req, res) => {
     try {
-        var {page,perpage}=req.query;
-        var query={};
-        var options={
-            page:parseInt(page,10)||1,
-            limit:parseInt(perpage,10)||10
+        var { page, perpage } = req.query;
+        var query = {};
+        var options = {
+            page: parseInt(page, 10) || 1,
+            limit: parseInt(perpage, 10) || 10
         }
-        const userList = await User.paginate(query,options)
-        
+        const userList = await User.paginate(query, options)
+
         if (!userList) {
             res.status(400).json({ success: false })
         }
