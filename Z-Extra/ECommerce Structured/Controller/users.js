@@ -7,13 +7,18 @@ const router = express.Router();
 //Get
 router.get("/admin/users", async (req, res) => {
     try {
-        const {page=1,limit=2}=req.query;
-
-        const userList = await User.find().limit(limit*1).skip((page-1)*limit)
+        var {page,perpage}=req.query;
+        var query={};
+        var options={
+            page:parseInt(page,10)||1,
+            limit:parseInt(perpage,10)||10
+        }
+        const userList = await User.paginate(query,options)
+        
         if (!userList) {
             res.status(400).json({ success: false })
         }
-        res.status(200).json({total:userList.length,userList})
+        res.status(200).json(userList)
     } catch (error) {
         logger.error(error)
     }

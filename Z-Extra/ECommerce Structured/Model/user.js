@@ -1,4 +1,5 @@
 const mongoose=require("mongoose")
+var mongoosePaginate = require('mongoose-paginate');
 const Joi=require('joi')
 
 const User=new mongoose.Schema({
@@ -56,6 +57,7 @@ const User=new mongoose.Schema({
         maxlength: 50
     }
 })
+User.plugin(mongoosePaginate)
 
 exports.User=mongoose.model('User',User)
 

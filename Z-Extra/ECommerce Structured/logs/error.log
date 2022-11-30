@@ -89,3 +89,11 @@
 2022-11-29 14:54:10:5410 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74\n" (type string) at path "_id" for model "User"
 2022-11-29 14:56:15:5615 error: Cast to ObjectId failed for value "6385cd94f4e19ee3f4f40e74      " (type string) at path "_id" for model "User"
 2022-11-29 15:01:46:146 error: That user already exists!
+2022-11-30 12:35:05:355 error: Parameter "filter" to find() must be an object, got [object Object]
+2022-11-30 13:06:45:645 error: limit is not defined
+2022-11-30 14:45:52:4552 error: req.query is not a function
+2022-11-30 14:48:11:4811 error: req.query is not a function
+2022-11-30 14:49:16:4916 error: req.query is not a function
+2022-11-30 15:15:18:1518 error: page is not defined
+2022-11-30 15:41:02:412 error: User.paginate is not a function
+2022-11-30 16:13:51:1351 error: productName is not defined

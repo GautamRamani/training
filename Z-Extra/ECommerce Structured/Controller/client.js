@@ -1,19 +1,24 @@
 const express = require('express')
-const {  Product } = require("../Model/product")
+const { Product } = require("../Model/product")
 const { User } = require("../Model/user");
 const logger = require("../config/logger")
 const router = express.Router();
 
 //Get Products
-router.get("/user/product", async (req, res) => {   
+router.get("/user/product", async (req, res) => {
     try {
-        const {page=1,limit=2}=req.query;
+        var {page,perpage}=req.query;
+        var query={}
+        var options = {
+            page:parseInt(page,10)||1,
+            limit:parseInt(perpage,10)||10
+        }
+        const getproduct = await Product.paginate(query,options)
 
-        const getproduct = await Product.find().limit(limit*1).skip((page-1)*limit)
         if (!getproduct) {
             res.status(400).send({ success: false })
         }
-        res.status(200).json({total:getproduct.length,getproduct})
+        res.status(200).json(getproduct)
     } catch (error) {
         logger.error(error)
     }
@@ -22,13 +27,18 @@ router.get("/user/product", async (req, res) => {
 //Get User Profile
 router.get("/user/profile", async (req, res) => {
     try {
-        const {page=1,limit=2}=req.query;
-
-        const userList = await User.find().limit(limit*1).skip((page-1)*limit)
+        var {page,perpage}=req.query;
+        var query={};
+        var options={
+            page:parseInt(page,10)||1,
+            limit:parseInt(perpage,10)||10
+        }
+        const userList = await User.paginate(query,options)
+        
         if (!userList) {
             res.status(400).json({ success: false })
         }
-        res.status(200).json({total:userList.length,userList})
+        res.status(200).json(userList)
     } catch (error) {
         logger.error(error)
     }

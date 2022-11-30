@@ -12,6 +12,18 @@ Information Exchange:
 
                                 Make an E-Commerce Website (SaturdayBazaar.com) APIs
 
+    pagination:-
+                var mongoosePaginate = require('mongoose-paginate');
+                Product.plugin(mongoosePaginate);
+
+                var {page,perpage}=req.query;
+        var query={}
+        var options = {
+            page:parseInt(page,10)||1,
+            limit:parseInt(perpage,10)||10
+        }
+        const getproduct = await Product.paginate(query,options)
+
 Task:-
 
 Common Routes:
