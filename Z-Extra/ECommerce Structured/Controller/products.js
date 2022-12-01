@@ -7,12 +7,21 @@ const router = express.Router();
 //Get
 router.get("/admin/product",async(req,res)=>{
     try {        
-        var {page,perpage}=req.query;
+        var {page,perpage,search}=req.body;
         var query={}
         var options = {
             page:parseInt(page,10)||1,
             limit:parseInt(perpage,10)||10
         }
+
+        if (search) {
+            const regex = { $regex: new RegExp(search,'i') };
+            query = {
+                ...query,
+                productName: regex
+            };
+        }
+        
         const getproduct = await Product.paginate(query,options)
         
         if(!getproduct){

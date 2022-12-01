@@ -7,12 +7,24 @@ const router = express.Router();
 //Get
 router.get("/admin/users", async (req, res) => {
     try {
-        var {page,perpage}=req.query;
+        var {page,perpage,search}=req.body;
         var query={};
         var options={
             page:parseInt(page,10)||1,
             limit:parseInt(perpage,10)||10
         }
+
+        if (search) {
+            const regex = { $regex: new RegExp(search,'i') };
+            query = {
+                ...query,
+                $or:[
+                    {name: regex},
+                    {email:regex}
+                ]
+            }
+        }
+        
         const userList = await User.paginate(query,options)
         
         if (!userList) {

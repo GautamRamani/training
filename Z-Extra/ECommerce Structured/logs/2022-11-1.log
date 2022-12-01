@@ -1,0 +1,2953 @@
+2022-12-01 14:09:39:939 info: Mongodb Connected
+2022-12-01 14:10:01:101 info: GET /api/user/product?searchText=jeans 200 381 - 30.824 ms
+
+2022-12-01 14:10:13:1013 info: GET /api/user/product?searchText=deni 200 51 - 17.089 ms
+
+2022-12-01 14:10:17:1017 info: GET /api/user/product?searchText=denim 200 51 - 16.277 ms
+
+2022-12-01 14:10:22:1022 info: GET /api/user/product?searchText=jea 200 381 - 16.916 ms
+
+2022-12-01 14:10:27:1027 info: GET /api/user/product?searchText=jeans 200 381 - 17.048 ms
+
+2022-12-01 14:10:56:1056 info: Mongodb Connected
+2022-12-01 14:11:00:110 info: GET /api/user/product?searchText=jeans 200 1797 - 25.408 ms
+
+2022-12-01 14:11:07:117 info: GET /api/user/product?search=jeans 200 381 - 16.525 ms
+
+2022-12-01 14:11:26:1126 info: Mongodb Connected
+2022-12-01 14:11:58:1158 info: Mongodb Connected
+2022-12-01 14:12:54:1254 info: Mongodb Connected
+2022-12-01 14:13:00:130 info: Mongodb Connected
+2022-12-01 14:13:05:135 info: Mongodb Connected
+2022-12-01 14:13:06:136 info: Mongodb Connected
+2022-12-01 14:13:08:138 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:13:12:1312 error: uncaughtException: Missing initializer in const declaration
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:49
+            const regEx
+                  ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:13:15:1315 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:13:17:1317 info: Mongodb Connected
+2022-12-01 14:13:21:1321 info: Mongodb Connected
+2022-12-01 14:13:24:1324 info: Mongodb Connected
+2022-12-01 14:13:26:1326 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:49
+            const regex={$regex:new }
+                                    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:13:28:1328 info: Mongodb Connected
+2022-12-01 14:13:31:1331 info: Mongodb Connected
+2022-12-01 14:13:33:1333 info: Mongodb Connected
+2022-12-01 14:13:35:1335 info: Mongodb Connected
+2022-12-01 14:13:38:1338 info: Mongodb Connected
+2022-12-01 14:13:40:1340 info: Mongodb Connected
+2022-12-01 14:13:43:1343 info: Mongodb Connected
+2022-12-01 14:13:45:1345 info: Mongodb Connected
+2022-12-01 14:13:47:1347 info: Mongodb Connected
+2022-12-01 14:13:51:1351 info: Mongodb Connected
+2022-12-01 14:13:55:1355 info: Mongodb Connected
+2022-12-01 14:14:02:142 info: Mongodb Connected
+2022-12-01 14:14:05:145 info: Mongodb Connected
+2022-12-01 14:14:07:147 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+            }
+            ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:14:10:1410 error: uncaughtException: Unexpected token '...'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:51
+                ...qu
+                ^^^
+
+SyntaxError: Unexpected token '...'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:14:11:1411 error: uncaughtException: Unexpected token '...'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query
+                ^^^
+
+SyntaxError: Unexpected token '...'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:14:14:1414 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:14:16:1416 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:14:23:1423 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:15:41:1541 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:15:43:1543 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:15:46:1546 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:15:51:1551 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:15:53:1553 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:15:57:1557 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:01:161 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:03:163 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:11:1611 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:12:1612 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:14:1614 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:23:1623 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:27:1627 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:30:1630 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:32:1632 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:16:35:1635 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:17:34:1734 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                email: regex
+                     ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:17:35:1735 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                email: regex
+                     ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:17:38:1738 error: uncaughtException: Unexpected token '...'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query
+                ^^^
+
+SyntaxError: Unexpected token '...'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:17:40:1740 error: uncaughtException: Rest parameter must be last formal parameter
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:52
+                ...query,
+                   ^^^^^
+
+SyntaxError: Rest parameter must be last formal parameter
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:17:47:1747 error: uncaughtException: Unexpected token '{'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:51
+            query {
+                  ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:17:49:1749 info: Mongodb Connected
+2022-12-01 14:18:00:180 info: Mongodb Connected
+2022-12-01 14:18:09:189 info: GET /api/user/product?page=1&perpage=2&search=jeans 200 380 - 43.231 ms
+
+2022-12-01 14:18:23:1823 info: GET /api/user/profile?page=1&perpage=3 200 942 - 19.456 ms
+
+2022-12-01 14:18:41:1841 info: GET /api/user/profile?page=1&perpage=3&name=yaman 200 942 - 17.354 ms
+
+2022-12-01 14:19:01:191 info: GET /api/user/profile?page=1&perpage=3&search=yaman 200 942 - 28.469 ms
+
+2022-12-01 14:20:38:2038 info: Mongodb Connected
+2022-12-01 14:20:41:2041 info: Mongodb Connected
+2022-12-01 14:20:41:2041 info: GET /api/user/profile?page=1&perpage=3&search=yaman 200 343 - 27.505 ms
+
+2022-12-01 14:20:49:2049 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 50 - 18.009 ms
+
+2022-12-01 14:21:05:215 info: GET /api/user/profile?page=1&perpage=3&search=Parimal 200 50 - 16.706 ms
+
+2022-12-01 14:21:11:2111 info: GET /api/user/profile?page=1&perpage=3&search=yaman 200 343 - 17.854 ms
+
+2022-12-01 14:21:23:2123 info: GET /api/user/profile?page=1&perpage=3&search=yaspal 200 50 - 16.427 ms
+
+2022-12-01 14:21:31:2131 info: GET /api/user/profile?page=1&perpage=3&search=yashpal 200 50 - 17.277 ms
+
+2022-12-01 14:21:40:2140 info: GET /api/user/profile?page=1&perpage=3 200 942 - 15.531 ms
+
+2022-12-01 14:22:31:2231 info: Mongodb Connected
+2022-12-01 14:22:35:2235 info: GET /api/user/profile?page=1&perpage=3&search=yashpal 200 344 - 28.410 ms
+
+2022-12-01 14:22:46:2246 info: GET /api/user/profile?page=1&perpage=3&search=yaman 200 343 - 17.859 ms
+
+2022-12-01 14:22:52:2252 info: GET /api/user/profile?page=1&perpage=3&search=ya 200 638 - 18.117 ms
+
+2022-12-01 14:23:04:234 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 50 - 18.031 ms
+
+2022-12-01 14:23:18:2318 info: GET /api/user/profile?page=1&perpage=3&search=pairmal 200 353 - 17.339 ms
+
+2022-12-01 14:24:37:2437 info: PUT /api/admin/user/6385d17fa6375eb54f6199e1 200 303 - 41.160 ms
+
+2022-12-01 14:25:52:2552 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 353 - 16.990 ms
+
+2022-12-01 14:26:45:2645 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 50 - 17.096 ms
+
+2022-12-01 14:27:20:2720 info: Mongodb Connected
+2022-12-01 14:27:23:2723 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 50 - 17.282 ms
+
+2022-12-01 14:42:36:4236 info: GET /api/user/profile?page=1&perpage=3&search=yaman123 200 50 - 12.228 ms
+
+2022-12-01 14:48:08:488 info: Mongodb Connected
+2022-12-01 14:48:15:4815 info: Mongodb Connected
+2022-12-01 14:48:20:4820 error: uncaughtException: Missing initializer in const declaration
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail
+                  ^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:48:24:4824 info: Mongodb Connected
+2022-12-01 14:48:49:4849 info: Mongodb Connected
+2022-12-01 14:48:59:4859 info: Mongodb Connected
+2022-12-01 14:49:03:493 info: Mongodb Connected
+2022-12-01 14:49:07:497 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:new RegExp(".*"+search+)}
+                                                            ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:49:12:4912 info: Mongodb Connected
+2022-12-01 14:49:13:4913 info: Mongodb Connected
+2022-12-01 14:49:18:4918 info: Mongodb Connected
+2022-12-01 14:49:21:4921 error: uncaughtException: missing ) after argument list
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:new RegExp(".*"+search+".*",options:"i")}
+                                                                 ^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:49:39:4939 info: Mongodb Connected
+2022-12-01 14:49:46:4946 info: GET /api/user/profile?page=1&perpage=3&search=yaman123 200 50 - 27.699 ms
+
+2022-12-01 14:51:52:5152 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*","i")}
+                                                         ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:52:01:521 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*","i"}
+                                                         ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:52:13:5213 error: uncaughtException: Unexpected string
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*",$"i"}
+                                                       ^^^
+
+SyntaxError: Unexpected string
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:52:17:5217 error: uncaughtException: Unexpected string
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*",$options"i"}
+                                                              ^^^
+
+SyntaxError: Unexpected string
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 14:52:19:5219 info: Mongodb Connected
+2022-12-01 14:52:23:5223 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 50 - 27.274 ms
+
+2022-12-01 14:53:52:5352 info: GET /api/user/profile?page=1&perpage=3 200 942 - 37.359 ms
+
+2022-12-01 14:53:59:5359 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 50 - 16.773 ms
+
+2022-12-01 14:55:41:5541 info: Mongodb Connected
+2022-12-01 14:55:44:5544 info: Mongodb Connected
+2022-12-01 14:55:46:5546 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 50 - 25.366 ms
+
+2022-12-01 15:01:40:140 info: Mongodb Connected
+2022-12-01 15:01:45:145 info: Mongodb Connected
+2022-12-01 15:02:14:214 info: Mongodb Connected
+2022-12-01 15:02:31:231 info: Mongodb Connected
+2022-12-01 15:02:48:248 info: Mongodb Connected
+2022-12-01 15:02:58:258 info: Mongodb Connected
+2022-12-01 15:03:05:35 info: Mongodb Connected
+2022-12-01 15:03:09:39 info: Mongodb Connected
+2022-12-01 15:03:11:311 info: Mongodb Connected
+2022-12-01 15:03:43:343 info: Mongodb Connected
+2022-12-01 15:03:52:352 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*",:"i"}
+                                                      ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:03:53:353 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*","i"}
+                                                         ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:03:54:354 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*",'"i"}
+                                                      ^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:03:56:356 error: uncaughtException: Unexpected string
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*",''"i"}
+                                                        ^^^
+
+SyntaxError: Unexpected string
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:03:58:358 error: uncaughtException: Unexpected token ','
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regex:".*"+search+".*",'',"i"}
+                                                        ^
+
+SyntaxError: Unexpected token ','
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:04:05:45 info: Mongodb Connected
+2022-12-01 15:04:08:48 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 50 - 25.015 ms
+
+2022-12-01 15:05:57:557 info: Mongodb Connected
+2022-12-01 15:06:07:67 info: Mongodb Connected
+2022-12-01 15:06:11:611 info: Mongodb Connected
+2022-12-01 15:06:19:619 info: Mongodb Connected
+2022-12-01 15:06:20:620 info: GET /api/user/profile?page=1&perpage=3&search=yaman123@gmail.com 200 343 - 42.675 ms
+
+2022-12-01 15:06:31:631 info: GET /api/user/profile?page=1&perpage=3&search=yaman123 200 343 - 18.494 ms
+
+2022-12-01 15:06:41:641 info: GET /api/user/profile?page=1&perpage=3&search=yama@ 200 50 - 17.292 ms
+
+2022-12-01 15:06:46:646 info: GET /api/user/profile?page=1&perpage=3&search=yaman@ 200 50 - 17.042 ms
+
+2022-12-01 15:06:58:658 info: Mongodb Connected
+2022-12-01 15:07:02:72 info: Mongodb Connected
+2022-12-01 15:07:04:74 info: GET /api/user/profile?page=1&perpage=3&search=yaman@ 200 50 - 31.149 ms
+
+2022-12-01 15:07:21:721 error: uncaughtException: Unexpected token ']'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                []
+                 ^
+
+SyntaxError: Unexpected token ']'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:07:22:722 error: uncaughtException: Unexpected token ']'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:55
+                ]
+                ^
+
+SyntaxError: Unexpected token ']'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:07:25:725 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:54
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:07:29:729 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:54
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:07:33:733 info: Mongodb Connected
+2022-12-01 15:07:55:755 info: Mongodb Connected
+2022-12-01 15:07:58:758 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 353 - 27.538 ms
+
+2022-12-01 15:08:02:82 info: GET /api/user/profile?page=1&perpage=3&search=yaman@ 200 50 - 27.417 ms
+
+2022-12-01 15:08:18:818 error: uncaughtException: Identifier 'regex' has already been declared
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regex = { $regex: new RegExp('^' + search + '', 'i') };
+                  ^
+
+SyntaxError: Identifier 'regex' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:08:31:831 info: Mongodb Connected
+2022-12-01 15:08:36:836 info: Mongodb Connected
+2022-12-01 15:08:41:841 info: Mongodb Connected
+2022-12-01 15:08:45:845 info: Mongodb Connected
+2022-12-01 15:08:48:848 info: Mongodb Connected
+2022-12-01 15:09:16:916 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 942 - 35.283 ms
+
+2022-12-01 15:09:33:933 info: GET /api/user/profile?searchemail=yaman@ 200 1231 - 18.546 ms
+
+2022-12-01 15:09:39:939 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 942 - 17.602 ms
+
+2022-12-01 15:09:54:954 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 942 - 18.436 ms
+
+2022-12-01 15:10:26:1026 info: Mongodb Connected
+2022-12-01 15:10:26:1026 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 942 - 206.316 ms
+
+2022-12-01 15:12:39:1239 info: Mongodb Connected
+2022-12-01 15:12:41:1241 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 942 - 46.697 ms
+
+2022-12-01 15:13:16:1316 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:48
+        if (search||) {
+                    ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:13:22:1322 error: Can't use $regexemail with String.
+2022-12-01 15:13:23:1323 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ - - - - ms
+
+2022-12-01 15:13:24:1324 info: Mongodb Connected
+2022-12-01 15:13:35:1335 info: Mongodb Connected
+2022-12-01 15:13:35:1335 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 28.188 ms
+
+2022-12-01 15:14:45:1445 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:58
+        else if()
+                ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:14:50:1450 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:14:52:1452 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:14:58:1458 info: Mongodb Connected
+2022-12-01 15:15:03:153 info: Mongodb Connected
+2022-12-01 15:15:15:1515 info: Mongodb Connected
+2022-12-01 15:15:20:1520 info: Mongodb Connected
+2022-12-01 15:15:29:1529 info: Mongodb Connected
+2022-12-01 15:15:41:1541 info: Mongodb Connected
+2022-12-01 15:15:52:1552 info: Mongodb Connected
+2022-12-01 15:15:54:1554 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 27.750 ms
+
+2022-12-01 15:16:32:1632 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:48
+        if (search||) {
+                    ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:16:39:1639 info: Mongodb Connected
+2022-12-01 15:16:48:1648 info: Mongodb Connected
+2022-12-01 15:16:53:1653 info: Mongodb Connected
+2022-12-01 15:16:57:1657 info: Mongodb Connected
+2022-12-01 15:16:58:1658 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 26.134 ms
+
+2022-12-01 15:17:09:179 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:17:10:1710 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:58
+        if()
+           ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:17:12:1712 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:58
+        if(){
+           ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:17:14:1714 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+        if(){
+           ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:17:20:1720 info: Mongodb Connected
+2022-12-01 15:17:26:1726 info: Mongodb Connected
+2022-12-01 15:17:31:1731 info: Mongodb Connected
+2022-12-01 15:17:37:1737 info: Mongodb Connected
+2022-12-01 15:17:39:1739 info: Mongodb Connected
+2022-12-01 15:18:58:1858 info: Mongodb Connected
+2022-12-01 15:19:01:191 info: Mongodb Connected
+2022-12-01 15:19:02:192 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 24.748 ms
+
+2022-12-01 15:19:04:194 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 16.128 ms
+
+2022-12-01 15:19:13:1913 info: Mongodb Connected
+2022-12-01 15:19:16:1916 info: Mongodb Connected
+2022-12-01 15:19:20:1920 info: Mongodb Connected
+2022-12-01 15:19:23:1923 info: Mongodb Connected
+2022-12-01 15:19:24:1924 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 24.410 ms
+
+2022-12-01 15:19:37:1937 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 16.391 ms
+
+2022-12-01 15:20:17:2017 info: Mongodb Connected
+2022-12-01 15:20:17:2017 info: GET /api/user/profile?page=1&perpage=3&searchemail=yaman@ 200 50 - 257.867 ms
+
+2022-12-01 15:20:30:2030 info: Mongodb Connected
+2022-12-01 15:20:36:2036 info: Mongodb Connected
+2022-12-01 15:20:43:2043 info: GET /api/user/profile?page=1&perpage=3&search=yaman@ 200 50 - 26.083 ms
+
+2022-12-01 15:21:23:2123 info: GET /api/user/profile?page=1&perpage=3&search=yaman@123gmail.com 200 50 - 20.056 ms
+
+2022-12-01 15:21:34:2134 info: Mongodb Connected
+2022-12-01 15:21:38:2138 info: Mongodb Connected
+2022-12-01 15:21:40:2140 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 353 - 29.303 ms
+
+2022-12-01 15:21:54:2154 info: Mongodb Connected
+2022-12-01 15:22:14:2214 info: Mongodb Connected
+2022-12-01 15:22:15:2215 info: GET /api/user/profile?page=1&perpage=3&search=yaman@123gmail.com 200 50 - 26.109 ms
+
+2022-12-01 15:22:40:2240 info: Mongodb Connected
+2022-12-01 15:22:47:2247 info: Mongodb Connected
+2022-12-01 15:22:50:2250 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 353 - 29.188 ms
+
+2022-12-01 15:23:00:230 info: Mongodb Connected
+2022-12-01 15:23:11:2311 info: Mongodb Connected
+2022-12-01 15:24:22:2422 info: Mongodb Connected
+2022-12-01 15:24:23:2423 info: GET /api/user/profile?page=1&perpage=3&search=parimal 200 353 - 33.455 ms
+
+2022-12-01 15:24:29:2429 info: GET /api/user/profile?page=1&perpage=3&search=yaman@123gmail.com 200 50 - 18.417 ms
+
+2022-12-01 15:24:55:2455 info: GET /api/user/profile?search=parimal 200 354 - 22.313 ms
+
+2022-12-01 15:25:19:2519 info: GET /api/user/profile?search=parimal@ 200 51 - 17.849 ms
+
+2022-12-01 15:25:34:2534 info: GET /api/user/profile?search=yaman@123gmail.com 200 51 - 17.419 ms
+
+2022-12-01 15:26:04:264 info: Mongodb Connected
+2022-12-01 15:26:41:2641 info: Mongodb Connected
+2022-12-01 15:26:58:2658 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:04:274 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:08:278 info: Mongodb Connected
+2022-12-01 15:27:25:2725 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:29:2729 info: Mongodb Connected
+2022-12-01 15:27:37:2737 info: Mongodb Connected
+2022-12-01 15:27:38:2738 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+            email:{$regex:}
+                          ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:40:2740 info: Mongodb Connected
+2022-12-01 15:27:43:2743 info: Mongodb Connected
+2022-12-01 15:27:46:2746 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+            email:{$regex:'.*''.*}
+                              ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:50:2750 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+            email:{$regex:'.*'+'.*}
+                               ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:53:2753 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+            email:{$regex:'.*'+searchemail'.*}
+                                          ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:27:54:2754 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+            email:{$regex:'.*'+searchemail+'.*}
+                                           ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:28:18:2818 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+                email:{$regex:'.*'+searchemail+'.*}
+                                               ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:28:24:2824 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+                email:{$regex:'.*'+searchemail+'.*}
+                                               ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:28:27:2827 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:60
+                email:{$regex:'.*'+searchemail+'.*}
+                                               ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:28:30:2830 error: uncaughtException: Invalid or unexpected token
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+                email:{$regex:'.*'+searchemail+'.*}
+                                               ^^^^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:28:52:2852 info: Mongodb Connected
+2022-12-01 15:29:52:2952 error: uncaughtException: Invalid destructuring assignment target
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+                const{$regex:'.*'+searchemail+'.*'}
+                             ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid destructuring assignment target
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:29:53:2953 error: uncaughtException: Invalid destructuring assignment target
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+                const {$regex:'.*'+searchemail+'.*'}
+                              ^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid destructuring assignment target
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:30:00:300 error: uncaughtException: Missing initializer in const declaration
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+                const regex{$regex:'.*'+searchemail+'.*'}
+                      ^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:30:03:303 info: Mongodb Connected
+2022-12-01 15:30:16:3016 info: Mongodb Connected
+2022-12-01 15:30:24:3024 info: GET /api/user/profile?searchemail=yaman@123gmail.com 200 51 - 17.884 ms
+
+2022-12-01 15:31:14:3114 info: Mongodb Connected
+2022-12-01 15:31:20:3120 info: Mongodb Connected
+2022-12-01 15:31:26:3126 info: GET /api/user/profile?searchemail=yaman@123gmail.com 200 51 - 17.870 ms
+
+2022-12-01 15:31:35:3135 info: Mongodb Connected
+2022-12-01 15:31:37:3137 info: Mongodb Connected
+2022-12-01 15:31:41:3141 info: GET /api/user/profile?search=parimal 200 354 - 30.733 ms
+
+2022-12-01 15:31:46:3146 info: GET /api/user/profile?searchemail=yaman@123gmail.com 200 1231 - 11.026 ms
+
+2022-12-01 15:33:42:3342 info: Mongodb Connected
+2022-12-01 15:33:47:3347 info: Mongodb Connected
+2022-12-01 15:33:55:3355 info: Mongodb Connected
+2022-12-01 15:34:14:3414 info: GET /api/user/profile?search=yaman@123gmail.com 200 51 - 24.300 ms
+
+2022-12-01 15:34:38:3438 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}')
+                                  ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:34:41:3441 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regegnew RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}')
+                                        ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:34:44:3444 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:50
+            const regexemail={$regexnew RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}')
+                                        ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:34:45:3445 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:51
+            query = {
+            ^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:34:56:3456 info: Mongodb Connected
+2022-12-01 15:34:56:3456 info: GET /api/user/profile?search=yaman@123gmail.com 200 51 - 1087.073 ms
+
+2022-12-01 15:35:12:3512 info: Mongodb Connected
+2022-12-01 15:35:17:3517 info: Mongodb Connected
+2022-12-01 15:35:17:3517 info: GET /api/user/profile?search=yaman@123gmail.com 200 51 - 29.049 ms
+
+2022-12-01 15:35:37:3537 info: Mongodb Connected
+2022-12-01 15:36:08:368 info: Mongodb Connected
+2022-12-01 15:36:13:3613 info: Mongodb Connected
+2022-12-01 15:36:16:3616 info: Mongodb Connected
+2022-12-01 15:36:25:3625 info: Mongodb Connected
+2022-12-01 15:36:31:3631 info: GET /api/user/profile?search=parimal 200 354 - 28.341 ms
+
+2022-12-01 15:36:42:3642 info: Mongodb Connected
+2022-12-01 15:37:18:3718 info: Mongodb Connected
+2022-12-01 15:37:31:3731 info: Mongodb Connected
+2022-12-01 15:38:07:387 info: Mongodb Connected
+2022-12-01 15:38:19:3819 info: Mongodb Connected
+2022-12-01 15:38:23:3823 info: Mongodb Connected
+2022-12-01 15:39:03:393 info: GET /api/admin/users?page=1&perpage=3&search=yaman 200 343 - 28.894 ms
+
+2022-12-01 15:39:34:3934 info: GET /api/admin/product?page=1&perpage=3&search=trowser 200 428 - 17.819 ms
+
+2022-12-01 15:43:35:4335 info: Mongodb Connected
+2022-12-01 15:43:36:4336 error: uncaughtException: Missing initializer in const declaration
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:20
+            const rege
+                  ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:43:38:4338 error: uncaughtException: Identifier 'regex' has already been declared
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:20
+            const regex=
+                  ^
+
+SyntaxError: Identifier 'regex' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:44:37:4437 info: Mongodb Connected
+2022-12-01 15:44:39:4439 info: Mongodb Connected
+2022-12-01 15:44:44:4444 info: Mongodb Connected
+2022-12-01 15:44:51:4451 info: Mongodb Connected
+2022-12-01 15:44:53:4453 info: Mongodb Connected
+2022-12-01 15:44:55:4455 info: Mongodb Connected
+2022-12-01 15:44:58:4458 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:20
+            const regexemail={$regex:new RegExp('.*'+)}
+                                                     ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:45:06:456 info: Mongodb Connected
+2022-12-01 15:45:07:457 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:20
+            const regexemail={$regex:new RegExp('.*'+searchemail+)}
+                                                                 ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:45:10:4510 info: Mongodb Connected
+2022-12-01 15:45:13:4513 info: Mongodb Connected
+2022-12-01 15:45:20:4520 info: Mongodb Connected
+2022-12-01 15:45:38:4538 info: Mongodb Connected
+2022-12-01 15:45:40:4540 info: Mongodb Connected
+2022-12-01 15:45:51:4551 info: Mongodb Connected
+2022-12-01 15:45:57:4557 info: Mongodb Connected
+2022-12-01 15:45:59:4559 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:20
+            const regexemail={$regex:new RegExp('.*'+)}
+                                                     ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:46:00:460 info: Mongodb Connected
+2022-12-01 15:46:02:462 info: Mongodb Connected
+2022-12-01 15:46:10:4610 info: Mongodb Connected
+2022-12-01 15:46:12:4612 info: Mongodb Connected
+2022-12-01 15:46:13:4613 info: Mongodb Connected
+2022-12-01 15:46:32:4632 info: Mongodb Connected
+2022-12-01 15:46:40:4640 info: Mongodb Connected
+2022-12-01 15:46:46:4646 info: Mongodb Connected
+2022-12-01 15:46:49:4649 info: Mongodb Connected
+2022-12-01 15:46:52:4652 info: Mongodb Connected
+2022-12-01 15:46:58:4658 info: Mongodb Connected
+2022-12-01 15:47:00:470 info: Mongodb Connected
+2022-12-01 15:47:09:479 info: Mongodb Connected
+2022-12-01 15:47:28:4728 info: GET /api/user/product?page=1&perpage=2&searchemail=yaman@123gmail.com 200 759 - 32.810 ms
+
+2022-12-01 15:48:03:483 info: GET /api/user/profile?searchemail=yaman@123gmail.com 200 51 - 23.747 ms
+
+2022-12-01 15:51:01:511 info: GET /api/user/profile?searchemail=yaman123@gmail.com 200 51 - 17.142 ms
+
+2022-12-01 15:52:58:5258 info: Mongodb Connected
+2022-12-01 15:53:06:536 info: Mongodb Connected
+2022-12-01 15:53:07:537 error: uncaughtException: Unexpected token '}'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:56
+            }
+            ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:53:11:5311 info: Mongodb Connected
+2022-12-01 15:53:28:5328 info: GET /api/user/profile?search=puna 200 51 - 26.125 ms
+
+2022-12-01 15:53:39:5339 info: Mongodb Connected
+2022-12-01 15:53:39:5339 info: GET /api/user/profile?search=puna 200 344 - 823.850 ms
+
+2022-12-01 15:53:46:5346 info: GET /api/user/profile?search=punagam 200 344 - 18.034 ms
+
+2022-12-01 15:54:14:5414 info: GET /api/user/profile?search=jakatnak 200 354 - 17.797 ms
+
+2022-12-01 15:54:31:5431 info: Mongodb Connected
+2022-12-01 15:54:35:5435 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:54:37:5437 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:54:40:5440 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 15:54:42:5442 info: Mongodb Connected
+2022-12-01 15:54:53:5453 info: Mongodb Connected
+2022-12-01 15:54:56:5456 info: Mongodb Connected
+2022-12-01 15:55:04:554 info: Mongodb Connected
+2022-12-01 15:55:06:556 info: Mongodb Connected
+2022-12-01 15:55:09:559 info: Mongodb Connected
+2022-12-01 15:55:20:5520 info: Mongodb Connected
+2022-12-01 15:55:35:5535 info: GET /api/user/profile?searchemail=yaman123@gmail.com 200 51 - 29.186 ms
+
+2022-12-01 15:59:16:5916 info: Mongodb Connected
+2022-12-01 16:03:59:359 info: Mongodb Connected
+2022-12-01 16:04:06:46 info: Mongodb Connected
+2022-12-01 16:04:28:428 info: GET /api/user/profile?search=parimal 200 354 - 30.814 ms
+
+2022-12-01 16:04:36:436 info: Mongodb Connected
+2022-12-01 16:09:44:944 info: Mongodb Connected
+2022-12-01 16:09:48:948 info: Mongodb Connected
+2022-12-01 16:10:29:1029 info: Mongodb Connected
+2022-12-01 16:12:05:125 info: Mongodb Connected
+2022-12-01 16:12:11:1211 info: Mongodb Connected
+2022-12-01 16:12:16:1216 info: Mongodb Connected
+2022-12-01 16:12:38:1238 info: Mongodb Connected
+2022-12-01 16:12:49:1249 info: Mongodb Connected
+2022-12-01 16:12:51:1251 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:61
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 16:12:53:1253 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:59
+        if()
+           ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 16:12:57:1257 error: uncaughtException: Unexpected token 'const'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:61
+        const userList = await User.paginate(query, options)
+        ^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 16:12:59:1259 info: Mongodb Connected
+2022-12-01 16:13:06:136 info: Mongodb Connected
+2022-12-01 16:13:09:139 info: Mongodb Connected
+2022-12-01 16:13:19:1319 info: Mongodb Connected
+2022-12-01 16:13:22:1322 info: Mongodb Connected
+2022-12-01 16:13:31:1331 info: Mongodb Connected
+2022-12-01 16:32:05:325 info: Mongodb Connected
+2022-12-01 16:35:15:3515 info: Mongodb Connected
+2022-12-01 16:35:57:3557 error: Cannot read property 'push' of undefined
+2022-12-01 16:35:58:3558 info: GET /api/user/profile?search=parimal - - - - ms
+
+2022-12-01 16:36:08:368 info: Mongodb Connected
+2022-12-01 16:36:11:3611 error: search.$or is not a function
+2022-12-01 16:36:12:3612 info: GET /api/user/profile?search=parimal - - - - ms
+
+2022-12-01 16:36:43:3643 info: Mongodb Connected
+2022-12-01 16:37:16:3716 info: Mongodb Connected
+2022-12-01 16:37:26:3726 info: Mongodb Connected
+2022-12-01 16:37:32:3732 info: Mongodb Connected
+2022-12-01 16:37:36:3736 info: Mongodb Connected
+2022-12-01 16:37:45:3745 info: Mongodb Connected
+2022-12-01 16:37:48:3748 info: Mongodb Connected
+2022-12-01 16:37:55:3755 info: Mongodb Connected
+2022-12-01 16:38:01:381 info: Mongodb Connected
+2022-12-01 16:38:18:3818 error: query.push is not a function
+2022-12-01 16:38:20:3820 info: GET /api/user/profile?name=parimal - - - - ms
+
+2022-12-01 16:38:23:3823 error: query.push is not a function
+2022-12-01 16:38:24:3824 info: GET /api/user/profile?name=parimal - - - - ms
+
+2022-12-01 16:38:38:3838 info: Mongodb Connected
+2022-12-01 16:38:57:3857 error: query.push is not a function
+2022-12-01 16:38:58:3858 info: GET /api/user/profile - - - - ms
+
+2022-12-01 16:39:21:3921 info: Mongodb Connected
+2022-12-01 16:39:25:3925 info: Mongodb Connected
+2022-12-01 16:40:29:4029 error: userQueryOr is not defined
+2022-12-01 16:40:30:4030 info: GET /api/user/profile - - - - ms
+
+2022-12-01 16:40:38:4038 info: Mongodb Connected
+2022-12-01 16:40:38:4038 info: GET /api/user/profile 200 1231 - 1158.598 ms
+
+2022-12-01 16:42:03:423 info: Mongodb Connected
+2022-12-01 16:43:17:4317 info: Mongodb Connected
+2022-12-01 16:43:18:4318 error: userQueryOr is not defined
+2022-12-01 16:43:20:4320 info: GET /api/user/profile - - - - ms
+
+2022-12-01 16:43:28:4328 info: Mongodb Connected
+2022-12-01 16:43:30:4330 info: GET /api/user/profile 200 1244 - 28.180 ms
+
+2022-12-01 16:43:41:4341 error: uncaughtException: Unexpected token '('
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:64
+        res.status(200).({userList})
+                        ^
+
+SyntaxError: Unexpected token '('
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 16:43:51:4351 info: Mongodb Connected
+2022-12-01 16:43:51:4351 info: GET /api/user/profile 200 1244 - 399.494 ms
+
+2022-12-01 16:44:01:441 info: Mongodb Connected
+2022-12-01 16:44:03:443 info: GET /api/user/profile 200 1244 - 29.077 ms
+
+2022-12-01 16:44:16:4416 error: uncaughtException: Unexpected token ')'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:64
+        res.status(200).json({userList)
+                                      ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 16:44:21:4421 info: Mongodb Connected
+2022-12-01 16:44:25:4425 info: GET /api/user/profile 200 1231 - 29.795 ms
+
+2022-12-01 16:48:53:4853 info: Mongodb Connected
+2022-12-01 16:49:30:4930 info: Mongodb Connected
+2022-12-01 16:49:36:4936 info: Mongodb Connected
+2022-12-01 16:49:43:4943 info: Mongodb Connected
+2022-12-01 16:50:13:5013 error: Cannot read property '$or' of undefined
+2022-12-01 16:50:13:5013 info: GET /api/user/profile?name=parimal - - - - ms
+
+2022-12-01 16:50:30:5030 info: Mongodb Connected
+2022-12-01 16:50:36:5036 info: Mongodb Connected
+2022-12-01 16:50:42:5042 info: Mongodb Connected
+2022-12-01 16:50:46:5046 info: GET /api/user/profile?search=parimal 200 354 - 27.724 ms
+
+2022-12-01 16:56:13:5613 info: Mongodb Connected
+2022-12-01 16:56:32:5632 info: GET /api/user/profile?search=parimal123@gmail.com 200 51 - 37.857 ms
+
+2022-12-01 16:57:14:5714 info: Mongodb Connected
+2022-12-01 16:57:18:5718 info: Mongodb Connected
+2022-12-01 16:57:23:5723 error: uncaughtException: missing ) after argument list
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:49
+            const regex = { $regex: new RegExp(search'i') };
+                                               ^^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 16:57:25:5725 info: Mongodb Connected
+2022-12-01 16:57:28:5728 info: GET /api/user/profile?search=parimal123@gmail.com 200 51 - 36.580 ms
+
+2022-12-01 16:57:31:5731 info: GET /api/user/profile?search=parimal123@gmail.com 200 51 - 18.010 ms
+
+2022-12-01 16:57:39:5739 info: Mongodb Connected
+2022-12-01 16:57:39:5739 info: GET /api/user/profile?search=parimal123@gmail.com 200 354 - 32.745 ms
+
+2022-12-01 16:58:21:5821 info: GET /api/user/profile?search=parimal123@ 200 354 - 19.909 ms
+
+2022-12-01 16:59:06:596 info: Mongodb Connected
+2022-12-01 16:59:06:596 info: GET /api/user/profile?search=parimal123@ 200 51 - 25.212 ms
+
+2022-12-01 17:00:06:06 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                name: regex,
+                ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:08:08 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                name: regex,
+                ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:11:011 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:55
+                name: regex,
+                ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:19:019 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:21:021 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:22:022 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:53
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:26:026 error: uncaughtException: Unexpected token ']'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:55
+                ]
+                ^
+
+SyntaxError: Unexpected token ']'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:28:028 error: uncaughtException: Unexpected token '{'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:54
+                    {email:regex
+                    ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:31:031 error: uncaughtException: Unexpected token '{'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\client.js:54
+                    {email:regex}
+                    ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:10:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\app.js:24:18)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+2022-12-01 17:00:33:033 info: Mongodb Connected
+2022-12-01 17:01:51:151 info: GET /api/user/profile?search=parimal123@ 200 354 - 26.764 ms
+
+2022-12-01 17:01:56:156 info: GET /api/user/profile?search=parimal 200 354 - 19.194 ms
+
+2022-12-01 17:02:13:213 info: GET /api/user/profile?search=parimal123@gmail.com 200 354 - 18.207 ms
+
+2022-12-01 17:02:44:244 info: Mongodb Connected
+2022-12-01 17:02:45:245 info: GET /api/user/profile?search=parimal123@gmail.com 200 354 - 31.672 ms
+
+2022-12-01 17:02:53:253 info: Mongodb Connected
+2022-12-01 17:05:40:540 info: Mongodb Connected
+2022-12-01 17:05:56:556 info: GET /api/user/profile?search=parimal123@gmail.com 200 1231 - 25.754 ms
+
+2022-12-01 17:06:42:642 info: GET /api/user/profile 200 942 - 24.026 ms
+
+2022-12-01 17:07:14:714 info: GET /api/user/profile 400 1109 - 1.877 ms
+
+2022-12-01 17:07:28:728 info: GET /api/user/profile 200 942 - 13.596 ms
+
+2022-12-01 17:07:45:745 info: GET /api/user/profile 200 1231 - 12.464 ms
+
+2022-12-01 17:07:52:752 info: GET /api/user/profile 200 344 - 15.775 ms
+
+2022-12-01 17:07:58:758 info: GET /api/user/profile 200 354 - 14.081 ms
+
+2022-12-01 17:08:07:87 info: GET /api/user/profile 200 354 - 13.996 ms
+
+2022-12-01 17:08:29:829 info: Mongodb Connected
+2022-12-01 17:09:36:936 info: Mongodb Connected
+2022-12-01 17:09:49:949 info: Mongodb Connected
+2022-12-01 17:10:43:1043 info: Mongodb Connected
+2022-12-01 17:11:48:1148 info: Mongodb Connected
+2022-12-01 17:15:01:151 info: GET /api/user/profile 200 344 - 57.435 ms
+
+2022-12-01 17:15:23:1523 info: GET /api/user/profile 400 1110 - 1.548 ms
+
+2022-12-01 17:15:41:1541 info: GET /api/user/profile 200 354 - 17.230 ms
+
+2022-12-01 17:19:16:1916 info: Mongodb Connected
+2022-12-01 17:19:23:1923 info: Mongodb Connected
+2022-12-01 17:19:29:1929 info: Mongodb Connected
+2022-12-01 17:19:31:1931 info: Mongodb Connected
+2022-12-01 17:19:36:1936 info: Mongodb Connected
+2022-12-01 17:19:39:1939 info: Mongodb Connected
+2022-12-01 17:27:41:2741 info: Mongodb Connected
+2022-12-01 17:27:42:2742 info: GET /api/user/profile 200 942 - 36.956 ms
+
+2022-12-01 17:28:38:2838 info: GET /api/user/profile 200 337 - 18.690 ms
+
+2022-12-01 17:28:43:2843 info: GET /api/user/profile 200 942 - 21.223 ms
+
+2022-12-01 17:30:22:3022 info: GET /api/user/profile 200 344 - 23.350 ms
+
+2022-12-01 17:30:54:3054 info: GET /api/user/product 200 1797 - 25.583 ms
+
+2022-12-01 17:31:07:317 info: Mongodb Connected
+2022-12-01 17:32:37:3237 info: GET /api/user/product 200 1081 - 38.877 ms
+
+2022-12-01 17:32:44:3244 info: GET /api/user/product 200 764 - 16.905 ms
+
+2022-12-01 17:32:56:3256 info: GET /api/user/product 200 1081 - 23.450 ms
+
+2022-12-01 17:33:06:336 info: GET /api/user/product 200 1081 - 17.174 ms
+
+2022-12-01 17:33:21:3321 info: GET /api/user/product 200 1081 - 17.619 ms
+
+2022-12-01 17:34:08:348 info: Mongodb Connected
+2022-12-01 17:34:37:3437 info: Mongodb Connected
+2022-12-01 17:34:48:3448 info: GET /api/user/product 200 1081 - 37.282 ms
+
+2022-12-01 17:35:13:3513 info: Mongodb Connected
+2022-12-01 17:35:40:3540 info: GET /api/admin/product 200 1081 - 37.451 ms
+
+2022-12-01 17:35:53:3553 info: GET /api/admin/product 200 764 - 16.121 ms
+
+2022-12-01 17:36:04:364 info: GET /api/admin/product 200 1081 - 16.583 ms
+
+2022-12-01 17:37:54:3754 info: Mongodb Connected
+2022-12-01 17:37:59:3759 info: Mongodb Connected
+2022-12-01 17:38:00:380 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:22
+                name: regex,
+                ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:03:383 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:24
+                name: regex,
+                ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:05:385 error: uncaughtException: Invalid shorthand property initializer
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or={
+                ^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:06:386 error: uncaughtException: Invalid shorthand property initializer
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or={
+                ^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:11:3811 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:22
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:14:3814 error: uncaughtException: Unexpected token ':'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:22
+                    name: regex,
+                        ^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:17:3817 error: uncaughtException: Unexpected identifier
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:24
+                    name: regex,
+                    ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:24:3824 error: uncaughtException: Unexpected token '{'
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:24
+                    {name: regex},
+                    ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:26:3826 error: uncaughtException: Invalid shorthand property initializer
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or=[
+                ^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:28:3828 error: uncaughtException: Invalid shorthand property initializer
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or=[
+                ^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:39:3839 error: uncaughtException: Invalid shorthand property initializer
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or=[
+                ^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:41:3841 error: uncaughtException: Invalid shorthand property initializer
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or=[
+                ^^^^^
+
+SyntaxError: Invalid shorthand property initializer
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:45:3845 error: uncaughtException: Unexpected token '['
+D:\GautamRamani\Z-Extra\ECommerce Structured\Controller\users.js:21
+                $or[
+                   ^
+
+SyntaxError: Unexpected token '['
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\Route\index.js:4:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+2022-12-01 17:38:47:3847 info: Mongodb Connected
+2022-12-01 17:38:51:3851 info: Mongodb Connected
+2022-12-01 17:39:24:3924 info: Mongodb Connected
+2022-12-01 17:39:26:3926 info: GET /api/admin/users 200 942 - 45.690 ms
+
+2022-12-01 17:39:33:3933 info: GET /api/admin/users 200 337 - 19.618 ms
+
+2022-12-01 17:39:38:3938 info: GET /api/admin/users 200 942 - 18.689 ms
+
+2022-12-01 17:40:05:405 info: GET /api/admin/users 200 1231 - 18.357 ms
+
+2022-12-01 17:40:21:4021 info: GET /api/admin/users 200 354 - 18.878 ms
+
+2022-12-01 17:40:30:4030 info: GET /api/admin/users 200 354 - 18.617 ms
+
+2022-12-01 17:41:51:4151 info: Mongodb Connected
+2022-12-01 17:41:58:4158 info: Mongodb Connected

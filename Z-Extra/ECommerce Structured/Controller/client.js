@@ -1,26 +1,24 @@
 const express = require('express')
 const { Product } = require("../Model/product")
 const { User } = require("../Model/user");
-const logger = require("../config/logger")
+const logger = require("../config/logger");
 const router = express.Router();
 
 //Get Products
 router.get("/user/product", async (req, res) => {
     try {
-        var { page, perpage, searchText } = req.query;
+        var { page, perpage, search } = req.body;
         var query = {}
         var options = {
             page: parseInt(page, 10) || 1,
             limit: parseInt(perpage, 10) || 10
         }
 
-        if (searchText) {
-            const regex = { $regex: new RegExp('^' + searchText + '', 'i') };
+        if (search) {
+            const regex = { $regex: new RegExp(search,'i') };
             query = {
                 ...query,
-
                 productName: regex
-
             };
         }
 
@@ -36,35 +34,27 @@ router.get("/user/product", async (req, res) => {
     }
 })
 
-router.get("/user/product/search", async (req, res) => {
-    try {
-        var { page, perpage } = req.query;
-        var query = {}
-        var options = {
-            page: parseInt(page, 10) || 1,
-            limit: parseInt(perpage, 10) || 10
-        }
-        const getproduct = await Product.paginate(query, options)
-
-        if (!getproduct) {
-            res.status(400).send({ success: false })
-        }
-        res.status(200).json(getproduct)
-    } catch (error) {
-        logger.error(error)
-    }
-})
-
-
 //Get User Profile
 router.get("/user/profile", async (req, res) => {
     try {
-        var { page, perpage } = req.query;
+        var { page, perpage, search } = req.body;
         var query = {};
         var options = {
             page: parseInt(page, 10) || 1,
             limit: parseInt(perpage, 10) || 10
         }
+
+        if (search) {
+            const regex = { $regex: new RegExp(search,'i') };
+            query = {
+                ...query,
+                $or:[
+                    {name: regex},
+                    {email:regex}
+                ]
+            }
+        }
+
         const userList = await User.paginate(query, options)
 
         if (!userList) {
