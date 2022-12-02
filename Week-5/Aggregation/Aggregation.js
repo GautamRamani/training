@@ -6,7 +6,7 @@
 // Size
 // db.getCollection("aggregate").find({students:{$size:4}})
 
-// Gropup :-
+// Group :-
 
 //    With the $group stage, we can perform all the aggregation or summary queries that we need, such as finding counts, totals, averages or maximums.
 
@@ -177,12 +177,3 @@
 //db.getCollection("aggregate").getIndexes()
 
 //db.getCollection("aggregate").find({name:"UPSA"}).explain("executionStats")
-
-
-
-
-
-
-
-
-
