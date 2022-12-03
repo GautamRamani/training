@@ -1,0 +1,13 @@
+2022-12-03 17:39:48:3948 info: Mongodb Connected
+2022-12-03 17:40:00:400 info: Mongodb Connected
+2022-12-03 17:40:34:4034 info: POST /login 200 248 - 127.533 ms
+
+2022-12-03 17:40:44:4044 info: GET /api/admin/users 200 354 - 24.115 ms
+
+2022-12-03 17:40:51:4051 info: GET /api/admin/product 200 1081 - 22.965 ms
+
+2022-12-03 17:40:58:4058 info: GET /api/user/product 200 1081 - 24.685 ms
+
+2022-12-03 17:41:03:413 info: GET /api/user/profile 200 344 - 28.320 ms
+
+2022-12-03 17:41:27:4127 info: Mongodb Connected

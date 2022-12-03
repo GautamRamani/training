@@ -1,0 +1,66 @@
+Helmet:-
+    Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help!
+
+xss-clean:-
+    Node.js Connect middleware to sanitize user input coming from POST body, GET queries, and url params. Works with Express, Restify, or any other Connect app.
+
+compression:-
+    The middleware will attempt to compress response bodies for all request that traverse through the middleware, based on the given options.
+
+cors(Cross-Origin Resource Sharing):-
+    enable the express server to respond to preflight requests. A preflight request is basically an OPTION request sent to the server before the actual request is sent, in order to ask which origin and which request options the server accepts.
+
+HTTP status code:-
+    Once you require this module, you may call it with either an HTTP code or a message name. With an HTTP code, you will get the message name while with a message name you will get an HTTP code.
+    Similar to HTTP codes, you can access class names and messages with the property {class}_NAME and {class}_MESSAGE
+
+cookie-parser:-
+    cookie-parser is a middleware which parses cookies attached to the client request object. To use it, we will require it in our index. js file, this can be used the same way as we use other middleware.
+
+cross-env:-
+
+    The problem
+    Most Windows command prompts will choke when you set environment variables with NODE_ENV=production like that. (The exception is Bash on Windows, which uses native Bash.) Similarly, there's a difference in how windows and POSIX commands utilize environment variables. With POSIX, you use: $ENV_VAR and on windows you use %ENV_VAR%.
+
+    This solution
+    cross-env makes it so you can have a single command without worrying about setting or using the environment variable properly for the platform. Just set it like you would if it's running on a POSIX system, and cross-env will take care of setting it properly.
+
+    POSIX, the Portable Operating System Interface, defines the standard APIs for Unix. It's adopted in Unix-based operating systems and beyond.
+
+Express Mongoose Sanitize:-
+
+    This module searches for any keys in objects that begin with a $ sign or contain a ., from req.body, req.query or req.params. It can then either:
+
+        completely remove these keys and associated data from the object, or
+        replace the prohibited characters with another allowed character.
+
+express-rate-limit:-
+    Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints such as password reset. Plays nice with express-slow-down.
+
+jimp:=
+    The "JavaScript Image Manipulation Program" :-)
+
+    An image processing library for Node written entirely in JavaScript, with zero native dependencies.
+
+    The default jimp configuration.
+    Supported types:
+
+    @jimp/jpeg
+    @jimp/png
+    @jimp/bmp
+    @jimp/tiff
+    @jimp/gif
+
+joi:-   
+    The most powerful schema description language and data validator for JavaScript.
+
+jsonwebtoken:-
+    jwt.sign(payload, secretOrPrivateKey, [options, callback])
+
+moment:-
+    A JavaScript date library for parsing, validating, manipulating, and formatting dates.
+
+twilio:-
+    The twilio-node helper library lets you write Node. js code to make HTTP requests to the Twilio API. This library is open-source, so if you find a feature missing or a bug, we encourage you to file an issue or contribute back to the twilio-node project.
+
+     provides programmable communication tools for making and receiving phone calls, sending and receiving text messages, and performing other communication functions

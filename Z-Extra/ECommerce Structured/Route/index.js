@@ -1,12 +1,41 @@
-const express=require('express')
-const router=express.Router()
+const router=require('express').Router();
 
-router.use("/api",require("../Controller/users"))
-router.use("/api",require("../Controller/products"))
-router.use("/register",require("../Controller/register"))
-router.use("/login",require("../Controller/login"))
+const userRoutes=require("../Controller/users")
+const productsRoutes=require("../Controller/products")
+const registerRoutes=require("../Controller/register")
+const loginRoutes=require("../Controller/login")
 
-//Client Side
-router.use("/api",require("../Controller/client"))
+//client
+const clientRoutes=require("../Controller/client")
+
+
+const appRoutes=[
+    {
+        path:"/api",
+        routes:userRoutes
+    },
+    {
+        path:"/api",
+        routes:productsRoutes
+    },
+    {
+        path:"/register",
+        routes:registerRoutes
+    },
+    {
+        path:"/login",
+        routes:loginRoutes
+    },
+
+        //Client Side
+    {
+        path:"/api",
+        routes:clientRoutes
+    },
+]
+
+appRoutes.forEach(({path,routes})=>{
+    router.use(path,routes)
+})
 
 module.exports=router;
