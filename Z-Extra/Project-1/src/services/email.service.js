@@ -25,6 +25,7 @@ class EmailServices {
   }
   
   sendOtpByEmail(to, otp){
+    console.log(to,otp)
     const template = sendOtpTemplate({ otp })
     const subject = 'Account Verification';
     this.sendEmail(

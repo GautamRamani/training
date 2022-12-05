@@ -8,17 +8,18 @@ const { AuthServices, UserServices, EmailServices, TokenServices } = require("..
 const ErrorHandler = require("../utils/errorHandler");
 const { formateMessage } = require("../utils/helpers");
 
-class AuthController extends ErrorHandler{
+class AuthController extends ErrorHandler {
 
   async sendOTP(req, res, next) {
-    const {  email  = '' } = req.body
+    // console.log(req.body)
+    const { email='' } = req.body
     const OTP = await AuthServices.generateOTP();
     const expiryTime = Date.now() + config.OTPExpiryDefaultTime;
     const hashedOTP = await AuthServices.bcryptText(`${email}.${OTP}.${expiryTime}`);
     AuthServices.generateDummyHash();
     try {
       //send OTP
-      await EmailServices.sendOtpByEmail(email, OTP)
+      await EmailServices.sendOtpByEmail(req.body.email, OTP)
 
       res.status(httpStatus.OK).json({
         statusCode: httpStatus.OK,
@@ -30,12 +31,12 @@ class AuthController extends ErrorHandler{
     }
   }
 
-  async verifyOTP(req, res, next){
-    const { otp = "", hashedText = ""} = req.body
+  async verifyOTP(req, res, next) {
+    const { otp = "", hashedText = "" } = req.body
     const [hashedOTP, email, expiryTime] = hashedText.split("&&")
     //check expiry
     const isExpired = AuthServices.checkOTPExpiry(expiryTime);
-    if(isExpired){
+    if (isExpired) {
       return res.status(httpStatus.UNAUTHORIZED).json({
         statusCode: httpStatus.UNAUTHORIZED,
         error: AuthNotifications.OTP.EXPIRED
@@ -46,7 +47,7 @@ class AuthController extends ErrorHandler{
     const statusCode = httpStatus[isValid ? 'OK' : 'UNAUTHORIZED'];
     const { SUCCESS, OTP: { INVALID } } = AuthNotifications;
     //return response if not valid otp provided
-    if(!isValid){
+    if (!isValid) {
       return res.status(statusCode).json({
         statusCode,
         error: INVALID,
@@ -61,7 +62,7 @@ class AuthController extends ErrorHandler{
 
     const { accessToken, refreshToken } = TokenServices.generateTokens({ _id: user._id })
     TokenServices.storeRefreshToken(refreshToken, user._id)
-    
+
     res.cookie("refreshToken", refreshToken, {
       maxAge: 1000 * 60 * 60 * 24 * 30,
       httpOnly: true
@@ -80,13 +81,13 @@ class AuthController extends ErrorHandler{
     });
   }
 
-  async performAutoLogin (req, res, next){
+  async performAutoLogin(req, res, next) {
     const {
       refreshToken: refreshTokenFromCookie,
       accessToken: accessTokenFromCookie
     } = req.cookies;
 
-    if(!refreshTokenFromCookie || !accessTokenFromCookie){
+    if (!refreshTokenFromCookie || !accessTokenFromCookie) {
       return res.status(httpStatus.OK).json({
         statusCode: httpStatus.UNAUTHORIZED,
         error: Auth.USER.UNAUTHORIZED,
@@ -108,7 +109,7 @@ class AuthController extends ErrorHandler{
 
     const authenticatedUser = await UserServices.getUserById(userData._id);
 
-    if(!authenticatedUser){
+    if (!authenticatedUser) {
       return res.status(httpStatus.NOT_FOUND).json({
         statusCode: httpStatus.NOT_FOUND,
         error: User.ERRORS.NOT_FOUND,
@@ -121,10 +122,10 @@ class AuthController extends ErrorHandler{
 
     try {
       const token = await TokenServices.updateRefreshToken(
-        { userId : userData._id },
+        { userId: userData._id },
         { refreshToken }
       );
-      if(!token){
+      if (!token) {
         return res.status(httpStatus.UNAUTHORIZED).json({
           statusCode: httpStatus.UNAUTHORIZED,
           error: Auth.TOKEN.INVALID,
@@ -155,11 +156,11 @@ class AuthController extends ErrorHandler{
     });
   }
 
-  async perfomManualLogin (req, res, next) {
+  async perfomManualLogin(req, res, next) {
     const { username, password } = req.body
     try {
       const user = await UserServices.getUserByKey("userName", username)
-      if(!user) {
+      if (!user) {
         return res.status(httpStatus.NOT_FOUND).json({
           statusCode: httpStatus.NOT_FOUND,
           error: "User not found"
@@ -167,7 +168,7 @@ class AuthController extends ErrorHandler{
       };
 
       const isAuthenticated = AuthServices.compareHash(password, user?.password);
-      if(!isAuthenticated){
+      if (!isAuthenticated) {
         return res.status(httpStatus.UNAUTHORIZED).json({
           statusCode: httpStatus.UNAUTHORIZED,
           isUserLogOut: true,
@@ -175,57 +176,57 @@ class AuthController extends ErrorHandler{
         })
       }
 
-    const isTokenExist = await TokenServices.getRefreshToken({ userId: user._id });
+      const isTokenExist = await TokenServices.getRefreshToken({ userId: user._id });
 
-    const { accessToken, refreshToken } = TokenServices.generateTokens({ _id: user._id })
+      const { accessToken, refreshToken } = TokenServices.generateTokens({ _id: user._id })
 
-    try {
-      
-      if(isTokenExist){
-        const token = await TokenServices.updateRefreshToken(
-          { userId : user._id },
-          { refreshToken }
-        );
-        if(!token){
-          return res.status(httpStatus.UNAUTHORIZED).json({
-            statusCode: httpStatus.UNAUTHORIZED,
-            isUserLogOut: true,
-            error: Auth.TOKEN.INVALID,
-          })
+      try {
+
+        if (isTokenExist) {
+          const token = await TokenServices.updateRefreshToken(
+            { userId: user._id },
+            { refreshToken }
+          );
+          if (!token) {
+            return res.status(httpStatus.UNAUTHORIZED).json({
+              statusCode: httpStatus.UNAUTHORIZED,
+              isUserLogOut: true,
+              error: Auth.TOKEN.INVALID,
+            })
+          }
+        } else {
+          const token = TokenServices.storeRefreshToken(refreshToken, user._id)
+          if (!token) {
+            return res.status(httpStatus.UNAUTHORIZED).json({
+              statusCode: httpStatus.UNAUTHORIZED,
+              error: Auth.TOKEN.INVALID,
+              isUserLogOut: true,
+            })
+          }
         }
-      }else {
-        const token = TokenServices.storeRefreshToken(refreshToken, user._id)
-        if(!token){
-          return res.status(httpStatus.UNAUTHORIZED).json({
-            statusCode: httpStatus.UNAUTHORIZED,
-            error: Auth.TOKEN.INVALID,
-            isUserLogOut: true,
-          })
-        }
+      } catch (error) {
+        return res.status(httpStatus.INTERNAL_SERVER_ERROR).json({
+          statusCode: httpStatus.INTERNAL_SERVER_ERROR,
+          error: COMMON.INTERNAL_SERVER_ERROR,
+        })
       }
-    } catch (error) {
-      return res.status(httpStatus.INTERNAL_SERVER_ERROR).json({
-        statusCode: httpStatus.INTERNAL_SERVER_ERROR,
-        error: COMMON.INTERNAL_SERVER_ERROR,
+
+      res.cookie("refreshToken", refreshToken, {
+        maxAge: 1000 * 60 * 60 * 24 * 30,
+        httpOnly: true
       })
-    }
-    
-    res.cookie("refreshToken", refreshToken, {
-      maxAge: 1000 * 60 * 60 * 24 * 30,
-      httpOnly: true
-    })
 
-    res.cookie("accessToken", accessToken, {
-      maxAge: 1000 * 60 * 60 * 24 * 30,
-      httpOnly: true
-    })
+      res.cookie("accessToken", accessToken, {
+        maxAge: 1000 * 60 * 60 * 24 * 30,
+        httpOnly: true
+      })
 
-    return res.status(httpStatus.OK).json({
-      statusCode: httpStatus.OK,
-      message: AuthNotifications.SUCCESS,
-      user: UserServices.mappedUserData(user),
-      isAuthenticated: true
-    });
+      return res.status(httpStatus.OK).json({
+        statusCode: httpStatus.OK,
+        message: AuthNotifications.SUCCESS,
+        user: UserServices.mappedUserData(user),
+        isAuthenticated: true
+      });
 
     } catch (error) {
       return res.status(httpStatus.INTERNAL_SERVER_ERROR).json({
@@ -235,16 +236,16 @@ class AuthController extends ErrorHandler{
     }
   }
 
-  async handleLogout (req, res, next) {
+  async handleLogout(req, res, next) {
 
     const { refreshToken } = req.cookies
 
     try {
       await TokenServices.removeTokens(refreshToken)
-    
+
       res.clearCookie("accessToken");
       res.clearCookie("refreshToken");
-  
+
       res.status(httpStatus.OK).json({
         statusCode: httpStatus.OK,
         isLoggedOut: true
