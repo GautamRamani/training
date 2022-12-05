@@ -2,6 +2,7 @@ const { default: mongoose } = require("mongoose");
 const config = require("./config/config");
 
 function connectDatabase() {
+  // console.log(process)
   mongoose.connect(config.mongoose.url, config.mongoose.options)
 
   const db = mongoose.connection
@@ -11,6 +12,6 @@ function connectDatabase() {
   })
 }
 
-module.exports = {
+module.exports = {  
   connectDatabase
 }

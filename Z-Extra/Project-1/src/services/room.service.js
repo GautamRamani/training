@@ -1,5 +1,5 @@
 const httpStatus = require('http-status');
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 const Room = require('../models/room.model');
 const { CommonNotifications } = require('../notifications');
 const ErrorHandler = require('../utils/errorHandler');

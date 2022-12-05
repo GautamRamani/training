@@ -64,3 +64,16 @@ twilio:-
     The twilio-node helper library lets you write Node. js code to make HTTP requests to the Twilio API. This library is open-source, so if you find a feature missing or a bug, we encourage you to file an issue or contribute back to the twilio-node project.
 
      provides programmable communication tools for making and receiving phone calls, sending and receiving text messages, and performing other communication functions
+
+
+
+**************************************Theory********************************
+
+TLD:-
+
+    A TLD (top-level domain) is the most generic domain in the Internet's hierarchical DNS (domain name system). A TLD is the final component of a domain name, for example, "org" in developer.mozilla.org . ICANN (Internet Corporation for Assigned Names and Numbers) designates organizations to manage each TLD
+
+Node Crypto:-
+
+    Node Crypto JS is a NodeJS (RSA+AES) encryption and decryption companion for hybrid-crypto-js. Node Crypto JS combines RSA and AES encryption algorithms making it possible to efficiently encrypt and decrypt large messages. This node library is based on hybrid-crypto-js
+

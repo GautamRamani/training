@@ -1,4 +1,4 @@
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 const config = require('../config/config');
 
 class AuthServices {
@@ -24,7 +24,7 @@ class AuthServices {
 
 
   generateDummyHash(){
-    console.log(crypto.randomBytes(64).toString('hex'));
+    // console.log(crypto.randomBytes(64).toString('hex'));
   }
 
 }
