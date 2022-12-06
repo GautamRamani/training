@@ -13,8 +13,8 @@ const envVariablesSchema = Joi.object().keys({
   WEBSITE: Joi.string().required(),
   SMTP_HOST: Joi.string().required(),
   SMTP_PORT: Joi.number().required(),
-  // SMTP_SECURE:Joi.boolean()/*.required()*/,
-  // SMTP_requiredTLS:Joi.boolean()/*.required()*/,
+  SMTP_SECURE:Joi.boolean()/*.required()*/,
+  SMTP_requireTLS:Joi.boolean(),
   SMTP_USERNAME: Joi.string().required(),
   SMTP_PASSWORD: Joi.string().required(),
   EMAIL_FROM: Joi.string().email().required(),
@@ -47,8 +47,8 @@ module.exports = {
     smtp: {
       host: envVariable.SMTP_HOST,
       port: envVariable.SMTP_PORT,
-      // secure:envVariable.SMTP_SECURE,
-      // requiredTLS:envVariable.SMTP_requiredTLS,
+      secure:envVariable.SMTP_SECURE,
+      requireTLS:envVariable.SMTP_requireTLS,
       auth: {
         user: envVariable.SMTP_USERNAME,
         pass: envVariable.SMTP_PASSWORD,

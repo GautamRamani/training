@@ -77,7 +77,7 @@ class UserServices {
   }
 
   async activeUserProfile(userData){
-
+    
     let isProfileReadyToActivate = false;
     if(userData?.userName && ( await this.checkIfKeyValueAlreadyExist('userName', userData?.userName, userData?._id))){
       throw new ErrorHandler(httpStatus.BAD_REQUEST, UserNotifications.ERRORS.USERNAME_ALREADY_EXIST);

@@ -11,7 +11,7 @@ const { formateMessage } = require("../utils/helpers");
 class AuthController extends ErrorHandler {
 
   async sendOTP(req, res, next) {
-    // console.log(req.body)
+    console.log(req.body)
     const { email='' } = req.body
     const OTP = await AuthServices.generateOTP();
     const expiryTime = Date.now() + config.OTPExpiryDefaultTime;
@@ -32,7 +32,7 @@ class AuthController extends ErrorHandler {
   }
 
   async verifyOTP(req, res, next) {
-    const { otp = "", hashedText = "" } = req.body
+    const { otp, hashedText} = req.body
     const [hashedOTP, email, expiryTime] = hashedText.split("&&")
     //check expiry
     const isExpired = AuthServices.checkOTPExpiry(expiryTime);
