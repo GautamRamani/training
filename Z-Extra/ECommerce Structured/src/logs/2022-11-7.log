@@ -20,3 +20,6 @@ Require stack:
 2022-12-07 11:48:13:4813 info: Mongodb Connected
 2022-12-07 11:48:15:4815 info: GET /api/admin/product/6385d8e6114120497e4b3ceb 200 330 - 17.337 ms
 
+2022-12-07 14:57:24:5724 info: Mongodb Connected
+2022-12-07 14:57:38:5738 info: POST /api/admin/product 200 330 - 38.072 ms
+
