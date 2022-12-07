@@ -1,0 +1,22 @@
+2022-12-07 11:47:49:4749 info: Mongodb Connected
+2022-12-07 11:47:55:4755 info: GET /api/admin/product/6385d8e6114120497e4b3ceb 200 330 - 17.554 ms
+
+2022-12-07 11:48:11:4811 error: uncaughtException: Cannot find module './Route/index'
+Require stack:
+- D:\GautamRamani\Z-Extra\ECommerce Structured\src\app.js
+Error: Cannot find module './Route/index'
+Require stack:
+- D:\GautamRamani\Z-Extra\ECommerce Structured\src\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (D:\GautamRamani\Z-Extra\ECommerce Structured\src\app.js:24:20)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+2022-12-07 11:48:13:4813 info: Mongodb Connected
+2022-12-07 11:48:15:4815 info: GET /api/admin/product/6385d8e6114120497e4b3ceb 200 330 - 17.337 ms
+

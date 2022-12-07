@@ -21,7 +21,7 @@ app.use(cors())
 
 require("./config/connection")
 
-const routeIndex = require("./Route/index")
+const routeIndex = require("./routes/index")
 app.use("/", routeIndex);
 
 app.listen(process.env.PORT, () => {
