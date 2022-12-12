@@ -1,0 +1,30 @@
+What is Cloud:-
+    just move your data to cloud
+
+    Local system with limited space----->data--------->Cloud with Unlimited Space
+
+    Service Models
+
+    Cloud Compute:-  IaaS
+                     PaaS
+                     SaaS  (Software as a service)   delivering applications over the Internet
+
+AWS:-
+
+    Secure Cloud services plateform Compute power, database storage, content delivery and other functionality to help business scale and grow.
+
+    Instance:-
+        EC2
+        General Purpose Instance --email response system
+        compute Instance
+        memory Instance
+        storage Instance
+        GPU instance
+
+S3:-
+    
+    What is a S3 bucket in AWS?
+        Amazon S3 is an object storage service that stores data as objects within buckets. An object is a file and any metadata that describes the file. A bucket is a container for objects. To store your data in Amazon S3, you first create a bucket and specify a bucket name and AWS Regions.
+
+Amazon SES(Simple Email Services):-
+    Amazon SES is a cloud based email service for sending both trasactional and mass emails. it ets you send transactional email, marketing messages, or any other type of high quality content to your customer's.
