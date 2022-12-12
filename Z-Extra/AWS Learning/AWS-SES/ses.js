@@ -14,7 +14,6 @@ const SES = new aws.SES(awsConfig)
 const sendEmail = async () => {
     const email = process.env.EMAIL_FROM
     const shortCode=nanoid(6).toUpperCase();
-
     try {
         //Prepare email to send
 
