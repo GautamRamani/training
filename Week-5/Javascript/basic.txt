@@ -1,0 +1,20 @@
+refer:-
+    akshay saini javascript tutorial
+
+                    Javascript
+
+"JavaScript is a Synchronous single-threaded language"
+
+        Variable        Thread of
+        environment     Execution
+            |               |
+            |               |
+            |               |
+
+          Memory          code
+         Component      Component
+
+        key-value       ---------line by line
+        a:10            ---------
+     function: {...}    ---------
+
