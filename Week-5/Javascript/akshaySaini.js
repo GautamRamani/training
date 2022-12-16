@@ -22,9 +22,6 @@
 //         console.log("Button Clicked",count++)
 //     })
 
-//
-
-
 // const radius=[1,2,3,4,5]
 
 // var calArea=(radius)=>{
