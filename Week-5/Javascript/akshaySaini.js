@@ -33,6 +33,16 @@
 // }
 // console.log(calArea(radius))
 
+//ForEach
+
+// const ratings = [5, 4, 5];
+// let sum = 0;
+
+// ratings.forEach(async (rating) => {
+//   return sum+=rating
+// });
+// console.log(sum);
+
 //map for transformation
 
 // const arr=[1,2,3,4,5]
@@ -174,7 +184,7 @@
 
 // // step1
 //   order(2000,()=>console.log(`${stocks.Fruits[0]} was selected`))
-  
+
 // // step 2
 // .catch(()=>{
 //     console.log("Customer left")
@@ -184,7 +194,7 @@
 // .then(()=>{
 //       return order(0000,()=>console.log('production has started'))
 //     })
-    
+
 // // step 4
 // .then(()=>{
 //     return order(2000, ()=>console.log("Fruit has been chopped"))
@@ -219,4 +229,3 @@
 // .finally(()=>{
 //     return console.log('\nEnd of the day\nOur Shop is Closed')
 // })
-
