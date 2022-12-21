@@ -26,7 +26,7 @@ What is TypeScript and why it is used?
 
         TypeScript --->Javascript with type Checking
 
-        browser does not understand type script we are using typescript compiler
+        browser does not understand Type script we are using typescript compiler
 
         typescript:-  Medium to large Project
         Javascript:- Simple project
