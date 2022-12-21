@@ -3,6 +3,7 @@
 //     age+=10;
 // console.log(age)
 
+
 //any
 
 // let sales =123_456_789;
@@ -38,6 +39,7 @@
 // const enum Size {small=1,Medium,Large}   //Pascal case
 // let mySize: Size = Size.Medium
 // console.log(mySize)
+
 
 //Functions
 // function calculateTax(income:number,taxYear=2022):number{
@@ -84,7 +86,7 @@
 //     if(typeof weight==='number')
 //         return weight *2.2;
 //     else
-//         return parseInt(weight)*2.2;
+//         return parseInt(weight)*2;
 //  }
 
 //  console.log(kgtoLbs(10));
@@ -99,6 +101,7 @@
 //Literal Type
 // type Quantity=50|100;
 // let quantity:Quantity=100;
+
 
 //Nullable Types
 // function greet(name:string|null|undefined){

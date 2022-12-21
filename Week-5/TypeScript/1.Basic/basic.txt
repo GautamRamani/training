@@ -38,6 +38,10 @@ What is TypeScript and why it is used?
                 tsc.cmd -v     -->show version
                 tsc.cmd --init
 
+                simple create file index.ts
+                run cmd--> tsc index.ts it will create index.js file
+                 
+
         JavaScript Data Type:-          TypeScript Data Type:-
 
         number                          any
@@ -58,9 +62,27 @@ What is TypeScript and why it is used?
                 Parent/Base/Super
                 Child/Derived/sub
 
-run :-
+flow :-
 
-        tsc
-        node dist/first.js
-        also:-  tsc && node dist/first.js
+        npm i -g typescript
+        tsc.cmd -v     -->show version
+        tsc.cmd --init ->create tsconfig.json
+
+        Make change in tsconfig.json
+        /* Modules */
+
+         "rootDir": "./src" 
         
+        /* Emit */
+        
+        "outDir": "./dist"
+        
+        create index.ts file in src folder
+
+        run 
+
+        tsc        -->it will create index.js file in dist folder   
+        
+        run in cmd
+
+        tsc && node dist/first.js
