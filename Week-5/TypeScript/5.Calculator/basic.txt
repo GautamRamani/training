@@ -1,2 +1,24 @@
 refer:-
         https://www.youtube.com/watch?v=L02BfvA7mgA
+
+        npm i typescript -g
+        npm tsc -v
+        npm init -y
+
+        npm i @types/readline-sync
+        npm i readline-sync
+
+        tsc --init
+
+        "rootDir": "./src" 
+        "outDir": "./dist"
+        
+        create index.ts file in src folder
+
+        run 
+
+        tsc        -->it will create index.js file in dist folder   
+        
+        run in cmd
+
+        tsc && node dist/first.js 
