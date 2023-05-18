@@ -66,4 +66,3 @@ function validateProduct(product){
     return Joi.validate(product,schema)
 }
 exports.validate=validateProduct;
-
