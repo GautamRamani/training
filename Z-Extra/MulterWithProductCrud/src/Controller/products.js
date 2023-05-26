@@ -1,6 +1,7 @@
 const { validate, Product } = require("../Model/product")
 const express = require('express')
 const multer = require("multer")
+const fs = require("fs")
 const router = express.Router();
 
 //Get
@@ -31,7 +32,7 @@ const storage = multer.diskStorage({
     filename: function (req, file, cb) {
         const filename = file.originalname.split(" ").join("-");
         const extension = File_TYPE_MAP[file.mimetype];
-        cb(null, `${filename}-${Date.now()}.${extension}`)
+        cb(null, `${filename}`)
     }
 })
 const upload = multer({ storage: storage })
@@ -39,9 +40,9 @@ const upload = multer({ storage: storage })
 
 //Post
 router.post("/createProduct", upload.single("image"), async (req, res) => {
-    
+
     //First validate the Request
-    const { error } = validate(req.body);
+    const { error } = validate.validateProduct(req.body);
     if (error) {
         return res.status(400).send(error.details[0].message);
     }
@@ -50,13 +51,11 @@ router.post("/createProduct", upload.single("image"), async (req, res) => {
     if (!file) return res.status(400).send("no image in the request")
 
     const fileName = file.originalname;
-    const basePath = `${req.protocol}://${req.get("host")}//public/uploads`;
-    // console.log(file)
 
     let product = new Product({
         productName: req.body.productName,
         description: req.body.description,
-        image: `${basePath}/${fileName}`,
+        image: fileName,
         price: req.body.price,
         countInStock: req.body.countInStock,
         rating: req.body.rating,
@@ -84,29 +83,46 @@ router.get("/product/:id", async (req, res) => {
 })
 
 //Put
-router.put("/admin/product/:id", async (req, res) => {
-    try {
-        const updateproduct = await Product.findByIdAndUpdate(
-            req.params.id,
-            {
-                productName: req.body.productName,
-                description: req.body.description,
-                brand: req.body.brand,
-                price: req.body.price,
-                countInStock: req.body.countInStock,
-                rating: req.body.rating,
-                numReviews: req.body.numReviews
-            },
-            { new: true }
-        )
-        if (!updateproduct) {
-            res.status(400).send("Product can not be Updated")
-        }
-        res.send(updateproduct)
-    } catch (error) {
-        res.status(400).send(err)
+router.put('/updateProduct', upload.single('image'), async (req, res) => {
+
+    //First validate the Request
+    const { error } = validate.validateUpdateProductImage(req.body);
+    if (error) {
+        return res.status(400).send(error.details[0].message);
     }
-})
+
+    const product = await Product.findById({ _id: req.body.productId })
+
+    if (!product) {
+        return res.status(500).json({ error: 'Product does not found.' });
+    }
+
+    // Delete the old image from public/uploads folder
+    const oldImagePath = `public/uploads/${product.image}`;
+    console.log(oldImagePath);
+
+    fs.unlink(oldImagePath, (err) => {
+        if (err && err.code !== 'ENOENT') {
+            return res.status(500).json({ error: 'Failed to delete old image.' });
+        }
+
+        // Upload the new image
+        const newImagePath = req.file.originalname;
+
+        // Update the image path in the user object
+        product.image = newImagePath;
+
+        // Save the updated user in the database
+        product.save((err, updatedProduct) => {
+            if (err) {
+                // Handle error
+                return res.status(500).json({ error: 'Failed to update product.' });
+            }
+
+            res.status(200).json(updatedProduct);
+        });
+    });
+});
 
 //Delete
 router.delete("/deleteProduct/:id", async (req, res) => {

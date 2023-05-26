@@ -47,4 +47,12 @@ function validateProduct(product) {
     };
     return Joi.validate(product, schema)
 }
-exports.validate = validateProduct;
+
+function validateUpdateProductImage(product) {
+    const schema = {
+        productId: Joi.string().required(),
+        image: Joi.string()
+    };
+    return Joi.validate(product, schema)
+}
+exports.validate = { validateProduct, validateUpdateProductImage };
