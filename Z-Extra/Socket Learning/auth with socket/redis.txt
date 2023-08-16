@@ -1,0 +1,25 @@
+redis:-
+    Redis is an open-source, in-memory data storage system known for its speed and versatility. 
+It serves as a high-performance key-value store, cache, and message broker, 
+allowing applications to efficiently store and retrieve data in various formats, 
+making it ideal for tasks requiring rapid data access and manipulation.
+
+
+#redisAdapter:-
+
+manage multple instance...
+like one code run on multiple port..it means run on multiple instance..
+after we create subsciber 1,2,3 upto..
+after we publish subsciber..
+so msg sent to all subsciber..
+here publisher is a head...
+
+//for redis..
+
+redis-cli
+subscibe channel1
+
+redis-cli
+subscibe channel1
+
+publish channel "hello"
