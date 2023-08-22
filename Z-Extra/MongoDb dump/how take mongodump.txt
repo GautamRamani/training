@@ -1,0 +1,18 @@
+stpes to take mongoDb dump
+
+1) download mongodb database tool, extract them, open it go upto bin folder..open cmd..press below command
+
+syntex-
+mongodump --host="hostname" --username="username" --password="password" --db="dbname"
+mongorestore --uri "mongodb://username:password@hostname/dbname" ./dump/dbname
+
+here in mongodump-->dbname is je db ne je db ma lai javo hoi a
+               mongorestore-->first dbname is..jema restore karia a db name , second db name is j db mathi data restore karia a dbname
+
+ex.
+mongodump --host="172.20.12.7:27017" --username="mgp-3games-nodejs" --password="lqrvDiHTbcpShyn" --db="mgp-3games-nodejs"
+mongorestore --uri "mongodb://mgp-node:5svdYe<38v4qHJf5@172.20.12.15:27017/mgp-node" ./dump/mgp-3games-nodejs
+
+for local ex.
+mongodump --host="172.20.12.15:27017" --username="artoon-fantasy-sports-nodejs" --password="artoon-fantasy-sports-nodejs" --db="artoon-fantasy-sports-nodejs"
+mongorestore --uri "mongodb://localhost:27017/fantasy-cricket" ./dump/artoon-fantasy-sports-nodejs

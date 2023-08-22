@@ -1,0 +1,50 @@
+1)commit separate file in vs code
+
+a)add some files--> ex. test1.js-->  +  --> now test1.js go in Staged Changes  --> Commit -->push in git Desktop
+
+b)code through command line
+
+git status
+
+git add test1.js
+
+or if in folder... git add Controller/test1.js
+
+git commit -m "added files"
+
+git push -uf origin Branchname
+
+2)commit all files in vs code
+
+a) pass commit msg--> commit -->push in git Desktop
+
+b)code through command line
+git add .
+
+git commit -m "reomve files"
+
+git push -uf origin Branchname
+
+2)checkout branch
+
+a)from right corner we can change also chnage in git Desktop
+b)command line ex.1)main 2)gautam-dev currently in main now want to change to gautam-dev
+	git checkout gautam-dev
+
+now..i commit ex. test.js file in gautam-dev branch..
+           create merge request gautam-dev into main...
+           take a pull(should...) 
+	
+3)conflict
+	git merge --abort
+	git mergetool --> d (give cooman after type d)
+
+4)revert 
+	ex.  i commit test.js file in gautam-dev..i dont want to add this file..
+	now i have two options 1) new commit time i will remove this file...
+			      2)i wil revert this req in git Desktop or gitlab or github
+
+
+	
+
+	
