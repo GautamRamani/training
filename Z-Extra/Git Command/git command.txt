@@ -44,7 +44,40 @@ now..i commit ex. test.js file in gautam-dev branch..
 	now i have two options 1) new commit time i will remove this file...
 			      2)i wil revert this req in git Desktop or gitlab or github
 
+5)dir in/out
+	for in cd tab
+	 for out cd ..      	
 
+6)check config
+	git config user.name	
+	git config user.email
+
+a)set config
+	git config user.name username	
+	git config user.email	email
+
+7)git log
+	git log
+	git log --grep="refactor"
+	git log --author="username"
+
+8)git bash command
+
+	downlaod gitbash
+	npm install -g pm2		
+
+	(simlar commands...)
+	git init
+	git clone <repository_url>
+	git add .
+	git commit -m "Your commit message here"
+	git pull origin main
 	
 
-	
+	if repo has already clone
+	username
+	password
+	pm2 ls
+	cd  /home/node/fantasy-cricket   (ex. dir)
+	pm2 logs
+
