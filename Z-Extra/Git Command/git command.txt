@@ -81,3 +81,10 @@ a)set config
 	cd  /home/node/fantasy-cricket   (ex. dir)
 	pm2 logs
 
+	--if pull--
+	pm2 list (get id ex. 0)
+	pm2 restart 0 && pm2 logs
+
+
+	--check env--
+	cat .env
