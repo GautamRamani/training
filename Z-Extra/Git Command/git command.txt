@@ -88,3 +88,9 @@ a)set config
 
 	--check env--
 	cat .env
+
+----------------------show files in server--------------
+ex.	cd /home/node/rwl_socket
+
+	ls
+	cat filename
