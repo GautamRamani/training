@@ -89,6 +89,30 @@ a)set config
 	--check env--
 	cat .env
 
+	---edit env or anything else---
+	vim .env
+
+	read File : cat Filename
+	editFile : vim filename
+
+	step
+	shift + E
+	press Insert Key
+	do edditing in any thing
+
+	for save follow below step
+
+	press ESC key 
+	press : (jem)
+	after jem type  "wq"   (this command save you file in server)
+	press enter
+	in sort command is    ESC + : + wq
+
+	if file does't want to save then 
+
+	press ESC key
+	type ':q!' that command
+
 ----------------------show files in server--------------
 ex.	cd /home/node/rwl_socket
 
