@@ -118,3 +118,14 @@ ex.	cd /home/node/rwl_socket
 
 	ls
 	cat filename
+
+-------------------------server start on https when give args------------------------------------------
+pm2 start dist/RWL_http.js -- https && pm2 logs
+
+--------------------if project in ts------------------
+any chnage commited..take pull..
+after npm run buils..after restart ther server...
+
+-----------------------server kill && start on https server---------------------------------------
+pm2 kill
+pm2 start RWL_http.js -- https  (filename instead of RWL_http.js )
