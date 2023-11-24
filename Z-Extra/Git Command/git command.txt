@@ -129,3 +129,13 @@ after npm run buils..after restart ther server...
 -----------------------server kill && start on https server---------------------------------------
 pm2 kill
 pm2 start RWL_http.js -- https  (filename instead of RWL_http.js )
+
+--------------------show logs and size-------------------------
+pm2 show 2 (ex. index 2)
+
+-it will show all dir, copy dir
+
+cd copy above dir
+
+du -h filename with extension (it will show log file size)
+cat filename with extension (it will show all logs)
