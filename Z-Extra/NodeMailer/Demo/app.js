@@ -6,8 +6,8 @@ var transporter = nodemailer.createTransport({
   secure:false,
   requireTLS:true,
   auth: {
-    user: "2a2c8716be7f26",
-    pass: "5f1b2e70e375d1"
+    user: "email",
+    pass: "pass create api"
   }
 });
 

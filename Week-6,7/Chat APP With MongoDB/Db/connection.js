@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-const uri ="mongodb+srv://admin:admin@cluster0.pk2l5qk.mongodb.net/chatAPP?retryWrites=true&w=majority"
+const uri ="mongodb://127.0.0.1:27017/test"
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true

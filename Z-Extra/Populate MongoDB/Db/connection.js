@@ -4,7 +4,7 @@ const mongoose=require("mongoose")
 //         .then(()=>console.log("Database Connected Successfully"))
 //         .catch((err)=>console.log(err))
 
-const uri="mongodb+srv://admin:admin@cluster0.pk2l5qk.mongodb.net/Populate?retryWrites=true&w=majority"
+const uri="mongodb://127.0.0.1:27017/populate"
 mongoose.connect(uri,
                 {
                         useNewUrlParser: true, 
