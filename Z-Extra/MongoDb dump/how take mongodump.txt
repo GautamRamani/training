@@ -16,3 +16,8 @@ mongorestore --uri "mongodb://mgp-node:5svdYe<38v4qHJf5@172.20.12.15:27017/mgp-n
 for local ex.
 mongodump --host="172.20.12.15:27017" --username="artoon-fantasy-sports-nodejs" --password="artoon-fantasy-sports-nodejs" --db="artoon-fantasy-sports-nodejs"
 mongorestore --uri "mongodb://localhost:27017/fantasy-cricket" ./dump/artoon-fantasy-sports-nodejs
+
+
+some time may coneection refuse use below way
+mongodump --uri="mongodb+srv://nijwebsolution:olzhZy9pICsWiPfJ@cluster0.5kgpp.mongodb.net/wellness_mahotsav_staging"
+mongorestore --uri "mongodb+srv://nijwebsolution:olzhZy9pICsWiPfJ@cluster0.5kgpp.mongodb.net/meadow_wellness_mahotsav_staging" ./dump/wellness_mahotsav_staging
