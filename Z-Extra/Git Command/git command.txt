@@ -139,3 +139,41 @@ cd copy above dir
 
 du -h filename with extension (it will show log file size)
 cat filename with extension (it will show all logs)
+
+---------------------server config--------------------------------
+
+server {
+    server_name staging-app.wellnessmahotsav.com www.staging-app.wellnessmahotsav.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:3009;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+}
+
+sudo ln -s /etc/nginx/sites-available/staging-app.wellnessmahotsav.com /etc/nginx/sites-enabled/staging-app.wellnessmahotsav.com
+
+sudo certbot --nginx -d staging-app.wellnessmahotsav.com
+
+sudo systemctl restart nginx
+
+sudo systemctl status nginx
+
+
+-------for front---------
+server {
+	listen 80;
+        root /var/www/html/winon1.com;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name winon1.com www.winon1.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
