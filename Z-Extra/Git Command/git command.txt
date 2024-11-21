@@ -169,7 +169,9 @@ sudo systemctl status nginx
 server {
 	listen 80;
         root /var/www/html/winon1.com;
+
         index index.html index.htm index.nginx-debian.html;
+        error_page 404 /index.html;
 
         server_name winon1.com www.winon1.com;
 
@@ -177,3 +179,16 @@ server {
                 try_files $uri $uri/ =404;
         }
 }
+
+if getting error on page refresh..add 
+error_page 404 /index.html;   //site-avialable front domain
+
+/etc/apache2/conf-available/javascript-common.conf
+
+Alias /javascript /usr/share/javascript/
+
+<Directory "/usr/share/javascript/">
+	Options FollowSymLinks MultiViews
+</Directory>
+
+set to MultiViews (if not set)
