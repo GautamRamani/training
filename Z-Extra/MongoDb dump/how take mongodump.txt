@@ -11,13 +11,13 @@ here in mongodump-->dbname is je db ne je db ma lai javo hoi a
 
 ex.
 mongodump --host="172.20.12.7:27017" --username="mgp-3games-nodejs" --password="lqrvDiHTbcpShyn" --db="mgp-3games-nodejs"
-mongorestore --uri "mongodb://mgp-node:5svdYe<38v4qHJf5@172.20.12.15:27017/mgp-node" ./dump/mgp-3games-nodejs
+mongorestore --uri "mongodb://mgp-node:admin@172.20.12.15:27017/mgp-node" ./dump/mgp-3games-nodejs
 
 for local ex.
-mongodump --host="172.20.12.15:27017" --username="artoon-fantasy-sports-nodejs" --password="artoon-fantasy-sports-nodejs" --db="artoon-fantasy-sports-nodejs"
+mongodump --host="172.20.12.15:27017" --username="artoon-fantasy-sports-nodejs" --password="admin" --db="artoon-fantasy-sports-nodejs"
 mongorestore --uri "mongodb://localhost:27017/fantasy-cricket" ./dump/artoon-fantasy-sports-nodejs
 
 
 some time may coneection refuse use below way
-mongodump --uri="mongodb+srv://nijwebsolution:olzhZy9pICsWiPfJ@cluster0.5kgpp.mongodb.net/wellness_mahotsav_staging"
-mongorestore --uri "mongodb+srv://nijwebsolution:olzhZy9pICsWiPfJ@cluster0.5kgpp.mongodb.net/meadow_wellness_mahotsav_staging" ./dump/wellness_mahotsav_staging
+mongodump --uri="mongodb+srv://nijwebsolution:admin@cluster0.5kgpp.mongodb.net/wellness_mahotsav_staging"
+mongorestore --uri "mongodb+srv://nijwebsolution:admin@cluster0.5kgpp.mongodb.net/meadow_wellness_mahotsav_staging" ./dump/wellness_mahotsav_staging
