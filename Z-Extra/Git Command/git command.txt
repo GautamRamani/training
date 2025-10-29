@@ -140,7 +140,9 @@ cd copy above dir
 du -h filename with extension (it will show log file size)
 cat filename with extension (it will show all logs)
 
----------------------server config--------------------------------
+---------------------server config nginx--------------------------------
+
+-------for back---------
 
 server {
     server_name staging-app.wellnessmahotsav.com;
@@ -166,6 +168,7 @@ sudo systemctl status nginx
 
 
 -------for front---------
+
 server {
 	listen 80;
         root /var/www/html/winon1.com;
@@ -179,6 +182,55 @@ server {
                 try_files $uri $uri/ =404;
         }
 }
+
+---------------------server config apache2--------------------------------
+
+-------for back---------
+nano /etc/apache2/sites-available/api.erosy.com.conf
+
+<VirtualHost *:80>
+    ServerName api.erosy.com
+
+    # Proxy to Node.js app on port 3001
+    ProxyPreserveHost On
+    ProxyPass / http://127.0.0.1:3001/
+    ProxyPassReverse / http://127.0.0.1:3001/
+
+    # Optional security headers
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Logs
+    ErrorLog ${APACHE_LOG_DIR}/api.erosy.error.log
+    CustomLog ${APACHE_LOG_DIR}/api.erosy.access.log combined
+</VirtualHost>
+
+sudo a2enmod proxy proxy_http headers
+sudo a2ensite api.erosy.com.conf
+sudo systemctl reload apache2
+
+-------for front---------
+sudo nano /etc/apache2/sites-available/admin.erosy.com.conf
+
+<VirtualHost *:80>
+    ServerAdmin info@erosy.com
+    ServerName admin.erosy.com
+    DocumentRoot /var/www/html/admin.erosy.com
+
+    ErrorLog ${APACHE_LOG_DIR}/admin.erosy.error.log
+    CustomLog ${APACHE_LOG_DIR}/admin.erosy.access.log combined
+
+    <Directory /var/www/html/admin.erosy.com>
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+sudo a2ensite admin.erosy.com.conf
+sudo systemctl reload apache2
+
+-------------------------------------------------
 
 if getting error on page refresh..add 
 error_page 404 /index.html;   //site-avialable front domain
