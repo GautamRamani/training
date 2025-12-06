@@ -1,6 +1,6 @@
 const validator = (schema) => {
     return (req, res, next) => {
-        const result = schema.validate(req.body);
+        const result = schema.validate(req.body || {});
         if (result.error) {
             return res.status(400).json({
                 error: result.error.details[0].message,
@@ -14,3 +14,13 @@ const validator = (schema) => {
     };
 };
 module.exports = validator;
+
+// exports.validator = (schema) => {
+//     return (req, res, next) => {
+//         const { error } = schema.validate(req.body || {});
+//         if (error) {
+//             return res.status(400).send({ error: error.details[0].message });
+//         }
+//         next();
+//     };
+// };
