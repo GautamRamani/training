@@ -1,0 +1,35 @@
+s3 bucket clone
+
+download below
+https://awscli.amazonaws.com/AWSCLIV2.msi
+
+check in powershell
+aws --version
+
+aws configure --profile old
+AWS Access Key ID:
+AWS Secret Access Key:
+Default region name:
+Default output format:
+
+aws configure --profile new
+AWS Access Key ID:
+AWS Secret Access Key:
+Default region name:
+Default output format:
+
+aws configure list-profiles
+
+take backup
+aws s3 sync s3://erosy-web/erosy-web ./temp-backup --profile old
+
+paste in new bucket destination
+aws s3 sync ./temp-backup s3://erosy-webs/erosy-webs --profile new
+
+when make backup get error like give permission
+IAM->Users->Zyno(ex)->Add permissions
+
+select
+AmazonS3FullAccess
+
+now backup taken
