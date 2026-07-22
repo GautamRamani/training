@@ -1,0 +1,219 @@
+Facebook Lead Ads → CRM Integration Documentation
+
+Purpose
+
+This document describes the complete end-to-end process for integrating
+Meta (Facebook) Lead Ads with a custom CRM so that leads submitted
+through Facebook Lead Forms are automatically received, enriched, and
+stored in the CRM.
+
+------------------------------------------------------------------------
+
+1. Prerequisites
+
+Business Requirements
+
+-   Meta Business Portfolio
+-   Facebook Page
+-   Ad Account
+-   Lead Form
+-   Meta Developer Account
+-   CRM Backend with public HTTPS endpoint
+-   Database
+
+------------------------------------------------------------------------
+
+2. High-Level Flow
+
+1.  Create Meta App
+2.  Complete App Settings
+3.  Configure Facebook Login for Business
+4.  Create Login Configuration (General + System User Access Token)
+5.  Configure OAuth Redirect URI
+6.  Configure App Permissions
+7.  Configure Webhook
+8.  Subscribe leadgen
+9.  Configure Business Manager assets & Lead Access
+10. Connect CRM in Business Manager
+11. Submit App Review (if required)
+12. Publish App
+13. Test with Lead Ads Testing Tool
+14. Implement Backend OAuth
+15. Store Page Access Tokens
+16. Receive Webhook
+17. Fetch Lead Details via Graph API
+18. Fetch Campaign/Ad details (optional)
+19. Store lead in CRM
+20. Monitor & troubleshoot
+
+------------------------------------------------------------------------
+
+3. Meta App Setup
+
+-   Create a Business App.
+-   Link it to the correct Business Portfolio.
+-   Add an App Icon, Category, Website URL, Privacy Policy URL, Data
+    Deletion URL, Contact Email, Testing Instructions and other App
+    Review information.
+-   Publish the app after configuration.
+
+------------------------------------------------------------------------
+
+4. Permissions
+
+Typical permissions: - leads_retrieval - pages_manage_metadata -
+pages_show_list - pages_read_engagement - pages_manage_ads -
+business_management - ads_read (optional for campaign insights) -
+ads_management (if required)
+
+------------------------------------------------------------------------
+
+5. Facebook Login for Business
+
+Enable: - Client OAuth Login - Web OAuth Login - HTTPS - Strict Redirect
+URI Mode
+
+Redirect URI: https://your-domain/api/.../facebook/callback
+
+Create a Login Configuration: - Login Variation: General - Access Token:
+System User Access Token
+
+Generate the access token.
+
+------------------------------------------------------------------------
+
+6. Webhook
+
+Object: Page
+
+Callback: https://your-domain/api/.../facebook/webhook
+
+Configure Verify Token.
+
+Subscribe: - leadgen
+
+Webhook must support: - GET verification (hub.challenge) - POST lead
+events
+
+------------------------------------------------------------------------
+
+7. Business Manager
+
+Assign Full Access to: - Facebook Page - Ad Account - Meta App
+
+Grant Lead Access to the Page.
+
+Verify Connected CRM contains your Meta App.
+
+------------------------------------------------------------------------
+
+8. App Review
+
+Required mainly for production/external users.
+
+Complete: - Testing Instructions - Required permissions - Business
+information
+
+------------------------------------------------------------------------
+
+9. Lead Testing
+
+Use Meta Lead Ads Testing Tool.
+
+Verify: - User has Leads Permission - Lead Access Manager Enabled - User
+is Page Admin
+
+Generate test lead and confirm CRM receives it.
+
+------------------------------------------------------------------------
+
+10. Backend API Design
+
+Routes: - GET /facebook/login - GET /facebook/callback - GET
+/facebook/webhook - POST /facebook/webhook
+
+Environment: - FACEBOOK_WEBHOOK_APP_ID - FACEBOOK_WEBHOOK_APP_SECRET -
+FACEBOOK_WEBHOOK_REDIRECT_URI - FACEBOOK_WEBHOOK_VERIFY_TOKEN -
+FACEBOOK_WEBHOOK_LOGIN_CONFIGURATION_ID
+
+------------------------------------------------------------------------
+
+11. OAuth Flow
+
+User → Facebook Login → Callback → Exchange authorization code →
+Exchange long-lived token → Fetch pages → Store page access tokens
+
+Validate OAuth state to prevent CSRF.
+
+------------------------------------------------------------------------
+
+12. Graph API Usage
+
+Fetch Pages: GET /me/accounts
+
+Fetch Lead: GET /{lead_id}
+
+Useful fields: - field_data - form_id - ad_id - campaign_id -
+created_time
+
+Optional: GET /{campaign_id} GET /{ad_id}
+
+------------------------------------------------------------------------
+
+13. Lead Processing
+
+Receive webhook.
+
+Extract: - leadgen_id - page_id
+
+Process: 1. Lookup page token 2. Fetch lead details 3. Map form fields
+4. Fetch campaign/ad if required 5. Validate duplicate lead 6. Store in
+CRM 7. Notify UI (optional)
+
+Always return HTTP 200 quickly to Meta.
+
+------------------------------------------------------------------------
+
+14. Database Suggestions
+
+Store: - Lead ID - Page ID - Form ID - Campaign ID - Campaign Name - Ad
+ID - Lead Created Time - Raw Payload - Parsed Question/Answer Fields -
+Sync Status
+
+------------------------------------------------------------------------
+
+15. Security
+
+-   Environment variables only
+-   HTTPS endpoints
+-   Verify webhook token
+-   Validate OAuth state
+-   Long-lived tokens
+-   Proper logging
+-   API timeouts
+
+------------------------------------------------------------------------
+
+16. Common Problems
+
+-   Webhook not firing → callback/subscription issue.
+-   Webhook received but no lead details → missing Lead Access or
+    leads_retrieval.
+-   No pages → missing pages_show_list.
+-   Graph API permission errors → wrong token/permissions.
+-   Test lead not arriving → delete previous test lead and recreate.
+
+------------------------------------------------------------------------
+
+17. Production Checklist
+
+[ ] Meta App created [ ] App settings completed [ ] OAuth configured [ ]
+Permissions granted [ ] Login configuration created [ ] System User
+Access Token generated [ ] Webhook verified [ ] leadgen subscribed [ ]
+Business assets assigned [ ] Lead Access granted [ ] Connected CRM
+verified [ ] App published [ ] Test lead successful [ ] Lead stored in
+CRM [ ] Logs verified
+
+This document is intentionally implementation-focused so it can be
+reused across future projects regardless of backend framework (Node.js,
+Laravel, .NET, Java, etc.).
